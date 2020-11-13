@@ -67,173 +67,172 @@ namespace TheBox.Buttons
 		/// </summary>
 		private void InitializeComponent()
 		{
-			var resources = new System.Resources.ResourceManager(typeof(MultiCommandEditor));
-			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.chkPrefix = new System.Windows.Forms.CheckBox();
-			this.txCommand = new System.Windows.Forms.TextBox();
-			this.label2 = new System.Windows.Forms.Label();
-			this.txCaption = new System.Windows.Forms.TextBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.bAdd = new System.Windows.Forms.Button();
-			this.linkPreview = new System.Windows.Forms.LinkLabel();
-			this.label3 = new System.Windows.Forms.Label();
-			this.bOk = new System.Windows.Forms.Button();
-			this.bCancel = new System.Windows.Forms.Button();
-			this.Tree = new System.Windows.Forms.TreeView();
-			this.groupBox1.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// groupBox1
-			// 
-			this.groupBox1.Controls.Add(this.chkPrefix);
-			this.groupBox1.Controls.Add(this.txCommand);
-			this.groupBox1.Controls.Add(this.label2);
-			this.groupBox1.Controls.Add(this.txCaption);
-			this.groupBox1.Controls.Add(this.label1);
-			this.groupBox1.Controls.Add(this.bAdd);
-			this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.groupBox1.Location = new System.Drawing.Point(208, 8);
-			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(264, 128);
-			this.groupBox1.TabIndex = 1;
-			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "ButtonMenuEditor.NewComText";
-			// 
-			// chkPrefix
-			// 
-			this.chkPrefix.Checked = true;
-			this.chkPrefix.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.chkPrefix.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.chkPrefix.Location = new System.Drawing.Point(8, 96);
-			this.chkPrefix.Name = "chkPrefix";
-			this.chkPrefix.Size = new System.Drawing.Size(152, 24);
-			this.chkPrefix.TabIndex = 3;
-			this.chkPrefix.Text = "ButtonMenuEditor.UsePrefix";
-			this.chkPrefix.CheckedChanged += new System.EventHandler(this.chkPrefix_CheckedChanged);
-			// 
-			// txCommand
-			// 
-			this.txCommand.Location = new System.Drawing.Point(72, 64);
-			this.txCommand.Name = "txCommand";
-			this.txCommand.Size = new System.Drawing.Size(184, 20);
-			this.txCommand.TabIndex = 2;
-			this.txCommand.Text = "";
-			this.txCommand.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txCommand_KeyDown);
-			this.txCommand.TextChanged += new System.EventHandler(this.txCommand_TextChanged);
-			this.txCommand.Enter += new System.EventHandler(this.txCommand_Enter);
-			// 
-			// label2
-			// 
-			this.label2.Location = new System.Drawing.Point(8, 64);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(64, 23);
-			this.label2.TabIndex = 2;
-			this.label2.Text = "ButtonMenuEditor.Command";
-			// 
-			// txCaption
-			// 
-			this.txCaption.Location = new System.Drawing.Point(72, 24);
-			this.txCaption.Name = "txCaption";
-			this.txCaption.Size = new System.Drawing.Size(184, 20);
-			this.txCaption.TabIndex = 1;
-			this.txCaption.Text = "";
-			this.txCaption.TextChanged += new System.EventHandler(this.txCaption_TextChanged);
-			// 
-			// label1
-			// 
-			this.label1.Location = new System.Drawing.Point(8, 24);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(64, 23);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "ButtonMenuEditor.Caption";
-			// 
-			// bAdd
-			// 
-			this.bAdd.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bAdd.Location = new System.Drawing.Point(200, 96);
-			this.bAdd.Name = "bAdd";
-			this.bAdd.Size = new System.Drawing.Size(56, 23);
-			this.bAdd.TabIndex = 4;
-			this.bAdd.Text = "Common.Add";
-			this.bAdd.Click += new System.EventHandler(this.bAdd_Click);
-			// 
-			// linkPreview
-			// 
-			this.linkPreview.Location = new System.Drawing.Point(208, 152);
-			this.linkPreview.Name = "linkPreview";
-			this.linkPreview.Size = new System.Drawing.Size(264, 23);
-			this.linkPreview.TabIndex = 2;
-			this.linkPreview.TabStop = true;
-			this.linkPreview.Text = "MultiCmd.Preview";
-			this.linkPreview.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.linkPreview.MouseDown += new System.Windows.Forms.MouseEventHandler(this.linkPreview_MouseDown);
-			// 
-			// label3
-			// 
-			this.label3.Location = new System.Drawing.Point(208, 184);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(264, 112);
-			this.label3.TabIndex = 3;
-			this.label3.Text = "MultiCmd.Instructions";
-			// 
-			// bOk
-			// 
-			this.bOk.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bOk.Location = new System.Drawing.Point(408, 304);
-			this.bOk.Name = "bOk";
-			this.bOk.Size = new System.Drawing.Size(64, 23);
-			this.bOk.TabIndex = 4;
-			this.bOk.Text = "Common.Ok";
-			this.bOk.Click += new System.EventHandler(this.bOk_Click);
-			// 
-			// bCancel
-			// 
-			this.bCancel.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bCancel.Location = new System.Drawing.Point(336, 304);
-			this.bCancel.Name = "bCancel";
-			this.bCancel.Size = new System.Drawing.Size(64, 23);
-			this.bCancel.TabIndex = 5;
-			this.bCancel.Text = "Common.Cancel";
-			this.bCancel.Click += new System.EventHandler(this.bCancel_Click);
-			// 
-			// Tree
-			// 
-			this.Tree.CheckBoxes = true;
-			this.Tree.FullRowSelect = true;
-			this.Tree.HideSelection = false;
-			this.Tree.ImageIndex = -1;
-			this.Tree.Location = new System.Drawing.Point(8, 8);
-			this.Tree.Name = "Tree";
-			this.Tree.SelectedImageIndex = -1;
-			this.Tree.ShowLines = false;
-			this.Tree.ShowPlusMinus = false;
-			this.Tree.ShowRootLines = false;
-			this.Tree.Size = new System.Drawing.Size(192, 320);
-			this.Tree.TabIndex = 6;
-			this.Tree.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Tree_KeyDown);
-			this.Tree.Click += new System.EventHandler(this.Tree_Click);
-			this.Tree.AfterCheck += new System.Windows.Forms.TreeViewEventHandler(this.Tree_AfterCheck);
-			this.Tree.DoubleClick += new System.EventHandler(this.Tree_DoubleClick);
-			this.Tree.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.Tree_AfterSelect);
-			// 
-			// MultiCommandEditor
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(480, 336);
-			this.Controls.Add(this.Tree);
-			this.Controls.Add(this.bCancel);
-			this.Controls.Add(this.bOk);
-			this.Controls.Add(this.label3);
-			this.Controls.Add(this.linkPreview);
-			this.Controls.Add(this.groupBox1);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.Name = "MultiCommandEditor";
-			this.ShowInTaskbar = false;
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "MultiCmd.Title";
-			this.groupBox1.ResumeLayout(false);
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MultiCommandEditor));
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.chkPrefix = new System.Windows.Forms.CheckBox();
+            this.txCommand = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txCaption = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.bAdd = new System.Windows.Forms.Button();
+            this.linkPreview = new System.Windows.Forms.LinkLabel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.bOk = new System.Windows.Forms.Button();
+            this.bCancel = new System.Windows.Forms.Button();
+            this.Tree = new System.Windows.Forms.TreeView();
+            this.groupBox1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.chkPrefix);
+            this.groupBox1.Controls.Add(this.txCommand);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txCaption);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.bAdd);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox1.Location = new System.Drawing.Point(208, 8);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(264, 128);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "ButtonMenuEditor.NewComText";
+            // 
+            // chkPrefix
+            // 
+            this.chkPrefix.Checked = true;
+            this.chkPrefix.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkPrefix.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.chkPrefix.Location = new System.Drawing.Point(8, 96);
+            this.chkPrefix.Name = "chkPrefix";
+            this.chkPrefix.Size = new System.Drawing.Size(152, 24);
+            this.chkPrefix.TabIndex = 3;
+            this.chkPrefix.Text = "ButtonMenuEditor.UsePrefix";
+            this.chkPrefix.CheckedChanged += new System.EventHandler(this.chkPrefix_CheckedChanged);
+            // 
+            // txCommand
+            // 
+            this.txCommand.Location = new System.Drawing.Point(72, 64);
+            this.txCommand.Name = "txCommand";
+            this.txCommand.Size = new System.Drawing.Size(184, 23);
+            this.txCommand.TabIndex = 2;
+            this.txCommand.TextChanged += new System.EventHandler(this.txCommand_TextChanged);
+            this.txCommand.Enter += new System.EventHandler(this.txCommand_Enter);
+            this.txCommand.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txCommand_KeyDown);
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(8, 64);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 23);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "ButtonMenuEditor.Command";
+            // 
+            // txCaption
+            // 
+            this.txCaption.Location = new System.Drawing.Point(72, 24);
+            this.txCaption.Name = "txCaption";
+            this.txCaption.Size = new System.Drawing.Size(184, 23);
+            this.txCaption.TabIndex = 1;
+            this.txCaption.TextChanged += new System.EventHandler(this.txCaption_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(8, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 23);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ButtonMenuEditor.Caption";
+            // 
+            // bAdd
+            // 
+            this.bAdd.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bAdd.Location = new System.Drawing.Point(200, 96);
+            this.bAdd.Name = "bAdd";
+            this.bAdd.Size = new System.Drawing.Size(56, 23);
+            this.bAdd.TabIndex = 4;
+            this.bAdd.Text = "Common.Add";
+            this.bAdd.Click += new System.EventHandler(this.bAdd_Click);
+            // 
+            // linkPreview
+            // 
+            this.linkPreview.Location = new System.Drawing.Point(208, 152);
+            this.linkPreview.Name = "linkPreview";
+            this.linkPreview.Size = new System.Drawing.Size(264, 23);
+            this.linkPreview.TabIndex = 2;
+            this.linkPreview.TabStop = true;
+            this.linkPreview.Text = "MultiCmd.Preview";
+            this.linkPreview.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkPreview.MouseDown += new System.Windows.Forms.MouseEventHandler(this.linkPreview_MouseDown);
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(208, 184);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(264, 112);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "MultiCmd.Instructions";
+            // 
+            // bOk
+            // 
+            this.bOk.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bOk.Location = new System.Drawing.Point(408, 304);
+            this.bOk.Name = "bOk";
+            this.bOk.Size = new System.Drawing.Size(64, 23);
+            this.bOk.TabIndex = 4;
+            this.bOk.Text = "Common.Ok";
+            this.bOk.Click += new System.EventHandler(this.bOk_Click);
+            // 
+            // bCancel
+            // 
+            this.bCancel.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bCancel.Location = new System.Drawing.Point(336, 304);
+            this.bCancel.Name = "bCancel";
+            this.bCancel.Size = new System.Drawing.Size(64, 23);
+            this.bCancel.TabIndex = 5;
+            this.bCancel.Text = "Common.Cancel";
+            this.bCancel.Click += new System.EventHandler(this.bCancel_Click);
+            // 
+            // Tree
+            // 
+            this.Tree.CheckBoxes = true;
+            this.Tree.FullRowSelect = true;
+            this.Tree.HideSelection = false;
+            this.Tree.Location = new System.Drawing.Point(8, 8);
+            this.Tree.Name = "Tree";
+            this.Tree.ShowLines = false;
+            this.Tree.ShowPlusMinus = false;
+            this.Tree.ShowRootLines = false;
+            this.Tree.Size = new System.Drawing.Size(192, 320);
+            this.Tree.TabIndex = 6;
+            this.Tree.AfterCheck += new System.Windows.Forms.TreeViewEventHandler(this.Tree_AfterCheck);
+            this.Tree.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.Tree_AfterSelect);
+            this.Tree.Click += new System.EventHandler(this.Tree_Click);
+            this.Tree.DoubleClick += new System.EventHandler(this.Tree_DoubleClick);
+            this.Tree.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Tree_KeyDown);
+            // 
+            // MultiCommandEditor
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(6, 16);
+            this.ClientSize = new System.Drawing.Size(480, 336);
+            this.Controls.Add(this.Tree);
+            this.Controls.Add(this.bCancel);
+            this.Controls.Add(this.bOk);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.linkPreview);
+            this.Controls.Add(this.groupBox1);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "MultiCommandEditor";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "MultiCmd.Title";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.ResumeLayout(false);
+
 		}
 		#endregion
 

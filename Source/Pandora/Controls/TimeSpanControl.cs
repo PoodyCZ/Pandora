@@ -63,128 +63,146 @@ namespace TheBox.Controls
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.numSeconds = new System.Windows.Forms.NumericUpDown();
-			this.numMins = new System.Windows.Forms.NumericUpDown();
-			this.numHours = new System.Windows.Forms.NumericUpDown();
-			this.numDays = new System.Windows.Forms.NumericUpDown();
-			this.bSet = new System.Windows.Forms.Button();
-			this.label1 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			((System.ComponentModel.ISupportInitialize)(this.numSeconds)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numMins)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numHours)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numDays)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// numSeconds
-			// 
-			this.numSeconds.Location = new System.Drawing.Point(52, 64);
-			this.numSeconds.Maximum = new System.Decimal(new int[] {100000, 0, 0, 0});
-			this.numSeconds.Name = "numSeconds";
-			this.numSeconds.Size = new System.Drawing.Size(52, 20);
-			this.numSeconds.TabIndex = 1;
-			this.numSeconds.ValueChanged += new System.EventHandler(this.numSeconds_ValueChanged);
-			// 
-			// numMins
-			// 
-			this.numMins.Location = new System.Drawing.Point(52, 44);
-			this.numMins.Maximum = new System.Decimal(new int[] {100000, 0, 0, 0});
-			this.numMins.Name = "numMins";
-			this.numMins.Size = new System.Drawing.Size(52, 20);
-			this.numMins.TabIndex = 2;
-			this.numMins.ValueChanged += new System.EventHandler(this.numMins_ValueChanged);
-			// 
-			// numHours
-			// 
-			this.numHours.Location = new System.Drawing.Point(52, 24);
-			this.numHours.Maximum = new System.Decimal(new int[] {100000, 0, 0, 0});
-			this.numHours.Name = "numHours";
-			this.numHours.Size = new System.Drawing.Size(52, 20);
-			this.numHours.TabIndex = 3;
-			this.numHours.ValueChanged += new System.EventHandler(this.numHours_ValueChanged);
-			// 
-			// numDays
-			// 
-			this.numDays.Location = new System.Drawing.Point(52, 4);
-			this.numDays.Maximum = new System.Decimal(new int[] {100000, 0, 0, 0});
-			this.numDays.Name = "numDays";
-			this.numDays.Size = new System.Drawing.Size(52, 20);
-			this.numDays.TabIndex = 4;
-			this.numDays.ValueChanged += new System.EventHandler(this.numDays_ValueChanged);
-			// 
-			// bSet
-			// 
-			this.bSet.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bSet.Location = new System.Drawing.Point(60, 92);
-			this.bSet.Name = "bSet";
-			this.bSet.Size = new System.Drawing.Size(36, 16);
-			this.bSet.TabIndex = 5;
-			this.bSet.Text = "->";
-			this.bSet.Click += new System.EventHandler(this.bSet_Click);
-			// 
-			// label1
-			// 
-			this.label1.Location = new System.Drawing.Point(0, 92);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(60, 16);
-			this.label1.TabIndex = 6;
-			this.label1.Text = "Props.TimeSpan";
-			// 
-			// label2
-			// 
-			this.label2.Location = new System.Drawing.Point(0, 8);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(52, 16);
-			this.label2.TabIndex = 7;
-			this.label2.Text = "Props.Days";
-			// 
-			// label3
-			// 
-			this.label3.Location = new System.Drawing.Point(0, 28);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(52, 16);
-			this.label3.TabIndex = 8;
-			this.label3.Text = "Props.Hours";
-			// 
-			// label4
-			// 
-			this.label4.Location = new System.Drawing.Point(0, 48);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(52, 16);
-			this.label4.TabIndex = 9;
-			this.label4.Text = "Props.Minutes";
-			// 
-			// label5
-			// 
-			this.label5.Location = new System.Drawing.Point(0, 68);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(52, 16);
-			this.label5.TabIndex = 10;
-			this.label5.Text = "Props.Seconds";
-			// 
-			// TimeSpanControl
-			// 
-			this.Controls.Add(this.label5);
-			this.Controls.Add(this.label4);
-			this.Controls.Add(this.label3);
-			this.Controls.Add(this.label2);
-			this.Controls.Add(this.label1);
-			this.Controls.Add(this.bSet);
-			this.Controls.Add(this.numDays);
-			this.Controls.Add(this.numHours);
-			this.Controls.Add(this.numMins);
-			this.Controls.Add(this.numSeconds);
-			this.Name = "TimeSpanControl";
-			this.Size = new System.Drawing.Size(104, 116);
-			this.Load += new System.EventHandler(this.TimeSpanControl_Load);
-			((System.ComponentModel.ISupportInitialize)(this.numSeconds)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numMins)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numHours)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numDays)).EndInit();
-			this.ResumeLayout(false);
+            this.numSeconds = new System.Windows.Forms.NumericUpDown();
+            this.numMins = new System.Windows.Forms.NumericUpDown();
+            this.numHours = new System.Windows.Forms.NumericUpDown();
+            this.numDays = new System.Windows.Forms.NumericUpDown();
+            this.bSet = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.numSeconds)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMins)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numHours)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numDays)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // numSeconds
+            // 
+            this.numSeconds.Location = new System.Drawing.Point(52, 64);
+            this.numSeconds.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.numSeconds.Name = "numSeconds";
+            this.numSeconds.Size = new System.Drawing.Size(52, 23);
+            this.numSeconds.TabIndex = 1;
+            this.numSeconds.ValueChanged += new System.EventHandler(this.numSeconds_ValueChanged);
+            // 
+            // numMins
+            // 
+            this.numMins.Location = new System.Drawing.Point(52, 44);
+            this.numMins.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.numMins.Name = "numMins";
+            this.numMins.Size = new System.Drawing.Size(52, 23);
+            this.numMins.TabIndex = 2;
+            this.numMins.ValueChanged += new System.EventHandler(this.numMins_ValueChanged);
+            // 
+            // numHours
+            // 
+            this.numHours.Location = new System.Drawing.Point(52, 24);
+            this.numHours.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.numHours.Name = "numHours";
+            this.numHours.Size = new System.Drawing.Size(52, 23);
+            this.numHours.TabIndex = 3;
+            this.numHours.ValueChanged += new System.EventHandler(this.numHours_ValueChanged);
+            // 
+            // numDays
+            // 
+            this.numDays.Location = new System.Drawing.Point(52, 4);
+            this.numDays.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.numDays.Name = "numDays";
+            this.numDays.Size = new System.Drawing.Size(52, 23);
+            this.numDays.TabIndex = 4;
+            this.numDays.ValueChanged += new System.EventHandler(this.numDays_ValueChanged);
+            // 
+            // bSet
+            // 
+            this.bSet.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bSet.Location = new System.Drawing.Point(60, 92);
+            this.bSet.Name = "bSet";
+            this.bSet.Size = new System.Drawing.Size(36, 16);
+            this.bSet.TabIndex = 5;
+            this.bSet.Text = "->";
+            this.bSet.Click += new System.EventHandler(this.bSet_Click);
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(0, 92);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 16);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Props.TimeSpan";
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(0, 8);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(52, 16);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Props.Days";
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(0, 28);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(52, 16);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Props.Hours";
+            // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(0, 48);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(52, 16);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Props.Minutes";
+            // 
+            // label5
+            // 
+            this.label5.Location = new System.Drawing.Point(0, 68);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 16);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Props.Seconds";
+            // 
+            // TimeSpanControl
+            // 
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.bSet);
+            this.Controls.Add(this.numDays);
+            this.Controls.Add(this.numHours);
+            this.Controls.Add(this.numMins);
+            this.Controls.Add(this.numSeconds);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Name = "TimeSpanControl";
+            this.Size = new System.Drawing.Size(104, 116);
+            this.Load += new System.EventHandler(this.TimeSpanControl_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.numSeconds)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMins)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numHours)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numDays)).EndInit();
+            this.ResumeLayout(false);
+
 		}
 		#endregion
 

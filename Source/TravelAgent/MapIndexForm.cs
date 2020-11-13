@@ -64,98 +64,106 @@ namespace TheBox.TravelAgent
 		/// </summary>
 		private void InitializeComponent()
 		{
-			var resources = new System.Resources.ResourceManager(typeof(MapIndexForm));
-			this.label1 = new System.Windows.Forms.Label();
-			this.radioButton1 = new System.Windows.Forms.RadioButton();
-			this.radioButton2 = new System.Windows.Forms.RadioButton();
-			this.radioButton3 = new System.Windows.Forms.RadioButton();
-			this.radioButton4 = new System.Windows.Forms.RadioButton();
-			this.button1 = new System.Windows.Forms.Button();
-			this.radioButton5 = new System.Windows.Forms.RadioButton();
-			this.SuspendLayout();
-			// 
-			// label1
-			// 
-			this.label1.Location = new System.Drawing.Point(16, 16);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(216, 23);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "Please select the map ID for this datafile.";
-			// 
-			// radioButton1
-			// 
-			this.radioButton1.Checked = true;
-			this.radioButton1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.radioButton1.Location = new System.Drawing.Point(32, 48);
-			this.radioButton1.Name = "radioButton1";
-			this.radioButton1.TabIndex = 1;
-			this.radioButton1.TabStop = true;
-			this.radioButton1.Text = "0 : Felucca";
-			this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-			// 
-			// radioButton2
-			// 
-			this.radioButton2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.radioButton2.Location = new System.Drawing.Point(32, 72);
-			this.radioButton2.Name = "radioButton2";
-			this.radioButton2.TabIndex = 2;
-			this.radioButton2.Text = "1: Trammel";
-			this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
-			// 
-			// radioButton3
-			// 
-			this.radioButton3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.radioButton3.Location = new System.Drawing.Point(32, 96);
-			this.radioButton3.Name = "radioButton3";
-			this.radioButton3.TabIndex = 3;
-			this.radioButton3.Text = "2: Ilshenar";
-			this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
-			// 
-			// radioButton4
-			// 
-			this.radioButton4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.radioButton4.Location = new System.Drawing.Point(32, 120);
-			this.radioButton4.Name = "radioButton4";
-			this.radioButton4.TabIndex = 4;
-			this.radioButton4.Text = "3: Malas";
-			this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
-			// 
-			// button1
-			// 
-			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.button1.Location = new System.Drawing.Point(144, 184);
-			this.button1.Name = "button1";
-			this.button1.TabIndex = 5;
-			this.button1.Text = "Select";
-			this.button1.Click += new System.EventHandler(this.button1_Click);
-			// 
-			// radioButton5
-			// 
-			this.radioButton5.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.radioButton5.Location = new System.Drawing.Point(32, 144);
-			this.radioButton5.Name = "radioButton5";
-			this.radioButton5.TabIndex = 6;
-			this.radioButton5.Text = "4: Tokuno";
-			this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
-			// 
-			// MapIndexForm
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(240, 224);
-			this.Controls.Add(this.radioButton5);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.radioButton4);
-			this.Controls.Add(this.radioButton3);
-			this.Controls.Add(this.radioButton2);
-			this.Controls.Add(this.radioButton1);
-			this.Controls.Add(this.label1);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.MaximizeBox = false;
-			this.Name = "MapIndexForm";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "MapIndexForm";
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MapIndexForm));
+            this.label1 = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.button1 = new System.Windows.Forms.Button();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(16, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(216, 23);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Please select the map ID for this datafile.";
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.Checked = true;
+            this.radioButton1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.radioButton1.Location = new System.Drawing.Point(32, 48);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(104, 24);
+            this.radioButton1.TabIndex = 1;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "0 : Felucca";
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.radioButton2.Location = new System.Drawing.Point(32, 72);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(104, 24);
+            this.radioButton2.TabIndex = 2;
+            this.radioButton2.Text = "1: Trammel";
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.radioButton3.Location = new System.Drawing.Point(32, 96);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(104, 24);
+            this.radioButton3.TabIndex = 3;
+            this.radioButton3.Text = "2: Ilshenar";
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.radioButton4.Location = new System.Drawing.Point(32, 120);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(104, 24);
+            this.radioButton4.TabIndex = 4;
+            this.radioButton4.Text = "3: Malas";
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button1.Location = new System.Drawing.Point(144, 184);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Select";
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.radioButton5.Location = new System.Drawing.Point(32, 144);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(104, 24);
+            this.radioButton5.TabIndex = 6;
+            this.radioButton5.Text = "4: Tokuno";
+            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
+            // 
+            // MapIndexForm
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(6, 16);
+            this.ClientSize = new System.Drawing.Size(240, 224);
+            this.Controls.Add(this.radioButton5);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.radioButton4);
+            this.Controls.Add(this.radioButton3);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.Name = "MapIndexForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "MapIndexForm";
+            this.ResumeLayout(false);
+
 		}
 		#endregion
 

@@ -143,201 +143,202 @@ namespace TheBox.Buttons
 		/// </summary>
 		private void InitializeComponent()
 		{
-			var resources = new System.Resources.ResourceManager(typeof(BoxMenuEditor));
-			this.Tree = new System.Windows.Forms.TreeView();
-			this.GroupSubmenu = new System.Windows.Forms.GroupBox();
-			this.bNewSubmenu = new System.Windows.Forms.Button();
-			this.txSubmenu = new System.Windows.Forms.TextBox();
-			this.GroupCommand = new System.Windows.Forms.GroupBox();
-			this.bNewCommand = new System.Windows.Forms.Button();
-			this.chkPrefix = new System.Windows.Forms.CheckBox();
-			this.txCommand = new System.Windows.Forms.TextBox();
-			this.label2 = new System.Windows.Forms.Label();
-			this.txCaption = new System.Windows.Forms.TextBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-			this.bOk = new System.Windows.Forms.Button();
-			this.bCancel = new System.Windows.Forms.Button();
-			this.label3 = new System.Windows.Forms.Label();
-			this.GroupSubmenu.SuspendLayout();
-			this.GroupCommand.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// Tree
-			// 
-			this.Tree.HideSelection = false;
-			this.Tree.ImageIndex = -1;
-			this.Tree.Location = new System.Drawing.Point(8, 8);
-			this.Tree.Name = "Tree";
-			this.Tree.SelectedImageIndex = -1;
-			this.Tree.Size = new System.Drawing.Size(320, 408);
-			this.Tree.TabIndex = 0;
-			this.Tree.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Tree_KeyDown);
-			this.Tree.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.Tree_AfterSelect);
-			this.Tree.AfterLabelEdit += new System.Windows.Forms.NodeLabelEditEventHandler(this.Tree_AfterLabelEdit);
-			// 
-			// GroupSubmenu
-			// 
-			this.GroupSubmenu.Controls.Add(this.bNewSubmenu);
-			this.GroupSubmenu.Controls.Add(this.txSubmenu);
-			this.GroupSubmenu.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.GroupSubmenu.Location = new System.Drawing.Point(336, 8);
-			this.GroupSubmenu.Name = "GroupSubmenu";
-			this.GroupSubmenu.Size = new System.Drawing.Size(304, 56);
-			this.GroupSubmenu.TabIndex = 1;
-			this.GroupSubmenu.TabStop = false;
-			this.GroupSubmenu.Text = "ButtonMenuEditor.NewSubText";
-			// 
-			// bNewSubmenu
-			// 
-			this.bNewSubmenu.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bNewSubmenu.Location = new System.Drawing.Point(240, 24);
-			this.bNewSubmenu.Name = "bNewSubmenu";
-			this.bNewSubmenu.Size = new System.Drawing.Size(56, 23);
-			this.bNewSubmenu.TabIndex = 1;
-			this.bNewSubmenu.Text = "Common.Add";
-			this.bNewSubmenu.Click += new System.EventHandler(this.bNewSubmenu_Click);
-			// 
-			// txSubmenu
-			// 
-			this.txSubmenu.Location = new System.Drawing.Point(16, 24);
-			this.txSubmenu.Name = "txSubmenu";
-			this.txSubmenu.Size = new System.Drawing.Size(216, 20);
-			this.txSubmenu.TabIndex = 0;
-			this.txSubmenu.Text = "";
-			this.txSubmenu.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txSubmenu_KeyDown);
-			// 
-			// GroupCommand
-			// 
-			this.GroupCommand.Controls.Add(this.bNewCommand);
-			this.GroupCommand.Controls.Add(this.chkPrefix);
-			this.GroupCommand.Controls.Add(this.txCommand);
-			this.GroupCommand.Controls.Add(this.label2);
-			this.GroupCommand.Controls.Add(this.txCaption);
-			this.GroupCommand.Controls.Add(this.label1);
-			this.GroupCommand.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.GroupCommand.Location = new System.Drawing.Point(336, 72);
-			this.GroupCommand.Name = "GroupCommand";
-			this.GroupCommand.Size = new System.Drawing.Size(304, 112);
-			this.GroupCommand.TabIndex = 2;
-			this.GroupCommand.TabStop = false;
-			this.GroupCommand.Text = "ButtonMenuEditor.NewComText";
-			// 
-			// bNewCommand
-			// 
-			this.bNewCommand.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bNewCommand.Location = new System.Drawing.Point(240, 80);
-			this.bNewCommand.Name = "bNewCommand";
-			this.bNewCommand.Size = new System.Drawing.Size(56, 23);
-			this.bNewCommand.TabIndex = 5;
-			this.bNewCommand.Text = "Common.Add";
-			this.bNewCommand.Click += new System.EventHandler(this.bNewCommand_Click);
-			// 
-			// chkPrefix
-			// 
-			this.chkPrefix.Checked = true;
-			this.chkPrefix.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.chkPrefix.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.chkPrefix.Location = new System.Drawing.Point(8, 80);
-			this.chkPrefix.Name = "chkPrefix";
-			this.chkPrefix.Size = new System.Drawing.Size(200, 24);
-			this.chkPrefix.TabIndex = 4;
-			this.chkPrefix.Text = "ButtonMenuEditor.UsePrefix";
-			this.chkPrefix.CheckedChanged += new System.EventHandler(this.chkPrefix_CheckedChanged);
-			// 
-			// txCommand
-			// 
-			this.txCommand.Location = new System.Drawing.Point(64, 48);
-			this.txCommand.Name = "txCommand";
-			this.txCommand.Size = new System.Drawing.Size(232, 20);
-			this.txCommand.TabIndex = 3;
-			this.txCommand.Text = "";
-			this.txCommand.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txCommand_KeyDown);
-			this.txCommand.TextChanged += new System.EventHandler(this.txCommand_TextChanged);
-			this.txCommand.Enter += new System.EventHandler(this.txCommand_Enter);
-			// 
-			// label2
-			// 
-			this.label2.Location = new System.Drawing.Point(8, 48);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(56, 23);
-			this.label2.TabIndex = 2;
-			this.label2.Text = "ButtonMenuEditor.Command";
-			// 
-			// txCaption
-			// 
-			this.txCaption.Location = new System.Drawing.Point(64, 16);
-			this.txCaption.Name = "txCaption";
-			this.txCaption.Size = new System.Drawing.Size(232, 20);
-			this.txCaption.TabIndex = 1;
-			this.txCaption.Text = "";
-			this.txCaption.TextChanged += new System.EventHandler(this.txCaption_TextChanged);
-			// 
-			// label1
-			// 
-			this.label1.Location = new System.Drawing.Point(8, 16);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(56, 23);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "ButtonMenuEditor.Caption";
-			// 
-			// linkLabel1
-			// 
-			this.linkLabel1.Location = new System.Drawing.Point(336, 192);
-			this.linkLabel1.Name = "linkLabel1";
-			this.linkLabel1.Size = new System.Drawing.Size(304, 23);
-			this.linkLabel1.TabIndex = 3;
-			this.linkLabel1.TabStop = true;
-			this.linkLabel1.Text = "ButtonMenuEditor.Preview";
-			this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.linkLabel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.linkLabel1_MouseDown);
-			// 
-			// bOk
-			// 
-			this.bOk.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bOk.Location = new System.Drawing.Point(568, 392);
-			this.bOk.Name = "bOk";
-			this.bOk.TabIndex = 4;
-			this.bOk.Text = "Common.Ok";
-			this.bOk.Click += new System.EventHandler(this.bOk_Click);
-			// 
-			// bCancel
-			// 
-			this.bCancel.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bCancel.Location = new System.Drawing.Point(480, 392);
-			this.bCancel.Name = "bCancel";
-			this.bCancel.TabIndex = 5;
-			this.bCancel.Text = "Common.Cancel";
-			this.bCancel.Click += new System.EventHandler(this.bCancel_Click);
-			// 
-			// label3
-			// 
-			this.label3.Location = new System.Drawing.Point(336, 232);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(304, 144);
-			this.label3.TabIndex = 6;
-			this.label3.Text = "ButtonMenuEditor.Instructions";
-			// 
-			// BoxMenuEditor
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(650, 424);
-			this.Controls.Add(this.label3);
-			this.Controls.Add(this.bCancel);
-			this.Controls.Add(this.bOk);
-			this.Controls.Add(this.linkLabel1);
-			this.Controls.Add(this.GroupCommand);
-			this.Controls.Add(this.GroupSubmenu);
-			this.Controls.Add(this.Tree);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.Name = "BoxMenuEditor";
-			this.ShowInTaskbar = false;
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "ButtonMenuEditor.Title";
-			this.GroupSubmenu.ResumeLayout(false);
-			this.GroupCommand.ResumeLayout(false);
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BoxMenuEditor));
+            this.Tree = new System.Windows.Forms.TreeView();
+            this.GroupSubmenu = new System.Windows.Forms.GroupBox();
+            this.bNewSubmenu = new System.Windows.Forms.Button();
+            this.txSubmenu = new System.Windows.Forms.TextBox();
+            this.GroupCommand = new System.Windows.Forms.GroupBox();
+            this.bNewCommand = new System.Windows.Forms.Button();
+            this.chkPrefix = new System.Windows.Forms.CheckBox();
+            this.txCommand = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txCaption = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.bOk = new System.Windows.Forms.Button();
+            this.bCancel = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.GroupSubmenu.SuspendLayout();
+            this.GroupCommand.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // Tree
+            // 
+            this.Tree.HideSelection = false;
+            this.Tree.Location = new System.Drawing.Point(8, 8);
+            this.Tree.Name = "Tree";
+            this.Tree.Size = new System.Drawing.Size(320, 408);
+            this.Tree.TabIndex = 0;
+            this.Tree.AfterLabelEdit += new System.Windows.Forms.NodeLabelEditEventHandler(this.Tree_AfterLabelEdit);
+            this.Tree.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.Tree_AfterSelect);
+            this.Tree.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Tree_KeyDown);
+            // 
+            // GroupSubmenu
+            // 
+            this.GroupSubmenu.Controls.Add(this.bNewSubmenu);
+            this.GroupSubmenu.Controls.Add(this.txSubmenu);
+            this.GroupSubmenu.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.GroupSubmenu.Location = new System.Drawing.Point(336, 8);
+            this.GroupSubmenu.Name = "GroupSubmenu";
+            this.GroupSubmenu.Size = new System.Drawing.Size(304, 56);
+            this.GroupSubmenu.TabIndex = 1;
+            this.GroupSubmenu.TabStop = false;
+            this.GroupSubmenu.Text = "ButtonMenuEditor.NewSubText";
+            // 
+            // bNewSubmenu
+            // 
+            this.bNewSubmenu.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bNewSubmenu.Location = new System.Drawing.Point(240, 24);
+            this.bNewSubmenu.Name = "bNewSubmenu";
+            this.bNewSubmenu.Size = new System.Drawing.Size(56, 23);
+            this.bNewSubmenu.TabIndex = 1;
+            this.bNewSubmenu.Text = "Common.Add";
+            this.bNewSubmenu.Click += new System.EventHandler(this.bNewSubmenu_Click);
+            // 
+            // txSubmenu
+            // 
+            this.txSubmenu.Location = new System.Drawing.Point(16, 24);
+            this.txSubmenu.Name = "txSubmenu";
+            this.txSubmenu.Size = new System.Drawing.Size(216, 23);
+            this.txSubmenu.TabIndex = 0;
+            this.txSubmenu.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txSubmenu_KeyDown);
+            // 
+            // GroupCommand
+            // 
+            this.GroupCommand.Controls.Add(this.bNewCommand);
+            this.GroupCommand.Controls.Add(this.chkPrefix);
+            this.GroupCommand.Controls.Add(this.txCommand);
+            this.GroupCommand.Controls.Add(this.label2);
+            this.GroupCommand.Controls.Add(this.txCaption);
+            this.GroupCommand.Controls.Add(this.label1);
+            this.GroupCommand.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.GroupCommand.Location = new System.Drawing.Point(336, 72);
+            this.GroupCommand.Name = "GroupCommand";
+            this.GroupCommand.Size = new System.Drawing.Size(304, 112);
+            this.GroupCommand.TabIndex = 2;
+            this.GroupCommand.TabStop = false;
+            this.GroupCommand.Text = "ButtonMenuEditor.NewComText";
+            // 
+            // bNewCommand
+            // 
+            this.bNewCommand.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bNewCommand.Location = new System.Drawing.Point(240, 80);
+            this.bNewCommand.Name = "bNewCommand";
+            this.bNewCommand.Size = new System.Drawing.Size(56, 23);
+            this.bNewCommand.TabIndex = 5;
+            this.bNewCommand.Text = "Common.Add";
+            this.bNewCommand.Click += new System.EventHandler(this.bNewCommand_Click);
+            // 
+            // chkPrefix
+            // 
+            this.chkPrefix.Checked = true;
+            this.chkPrefix.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkPrefix.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.chkPrefix.Location = new System.Drawing.Point(8, 80);
+            this.chkPrefix.Name = "chkPrefix";
+            this.chkPrefix.Size = new System.Drawing.Size(200, 24);
+            this.chkPrefix.TabIndex = 4;
+            this.chkPrefix.Text = "ButtonMenuEditor.UsePrefix";
+            this.chkPrefix.CheckedChanged += new System.EventHandler(this.chkPrefix_CheckedChanged);
+            // 
+            // txCommand
+            // 
+            this.txCommand.Location = new System.Drawing.Point(64, 48);
+            this.txCommand.Name = "txCommand";
+            this.txCommand.Size = new System.Drawing.Size(232, 23);
+            this.txCommand.TabIndex = 3;
+            this.txCommand.TextChanged += new System.EventHandler(this.txCommand_TextChanged);
+            this.txCommand.Enter += new System.EventHandler(this.txCommand_Enter);
+            this.txCommand.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txCommand_KeyDown);
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(8, 48);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 23);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "ButtonMenuEditor.Command";
+            // 
+            // txCaption
+            // 
+            this.txCaption.Location = new System.Drawing.Point(64, 16);
+            this.txCaption.Name = "txCaption";
+            this.txCaption.Size = new System.Drawing.Size(232, 23);
+            this.txCaption.TabIndex = 1;
+            this.txCaption.TextChanged += new System.EventHandler(this.txCaption_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(8, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 23);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ButtonMenuEditor.Caption";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.Location = new System.Drawing.Point(336, 192);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(304, 23);
+            this.linkLabel1.TabIndex = 3;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "ButtonMenuEditor.Preview";
+            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkLabel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.linkLabel1_MouseDown);
+            // 
+            // bOk
+            // 
+            this.bOk.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bOk.Location = new System.Drawing.Point(568, 392);
+            this.bOk.Name = "bOk";
+            this.bOk.Size = new System.Drawing.Size(75, 23);
+            this.bOk.TabIndex = 4;
+            this.bOk.Text = "Common.Ok";
+            this.bOk.Click += new System.EventHandler(this.bOk_Click);
+            // 
+            // bCancel
+            // 
+            this.bCancel.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bCancel.Location = new System.Drawing.Point(480, 392);
+            this.bCancel.Name = "bCancel";
+            this.bCancel.Size = new System.Drawing.Size(75, 23);
+            this.bCancel.TabIndex = 5;
+            this.bCancel.Text = "Common.Cancel";
+            this.bCancel.Click += new System.EventHandler(this.bCancel_Click);
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(336, 232);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(304, 144);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "ButtonMenuEditor.Instructions";
+            // 
+            // BoxMenuEditor
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(6, 16);
+            this.ClientSize = new System.Drawing.Size(650, 424);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.bCancel);
+            this.Controls.Add(this.bOk);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.GroupCommand);
+            this.Controls.Add(this.GroupSubmenu);
+            this.Controls.Add(this.Tree);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "BoxMenuEditor";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "ButtonMenuEditor.Title";
+            this.GroupSubmenu.ResumeLayout(false);
+            this.GroupSubmenu.PerformLayout();
+            this.GroupCommand.ResumeLayout(false);
+            this.GroupCommand.PerformLayout();
+            this.ResumeLayout(false);
+
 		}
 		#endregion
 

@@ -93,7 +93,7 @@ namespace TheBox.Controls
             0,
             0});
             this.num.Name = "num";
-            this.num.Size = new System.Drawing.Size(44, 20);
+            this.num.Size = new System.Drawing.Size(44, 23);
             this.num.TabIndex = 1;
             this.num.Value = new decimal(new int[] {
             1,
@@ -212,6 +212,7 @@ namespace TheBox.Controls
             this.Controls.Add(this.bUp);
             this.Controls.Add(this.bUpLeft);
             this.Controls.Add(this.num);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Name = "DecoMover";
             this.Size = new System.Drawing.Size(127, 77);
             this.Load += new System.EventHandler(this.DecoMover_Load);

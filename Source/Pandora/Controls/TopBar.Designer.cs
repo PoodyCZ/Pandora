@@ -31,7 +31,19 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TopBar));
             this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.boxButton1 = new TheBox.Buttons.BoxButton();
+            this.btnSetHue = new System.Windows.Forms.Button();
+            this.imgHue = new System.Windows.Forms.PictureBox();
             this.btnBoxMenu = new System.Windows.Forms.Button();
+            this.numHue = new System.Windows.Forms.NumericUpDown();
+            this.boxButton2 = new TheBox.Buttons.BoxButton();
+            this.boxButton3 = new TheBox.Buttons.BoxButton();
+            this.boxButton4 = new TheBox.Buttons.BoxButton();
+            this.boxButton5 = new TheBox.Buttons.BoxButton();
+            this.boxButton6 = new TheBox.Buttons.BoxButton();
+            this.boxButton7 = new TheBox.Buttons.BoxButton();
+            this.boxButton8 = new TheBox.Buttons.BoxButton();
+            this.pctCap = new System.Windows.Forms.PictureBox();
             this.TrayBox = new System.Windows.Forms.MenuItem();
             this.menuItem2 = new System.Windows.Forms.MenuItem();
             this.TrayOptions = new System.Windows.Forms.MenuItem();
@@ -62,23 +74,11 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.commonAboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.commonExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.numHue = new System.Windows.Forms.NumericUpDown();
-            this.imgHue = new System.Windows.Forms.PictureBox();
-            this.btnSetHue = new System.Windows.Forms.Button();
-            this.pctCap = new System.Windows.Forms.PictureBox();
-            this.boxButton1 = new TheBox.Buttons.BoxButton();
-            this.boxButton2 = new TheBox.Buttons.BoxButton();
-            this.boxButton3 = new TheBox.Buttons.BoxButton();
-            this.boxButton4 = new TheBox.Buttons.BoxButton();
-            this.boxButton5 = new TheBox.Buttons.BoxButton();
-            this.boxButton6 = new TheBox.Buttons.BoxButton();
-            this.boxButton7 = new TheBox.Buttons.BoxButton();
-            this.boxButton8 = new TheBox.Buttons.BoxButton();
             this.tableLayoutPanel.SuspendLayout();
-            this.contextMenuStrip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numHue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgHue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numHue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctCap)).BeginInit();
+            this.contextMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel
@@ -115,8 +115,43 @@
             this.tableLayoutPanel.Name = "tableLayoutPanel";
             this.tableLayoutPanel.RowCount = 1;
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel.Size = new System.Drawing.Size(857, 59);
+            this.tableLayoutPanel.Size = new System.Drawing.Size(1000, 68);
             this.tableLayoutPanel.TabIndex = 0;
+            // 
+            // boxButton1
+            // 
+            this.boxButton1.AllowEdit = true;
+            this.boxButton1.ButtonID = 9;
+            this.boxButton1.Def = null;
+            this.boxButton1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.boxButton1.IsActive = true;
+            this.boxButton1.Location = new System.Drawing.Point(162, 0);
+            this.boxButton1.Margin = new System.Windows.Forms.Padding(0);
+            this.boxButton1.Name = "boxButton1";
+            this.boxButton1.Size = new System.Drawing.Size(75, 23);
+            this.boxButton1.TabIndex = 8;
+            this.boxButton1.Text = "boxButton1";
+            // 
+            // btnSetHue
+            // 
+            this.btnSetHue.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnSetHue.Location = new System.Drawing.Point(125, 0);
+            this.btnSetHue.Margin = new System.Windows.Forms.Padding(0);
+            this.btnSetHue.Name = "btnSetHue";
+            this.btnSetHue.Size = new System.Drawing.Size(37, 23);
+            this.btnSetHue.TabIndex = 7;
+            this.btnSetHue.Text = "Common.Set";
+            // 
+            // imgHue
+            // 
+            this.imgHue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.imgHue.Location = new System.Drawing.Point(81, 0);
+            this.imgHue.Margin = new System.Windows.Forms.Padding(0);
+            this.imgHue.Name = "imgHue";
+            this.imgHue.Size = new System.Drawing.Size(44, 23);
+            this.imgHue.TabIndex = 6;
+            this.imgHue.TabStop = false;
+            this.imgHue.Click += new System.EventHandler(this.imgHue_Click);
             // 
             // btnBoxMenu
             // 
@@ -125,12 +160,140 @@
             this.btnBoxMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBoxMenu.Location = new System.Drawing.Point(3, 3);
             this.btnBoxMenu.Name = "btnBoxMenu";
-            this.btnBoxMenu.Size = new System.Drawing.Size(16, 16);
+            this.btnBoxMenu.Size = new System.Drawing.Size(19, 18);
             this.btnBoxMenu.TabIndex = 0;
             this.btnBoxMenu.UseVisualStyleBackColor = true;
-            this.btnBoxMenu.MouseLeave += new System.EventHandler(this.btnBoxMenu_MouseLeave);
             this.btnBoxMenu.Click += new System.EventHandler(this.btnBoxMenu_Click);
             this.btnBoxMenu.MouseEnter += new System.EventHandler(this.btnBoxMenu_MouseEnter);
+            this.btnBoxMenu.MouseLeave += new System.EventHandler(this.btnBoxMenu_MouseLeave);
+            // 
+            // numHue
+            // 
+            this.numHue.Location = new System.Drawing.Point(25, 0);
+            this.numHue.Margin = new System.Windows.Forms.Padding(0);
+            this.numHue.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.numHue.Name = "numHue";
+            this.numHue.Size = new System.Drawing.Size(56, 23);
+            this.numHue.TabIndex = 1;
+            this.numHue.ValueChanged += new System.EventHandler(this.numHue_ValueChanged);
+            // 
+            // boxButton2
+            // 
+            this.boxButton2.AllowEdit = true;
+            this.boxButton2.ButtonID = 28;
+            this.boxButton2.Def = null;
+            this.boxButton2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.boxButton2.IsActive = true;
+            this.boxButton2.Location = new System.Drawing.Point(237, 0);
+            this.boxButton2.Margin = new System.Windows.Forms.Padding(0);
+            this.boxButton2.Name = "boxButton2";
+            this.boxButton2.Size = new System.Drawing.Size(75, 23);
+            this.boxButton2.TabIndex = 9;
+            this.boxButton2.Text = "boxButton2";
+            // 
+            // boxButton3
+            // 
+            this.boxButton3.AllowEdit = true;
+            this.boxButton3.ButtonID = 29;
+            this.boxButton3.Def = null;
+            this.boxButton3.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.boxButton3.IsActive = true;
+            this.boxButton3.Location = new System.Drawing.Point(312, 0);
+            this.boxButton3.Margin = new System.Windows.Forms.Padding(0);
+            this.boxButton3.Name = "boxButton3";
+            this.boxButton3.Size = new System.Drawing.Size(75, 23);
+            this.boxButton3.TabIndex = 10;
+            this.boxButton3.Text = "boxButton3";
+            // 
+            // boxButton4
+            // 
+            this.boxButton4.AllowEdit = true;
+            this.boxButton4.ButtonID = 30;
+            this.boxButton4.Def = null;
+            this.boxButton4.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.boxButton4.IsActive = true;
+            this.boxButton4.Location = new System.Drawing.Point(387, 0);
+            this.boxButton4.Margin = new System.Windows.Forms.Padding(0);
+            this.boxButton4.Name = "boxButton4";
+            this.boxButton4.Size = new System.Drawing.Size(75, 23);
+            this.boxButton4.TabIndex = 11;
+            this.boxButton4.Text = "boxButton4";
+            // 
+            // boxButton5
+            // 
+            this.boxButton5.AllowEdit = true;
+            this.boxButton5.ButtonID = 31;
+            this.boxButton5.Def = null;
+            this.boxButton5.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.boxButton5.IsActive = true;
+            this.boxButton5.Location = new System.Drawing.Point(462, 0);
+            this.boxButton5.Margin = new System.Windows.Forms.Padding(0);
+            this.boxButton5.Name = "boxButton5";
+            this.boxButton5.Size = new System.Drawing.Size(75, 23);
+            this.boxButton5.TabIndex = 12;
+            this.boxButton5.Text = "boxButton5";
+            // 
+            // boxButton6
+            // 
+            this.boxButton6.AllowEdit = true;
+            this.boxButton6.ButtonID = 32;
+            this.boxButton6.Def = null;
+            this.boxButton6.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.boxButton6.IsActive = true;
+            this.boxButton6.Location = new System.Drawing.Point(537, 0);
+            this.boxButton6.Margin = new System.Windows.Forms.Padding(0);
+            this.boxButton6.Name = "boxButton6";
+            this.boxButton6.Size = new System.Drawing.Size(75, 23);
+            this.boxButton6.TabIndex = 13;
+            this.boxButton6.Text = "boxButton6";
+            // 
+            // boxButton7
+            // 
+            this.boxButton7.AllowEdit = true;
+            this.boxButton7.ButtonID = 33;
+            this.boxButton7.Def = null;
+            this.boxButton7.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.boxButton7.IsActive = true;
+            this.boxButton7.Location = new System.Drawing.Point(612, 0);
+            this.boxButton7.Margin = new System.Windows.Forms.Padding(0);
+            this.boxButton7.Name = "boxButton7";
+            this.boxButton7.Size = new System.Drawing.Size(75, 23);
+            this.boxButton7.TabIndex = 14;
+            this.boxButton7.Text = "boxButton7";
+            // 
+            // boxButton8
+            // 
+            this.boxButton8.AllowEdit = true;
+            this.boxButton8.ButtonID = 34;
+            this.boxButton8.Def = null;
+            this.boxButton8.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.boxButton8.IsActive = true;
+            this.boxButton8.Location = new System.Drawing.Point(687, 0);
+            this.boxButton8.Margin = new System.Windows.Forms.Padding(0);
+            this.boxButton8.Name = "boxButton8";
+            this.boxButton8.Size = new System.Drawing.Size(75, 23);
+            this.boxButton8.TabIndex = 15;
+            this.boxButton8.Text = "boxButton8";
+            // 
+            // pctCap
+            // 
+            this.pctCap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pctCap.Image = ((System.Drawing.Image)(resources.GetObject("pctCap.Image")));
+            this.pctCap.Location = new System.Drawing.Point(960, 3);
+            this.pctCap.Name = "pctCap";
+            this.pctCap.Size = new System.Drawing.Size(37, 23);
+            this.pctCap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pctCap.TabIndex = 16;
+            this.pctCap.TabStop = false;
+            this.pctCap.Paint += new System.Windows.Forms.PaintEventHandler(this.pctCap_Paint);
+            this.pctCap.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pctCap_MouseDown);
+            this.pctCap.MouseEnter += new System.EventHandler(this.pctCap_MouseEnter);
+            this.pctCap.MouseLeave += new System.EventHandler(this.pctCap_MouseLeave);
+            this.pctCap.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pctCap_MouseUp);
             // 
             // TrayBox
             // 
@@ -249,18 +412,18 @@
             this.commonAboutToolStripMenuItem,
             this.commonExitToolStripMenuItem});
             this.contextMenuStrip.Name = "contextMenuStrip1";
-            this.contextMenuStrip.Size = new System.Drawing.Size(168, 142);
+            this.contextMenuStrip.Size = new System.Drawing.Size(171, 142);
             // 
             // miscwwwToolStripMenuItem
             // 
             this.miscwwwToolStripMenuItem.Name = "miscwwwToolStripMenuItem";
-            this.miscwwwToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.miscwwwToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.miscwwwToolStripMenuItem.Text = "Misc.www";
             // 
             // commonOptionsToolStripMenuItem
             // 
             this.commonOptionsToolStripMenuItem.Name = "commonOptionsToolStripMenuItem";
-            this.commonOptionsToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.commonOptionsToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.commonOptionsToolStripMenuItem.Text = "Common.Options";
             // 
             // commonViewToolStripMenuItem
@@ -269,219 +432,57 @@
             this.miscDataFolderToolStripMenuItem,
             this.miscLogToolStripMenuItem});
             this.commonViewToolStripMenuItem.Name = "commonViewToolStripMenuItem";
-            this.commonViewToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.commonViewToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.commonViewToolStripMenuItem.Text = "Common.View";
             // 
             // miscDataFolderToolStripMenuItem
             // 
             this.miscDataFolderToolStripMenuItem.Name = "miscDataFolderToolStripMenuItem";
-            this.miscDataFolderToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.miscDataFolderToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.miscDataFolderToolStripMenuItem.Text = "Misc.DataFolder";
             // 
             // miscLogToolStripMenuItem
             // 
             this.miscLogToolStripMenuItem.Name = "miscLogToolStripMenuItem";
-            this.miscLogToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.miscLogToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.miscLogToolStripMenuItem.Text = "Misc.Log";
             // 
             // commonProfileToolStripMenuItem
             // 
             this.commonProfileToolStripMenuItem.Name = "commonProfileToolStripMenuItem";
-            this.commonProfileToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.commonProfileToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.commonProfileToolStripMenuItem.Text = "Common.Profile";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(164, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(167, 6);
             // 
             // commonAboutToolStripMenuItem
             // 
             this.commonAboutToolStripMenuItem.Name = "commonAboutToolStripMenuItem";
-            this.commonAboutToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.commonAboutToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.commonAboutToolStripMenuItem.Text = "Common.About";
             // 
             // commonExitToolStripMenuItem
             // 
             this.commonExitToolStripMenuItem.Name = "commonExitToolStripMenuItem";
-            this.commonExitToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.commonExitToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.commonExitToolStripMenuItem.Text = "Common.Exit";
-            // 
-            // numHue
-            // 
-            this.numHue.Location = new System.Drawing.Point(22, 0);
-            this.numHue.Margin = new System.Windows.Forms.Padding(0);
-            this.numHue.Maximum = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.numHue.Name = "numHue";
-            this.numHue.Size = new System.Drawing.Size(48, 20);
-            this.numHue.TabIndex = 1;
-            this.numHue.ValueChanged += new System.EventHandler(this.numHue_ValueChanged);
-            // 
-            // imgHue
-            // 
-            this.imgHue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.imgHue.Location = new System.Drawing.Point(70, 0);
-            this.imgHue.Margin = new System.Windows.Forms.Padding(0);
-            this.imgHue.Name = "imgHue";
-            this.imgHue.Size = new System.Drawing.Size(38, 20);
-            this.imgHue.TabIndex = 6;
-            this.imgHue.TabStop = false;
-            this.imgHue.Click += new System.EventHandler(this.imgHue_Click);
-            // 
-            // btnSetHue
-            // 
-            this.btnSetHue.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnSetHue.Location = new System.Drawing.Point(108, 0);
-            this.btnSetHue.Margin = new System.Windows.Forms.Padding(0);
-            this.btnSetHue.Name = "btnSetHue";
-            this.btnSetHue.Size = new System.Drawing.Size(32, 20);
-            this.btnSetHue.TabIndex = 7;
-            this.btnSetHue.Text = "Common.Set";
-            // 
-            // pctCap
-            // 
-            this.pctCap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pctCap.Image = ((System.Drawing.Image)(resources.GetObject("pctCap.Image")));
-            this.pctCap.Location = new System.Drawing.Point(822, 3);
-            this.pctCap.Name = "pctCap";
-            this.pctCap.Size = new System.Drawing.Size(32, 20);
-            this.pctCap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pctCap.TabIndex = 16;
-            this.pctCap.TabStop = false;
-            this.pctCap.MouseLeave += new System.EventHandler(this.pctCap_MouseLeave);
-            this.pctCap.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pctCap_MouseDown);
-            this.pctCap.Paint += new System.Windows.Forms.PaintEventHandler(this.pctCap_Paint);
-            this.pctCap.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pctCap_MouseUp);
-            this.pctCap.MouseEnter += new System.EventHandler(this.pctCap_MouseEnter);
-            // 
-            // boxButton1
-            // 
-            this.boxButton1.AllowEdit = true;
-            this.boxButton1.ButtonID = 9;
-            this.boxButton1.Def = null;
-            this.boxButton1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.boxButton1.IsActive = true;
-            this.boxButton1.Location = new System.Drawing.Point(140, 0);
-            this.boxButton1.Margin = new System.Windows.Forms.Padding(0);
-            this.boxButton1.Name = "boxButton1";
-            this.boxButton1.Size = new System.Drawing.Size(64, 20);
-            this.boxButton1.TabIndex = 8;
-            this.boxButton1.Text = "boxButton1";
-            // 
-            // boxButton2
-            // 
-            this.boxButton2.AllowEdit = true;
-            this.boxButton2.ButtonID = 28;
-            this.boxButton2.Def = null;
-            this.boxButton2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.boxButton2.IsActive = true;
-            this.boxButton2.Location = new System.Drawing.Point(204, 0);
-            this.boxButton2.Margin = new System.Windows.Forms.Padding(0);
-            this.boxButton2.Name = "boxButton2";
-            this.boxButton2.Size = new System.Drawing.Size(64, 20);
-            this.boxButton2.TabIndex = 9;
-            this.boxButton2.Text = "boxButton2";
-            // 
-            // boxButton3
-            // 
-            this.boxButton3.AllowEdit = true;
-            this.boxButton3.ButtonID = 29;
-            this.boxButton3.Def = null;
-            this.boxButton3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.boxButton3.IsActive = true;
-            this.boxButton3.Location = new System.Drawing.Point(268, 0);
-            this.boxButton3.Margin = new System.Windows.Forms.Padding(0);
-            this.boxButton3.Name = "boxButton3";
-            this.boxButton3.Size = new System.Drawing.Size(64, 20);
-            this.boxButton3.TabIndex = 10;
-            this.boxButton3.Text = "boxButton3";
-            // 
-            // boxButton4
-            // 
-            this.boxButton4.AllowEdit = true;
-            this.boxButton4.ButtonID = 30;
-            this.boxButton4.Def = null;
-            this.boxButton4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.boxButton4.IsActive = true;
-            this.boxButton4.Location = new System.Drawing.Point(332, 0);
-            this.boxButton4.Margin = new System.Windows.Forms.Padding(0);
-            this.boxButton4.Name = "boxButton4";
-            this.boxButton4.Size = new System.Drawing.Size(64, 20);
-            this.boxButton4.TabIndex = 11;
-            this.boxButton4.Text = "boxButton4";
-            // 
-            // boxButton5
-            // 
-            this.boxButton5.AllowEdit = true;
-            this.boxButton5.ButtonID = 31;
-            this.boxButton5.Def = null;
-            this.boxButton5.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.boxButton5.IsActive = true;
-            this.boxButton5.Location = new System.Drawing.Point(396, 0);
-            this.boxButton5.Margin = new System.Windows.Forms.Padding(0);
-            this.boxButton5.Name = "boxButton5";
-            this.boxButton5.Size = new System.Drawing.Size(64, 20);
-            this.boxButton5.TabIndex = 12;
-            this.boxButton5.Text = "boxButton5";
-            // 
-            // boxButton6
-            // 
-            this.boxButton6.AllowEdit = true;
-            this.boxButton6.ButtonID = 32;
-            this.boxButton6.Def = null;
-            this.boxButton6.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.boxButton6.IsActive = true;
-            this.boxButton6.Location = new System.Drawing.Point(460, 0);
-            this.boxButton6.Margin = new System.Windows.Forms.Padding(0);
-            this.boxButton6.Name = "boxButton6";
-            this.boxButton6.Size = new System.Drawing.Size(64, 20);
-            this.boxButton6.TabIndex = 13;
-            this.boxButton6.Text = "boxButton6";
-            // 
-            // boxButton7
-            // 
-            this.boxButton7.AllowEdit = true;
-            this.boxButton7.ButtonID = 33;
-            this.boxButton7.Def = null;
-            this.boxButton7.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.boxButton7.IsActive = true;
-            this.boxButton7.Location = new System.Drawing.Point(524, 0);
-            this.boxButton7.Margin = new System.Windows.Forms.Padding(0);
-            this.boxButton7.Name = "boxButton7";
-            this.boxButton7.Size = new System.Drawing.Size(64, 20);
-            this.boxButton7.TabIndex = 14;
-            this.boxButton7.Text = "boxButton7";
-            // 
-            // boxButton8
-            // 
-            this.boxButton8.AllowEdit = true;
-            this.boxButton8.ButtonID = 34;
-            this.boxButton8.Def = null;
-            this.boxButton8.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.boxButton8.IsActive = true;
-            this.boxButton8.Location = new System.Drawing.Point(588, 0);
-            this.boxButton8.Margin = new System.Windows.Forms.Padding(0);
-            this.boxButton8.Name = "boxButton8";
-            this.boxButton8.Size = new System.Drawing.Size(64, 20);
-            this.boxButton8.TabIndex = 15;
-            this.boxButton8.Text = "boxButton8";
             // 
             // TopBar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Name = "TopBar";
-            this.Size = new System.Drawing.Size(857, 59);
+            this.Size = new System.Drawing.Size(1000, 68);
             this.tableLayoutPanel.ResumeLayout(false);
-            this.contextMenuStrip.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numHue)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgHue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numHue)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctCap)).EndInit();
+            this.contextMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

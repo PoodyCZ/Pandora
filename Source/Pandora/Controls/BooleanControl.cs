@@ -55,35 +55,39 @@ namespace TheBox.Controls
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.bTrue = new System.Windows.Forms.Button();
-			this.bFlase = new System.Windows.Forms.Button();
-			this.SuspendLayout();
-			// 
-			// bTrue
-			// 
-			this.bTrue.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bTrue.Location = new System.Drawing.Point(16, 32);
-			this.bTrue.Name = "bTrue";
-			this.bTrue.TabIndex = 0;
-			this.bTrue.Text = "Common.True";
-			this.bTrue.Click += new System.EventHandler(this.bTrue_Click);
-			// 
-			// bFlase
-			// 
-			this.bFlase.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bFlase.Location = new System.Drawing.Point(16, 64);
-			this.bFlase.Name = "bFlase";
-			this.bFlase.TabIndex = 1;
-			this.bFlase.Text = "Common.False";
-			this.bFlase.Click += new System.EventHandler(this.bFlase_Click);
-			// 
-			// BooleanControl
-			// 
-			this.Controls.Add(this.bFlase);
-			this.Controls.Add(this.bTrue);
-			this.Name = "BooleanControl";
-			this.Size = new System.Drawing.Size(104, 116);
-			this.ResumeLayout(false);
+            this.bTrue = new System.Windows.Forms.Button();
+            this.bFlase = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // bTrue
+            // 
+            this.bTrue.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bTrue.Location = new System.Drawing.Point(16, 32);
+            this.bTrue.Name = "bTrue";
+            this.bTrue.Size = new System.Drawing.Size(75, 23);
+            this.bTrue.TabIndex = 0;
+            this.bTrue.Text = "Common.True";
+            this.bTrue.Click += new System.EventHandler(this.bTrue_Click);
+            // 
+            // bFlase
+            // 
+            this.bFlase.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bFlase.Location = new System.Drawing.Point(16, 64);
+            this.bFlase.Name = "bFlase";
+            this.bFlase.Size = new System.Drawing.Size(75, 23);
+            this.bFlase.TabIndex = 1;
+            this.bFlase.Text = "Common.False";
+            this.bFlase.Click += new System.EventHandler(this.bFlase_Click);
+            // 
+            // BooleanControl
+            // 
+            this.Controls.Add(this.bFlase);
+            this.Controls.Add(this.bTrue);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name = "BooleanControl";
+            this.Size = new System.Drawing.Size(104, 116);
+            this.ResumeLayout(false);
+
 		}
 		#endregion
 

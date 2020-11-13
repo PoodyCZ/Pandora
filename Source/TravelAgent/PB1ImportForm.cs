@@ -62,75 +62,82 @@ namespace Box.Misc
 		/// </summary>
 		private void InitializeComponent()
 		{
-			var resources = new System.Resources.ResourceManager(typeof(PB1ImportForm));
-			this.label1 = new System.Windows.Forms.Label();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button3 = new System.Windows.Forms.Button();
-			this.button4 = new System.Windows.Forms.Button();
-			this.SuspendLayout();
-			// 
-			// label1
-			// 
-			this.label1.Location = new System.Drawing.Point(8, 8);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(312, 40);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "You are importing a file from Pandora\'s Box 1 that doesn\'t contain map informatio" +
-							   "n or that contains locations for different maps. Please select which map should " + "be extracted.";
-			// 
-			// button1
-			// 
-			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.button1.Location = new System.Drawing.Point(8, 56);
-			this.button1.Name = "button1";
-			this.button1.TabIndex = 1;
-			this.button1.Text = "Felucca";
-			this.button1.Click += new System.EventHandler(this.button1_Click);
-			// 
-			// button2
-			// 
-			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.button2.Location = new System.Drawing.Point(88, 56);
-			this.button2.Name = "button2";
-			this.button2.TabIndex = 2;
-			this.button2.Text = "Trammel";
-			this.button2.Click += new System.EventHandler(this.button2_Click);
-			// 
-			// button3
-			// 
-			this.button3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.button3.Location = new System.Drawing.Point(168, 56);
-			this.button3.Name = "button3";
-			this.button3.TabIndex = 3;
-			this.button3.Text = "Ilshenar";
-			this.button3.Click += new System.EventHandler(this.button3_Click);
-			// 
-			// button4
-			// 
-			this.button4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.button4.Location = new System.Drawing.Point(248, 56);
-			this.button4.Name = "button4";
-			this.button4.TabIndex = 4;
-			this.button4.Text = "Malas";
-			this.button4.Click += new System.EventHandler(this.button4_Click);
-			// 
-			// PB1ImportForm
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(328, 85);
-			this.Controls.Add(this.button4);
-			this.Controls.Add(this.button3);
-			this.Controls.Add(this.button2);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.label1);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.MaximizeBox = false;
-			this.Name = "PB1ImportForm";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "PB1ImportForm";
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PB1ImportForm));
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(8, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(312, 61);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "You are importing a file from Pandora\'s Box 1 that doesn\'t contain map informatio" +
+    "n or that contains locations for different maps. Please select which map should " +
+    "be extracted.";
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button1.Location = new System.Drawing.Point(11, 72);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Felucca";
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button2.Location = new System.Drawing.Point(91, 72);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Trammel";
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button3.Location = new System.Drawing.Point(171, 72);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Ilshenar";
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button4.Location = new System.Drawing.Point(251, 72);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Malas";
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // PB1ImportForm
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(6, 16);
+            this.ClientSize = new System.Drawing.Size(328, 107);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.Name = "PB1ImportForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "PB1ImportForm";
+            this.ResumeLayout(false);
+
 		}
 		#endregion
 

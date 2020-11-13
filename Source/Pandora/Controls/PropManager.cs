@@ -73,129 +73,133 @@ namespace TheBox.Controls
 		/// </summary>
 		private void InitializeComponent()
 		{
-			var resources = new System.Resources.ResourceManager(typeof(PropManager));
-			this.label1 = new System.Windows.Forms.Label();
-			this.cbProps = new System.Windows.Forms.ComboBox();
-			this.label2 = new System.Windows.Forms.Label();
-			this.cbValue = new System.Windows.Forms.ComboBox();
-			this.cbType = new System.Windows.Forms.ComboBox();
-			this.bGet = new System.Windows.Forms.Button();
-			this.bSet = new System.Windows.Forms.Button();
-			this.chkType = new System.Windows.Forms.CheckBox();
-			this.button1 = new System.Windows.Forms.Button();
-			this.imgFilter = new System.Windows.Forms.PictureBox();
-			this.cmFilters = new System.Windows.Forms.ContextMenu();
-			this.SuspendLayout();
-			// 
-			// label1
-			// 
-			this.label1.Location = new System.Drawing.Point(4, 4);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(76, 16);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "Props.Property";
-			// 
-			// cbProps
-			// 
-			this.cbProps.Location = new System.Drawing.Point(4, 20);
-			this.cbProps.Name = "cbProps";
-			this.cbProps.Size = new System.Drawing.Size(168, 21);
-			this.cbProps.TabIndex = 1;
-			this.cbProps.Enter += new System.EventHandler(this.cbProps_Enter);
-			// 
-			// label2
-			// 
-			this.label2.Location = new System.Drawing.Point(4, 48);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(40, 16);
-			this.label2.TabIndex = 2;
-			this.label2.Text = "Props.Value";
-			this.label2.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-			// 
-			// cbValue
-			// 
-			this.cbValue.Location = new System.Drawing.Point(48, 44);
-			this.cbValue.Name = "cbValue";
-			this.cbValue.Size = new System.Drawing.Size(124, 21);
-			this.cbValue.TabIndex = 3;
-			this.cbValue.Enter += new System.EventHandler(this.cbValue_Enter);
-			// 
-			// cbType
-			// 
-			this.cbType.Location = new System.Drawing.Point(4, 88);
-			this.cbType.Name = "cbType";
-			this.cbType.Size = new System.Drawing.Size(168, 21);
-			this.cbType.TabIndex = 5;
-			this.cbType.Enter += new System.EventHandler(this.cbType_Enter);
-			// 
-			// bGet
-			// 
-			this.bGet.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bGet.Location = new System.Drawing.Point(52, 116);
-			this.bGet.Name = "bGet";
-			this.bGet.Size = new System.Drawing.Size(44, 24);
-			this.bGet.TabIndex = 6;
-			this.bGet.Text = "Props.Get";
-			this.bGet.Click += new System.EventHandler(this.bGet_Click);
-			// 
-			// bSet
-			// 
-			this.bSet.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bSet.Location = new System.Drawing.Point(104, 116);
-			this.bSet.Name = "bSet";
-			this.bSet.Size = new System.Drawing.Size(64, 24);
-			this.bSet.TabIndex = 8;
-			this.bSet.Text = "Props.Set";
-			this.bSet.Click += new System.EventHandler(this.bSet_Click);
-			// 
-			// chkType
-			// 
-			this.chkType.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.chkType.Location = new System.Drawing.Point(4, 68);
-			this.chkType.Name = "chkType";
-			this.chkType.Size = new System.Drawing.Size(84, 20);
-			this.chkType.TabIndex = 10;
-			this.chkType.Text = "Props.Type";
-			this.chkType.CheckedChanged += new System.EventHandler(this.chkType_CheckedChanged);
-			// 
-			// button1
-			// 
-			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.button1.Location = new System.Drawing.Point(4, 116);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(44, 24);
-			this.button1.TabIndex = 11;
-			this.button1.Text = "Common.Clear";
-			this.button1.Click += new System.EventHandler(this.button1_Click);
-			// 
-			// imgFilter
-			// 
-			this.imgFilter.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.imgFilter.Image = ((System.Drawing.Image)(resources.GetObject("imgFilter.Image")));
-			this.imgFilter.Location = new System.Drawing.Point(152, 68);
-			this.imgFilter.Name = "imgFilter";
-			this.imgFilter.Size = new System.Drawing.Size(20, 16);
-			this.imgFilter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-			this.imgFilter.TabIndex = 12;
-			this.imgFilter.TabStop = false;
-			this.imgFilter.Click += new System.EventHandler(this.imgFilter_Click);
-			// 
-			// PropManager
-			// 
-			this.Controls.Add(this.imgFilter);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.chkType);
-			this.Controls.Add(this.bSet);
-			this.Controls.Add(this.bGet);
-			this.Controls.Add(this.cbType);
-			this.Controls.Add(this.cbValue);
-			this.Controls.Add(this.label2);
-			this.Controls.Add(this.cbProps);
-			this.Controls.Add(this.label1);
-			this.Name = "PropManager";
-			this.Size = new System.Drawing.Size(176, 144);
-			this.Load += new System.EventHandler(this.PropManager_Load);
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PropManager));
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbProps = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cbValue = new System.Windows.Forms.ComboBox();
+            this.cbType = new System.Windows.Forms.ComboBox();
+            this.bGet = new System.Windows.Forms.Button();
+            this.bSet = new System.Windows.Forms.Button();
+            this.chkType = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.imgFilter = new System.Windows.Forms.PictureBox();
+            this.cmFilters = new System.Windows.Forms.ContextMenu();
+            ((System.ComponentModel.ISupportInitialize)(this.imgFilter)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(4, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(76, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Props.Property";
+            // 
+            // cbProps
+            // 
+            this.cbProps.Location = new System.Drawing.Point(4, 20);
+            this.cbProps.Name = "cbProps";
+            this.cbProps.Size = new System.Drawing.Size(168, 23);
+            this.cbProps.TabIndex = 1;
+            this.cbProps.Enter += new System.EventHandler(this.cbProps_Enter);
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(4, 48);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 16);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Props.Value";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // cbValue
+            // 
+            this.cbValue.Location = new System.Drawing.Point(48, 44);
+            this.cbValue.Name = "cbValue";
+            this.cbValue.Size = new System.Drawing.Size(124, 23);
+            this.cbValue.TabIndex = 3;
+            this.cbValue.Enter += new System.EventHandler(this.cbValue_Enter);
+            // 
+            // cbType
+            // 
+            this.cbType.Location = new System.Drawing.Point(4, 88);
+            this.cbType.Name = "cbType";
+            this.cbType.Size = new System.Drawing.Size(168, 23);
+            this.cbType.TabIndex = 5;
+            this.cbType.Enter += new System.EventHandler(this.cbType_Enter);
+            // 
+            // bGet
+            // 
+            this.bGet.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bGet.Location = new System.Drawing.Point(52, 116);
+            this.bGet.Name = "bGet";
+            this.bGet.Size = new System.Drawing.Size(44, 24);
+            this.bGet.TabIndex = 6;
+            this.bGet.Text = "Props.Get";
+            this.bGet.Click += new System.EventHandler(this.bGet_Click);
+            // 
+            // bSet
+            // 
+            this.bSet.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bSet.Location = new System.Drawing.Point(104, 116);
+            this.bSet.Name = "bSet";
+            this.bSet.Size = new System.Drawing.Size(64, 24);
+            this.bSet.TabIndex = 8;
+            this.bSet.Text = "Props.Set";
+            this.bSet.Click += new System.EventHandler(this.bSet_Click);
+            // 
+            // chkType
+            // 
+            this.chkType.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.chkType.Location = new System.Drawing.Point(4, 68);
+            this.chkType.Name = "chkType";
+            this.chkType.Size = new System.Drawing.Size(84, 20);
+            this.chkType.TabIndex = 10;
+            this.chkType.Text = "Props.Type";
+            this.chkType.CheckedChanged += new System.EventHandler(this.chkType_CheckedChanged);
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button1.Location = new System.Drawing.Point(4, 116);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(44, 24);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Common.Clear";
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // imgFilter
+            // 
+            this.imgFilter.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imgFilter.Image = ((System.Drawing.Image)(resources.GetObject("imgFilter.Image")));
+            this.imgFilter.Location = new System.Drawing.Point(152, 68);
+            this.imgFilter.Name = "imgFilter";
+            this.imgFilter.Size = new System.Drawing.Size(20, 16);
+            this.imgFilter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.imgFilter.TabIndex = 12;
+            this.imgFilter.TabStop = false;
+            this.imgFilter.Click += new System.EventHandler(this.imgFilter_Click);
+            // 
+            // PropManager
+            // 
+            this.Controls.Add(this.imgFilter);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.chkType);
+            this.Controls.Add(this.bSet);
+            this.Controls.Add(this.bGet);
+            this.Controls.Add(this.cbType);
+            this.Controls.Add(this.cbValue);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.cbProps);
+            this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Name = "PropManager";
+            this.Size = new System.Drawing.Size(176, 144);
+            this.Load += new System.EventHandler(this.PropManager_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.imgFilter)).EndInit();
+            this.ResumeLayout(false);
+
 		}
 		#endregion
 
