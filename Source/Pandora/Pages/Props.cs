@@ -194,235 +194,238 @@ namespace TheBox.Pages
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.tProps = new System.Windows.Forms.TreeView();
-			this.tClasses = new System.Windows.Forms.TreeView();
-			this.cmbFilter = new System.Windows.Forms.ComboBox();
-			this.chkAllClasses = new System.Windows.Forms.CheckBox();
-			this.chkAllProps = new System.Windows.Forms.CheckBox();
-			this.bFind = new System.Windows.Forms.Button();
-			this.cmbSearch = new System.Windows.Forms.ComboBox();
-			this.grpProp = new System.Windows.Forms.GroupBox();
-			this.cEnum = new TheBox.Controls.EnumControl();
-			this.cPoint3D = new TheBox.Controls.Point3DControl();
-			this.cDateTime = new TheBox.Controls.DateTimeControl();
-			this.cTimeSpan = new TheBox.Controls.TimeSpanControl();
-			this.labMsg = new System.Windows.Forms.Label();
-			this.cBoolean = new TheBox.Controls.BooleanControl();
-			this.txGet = new System.Windows.Forms.TextBox();
-			this.txSet = new System.Windows.Forms.TextBox();
-			this.panel1 = new System.Windows.Forms.Panel();
-			this.splitter = new System.Windows.Forms.Splitter();
-			this.grpProp.SuspendLayout();
-			this.panel1.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// tProps
-			// 
-			this.tProps.AllowDrop = true;
-			this.tProps.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tProps.HideSelection = false;
-			this.tProps.ImageIndex = -1;
-			this.tProps.Location = new System.Drawing.Point(0, 0);
-			this.tProps.Name = "tProps";
-			this.tProps.SelectedImageIndex = -1;
-			this.tProps.ShowLines = false;
-			this.tProps.ShowPlusMinus = false;
-			this.tProps.ShowRootLines = false;
-			this.tProps.Size = new System.Drawing.Size(276, 140);
-			this.tProps.Sorted = true;
-			this.tProps.TabIndex = 0;
-			this.tProps.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tClasses_MouseDown);
-			this.tProps.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tProps_AfterSelect);
-			// 
-			// tClasses
-			// 
-			this.tClasses.AllowDrop = true;
-			this.tClasses.Dock = System.Windows.Forms.DockStyle.Left;
-			this.tClasses.HideSelection = false;
-			this.tClasses.ImageIndex = -1;
-			this.tClasses.Indent = 15;
-			this.tClasses.Location = new System.Drawing.Point(0, 0);
-			this.tClasses.Name = "tClasses";
-			this.tClasses.SelectedImageIndex = -1;
-			this.tClasses.Size = new System.Drawing.Size(160, 140);
-			this.tClasses.Sorted = true;
-			this.tClasses.TabIndex = 1;
-			this.tClasses.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tClasses_MouseDown);
-			this.tClasses.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tClasses_AfterSelect);
-			// 
-			// cmbFilter
-			// 
-			this.cmbFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cmbFilter.Items.AddRange(new object[] {"Administrator", "Seer", "GameMaster", "Councelor"});
-			this.cmbFilter.Location = new System.Drawing.Point(4, 28);
-			this.cmbFilter.Name = "cmbFilter";
-			this.cmbFilter.Size = new System.Drawing.Size(92, 21);
-			this.cmbFilter.TabIndex = 2;
-			this.cmbFilter.SelectedIndexChanged += new System.EventHandler(this.cmbFilter_SelectedIndexChanged);
-			// 
-			// chkAllClasses
-			// 
-			this.chkAllClasses.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.chkAllClasses.Location = new System.Drawing.Point(4, 52);
-			this.chkAllClasses.Name = "chkAllClasses";
-			this.chkAllClasses.Size = new System.Drawing.Size(96, 20);
-			this.chkAllClasses.TabIndex = 3;
-			this.chkAllClasses.Text = "Props.AllClasses";
-			this.chkAllClasses.CheckedChanged += new System.EventHandler(this.chkAllClasses_CheckedChanged);
-			// 
-			// chkAllProps
-			// 
-			this.chkAllProps.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.chkAllProps.Location = new System.Drawing.Point(4, 72);
-			this.chkAllProps.Name = "chkAllProps";
-			this.chkAllProps.Size = new System.Drawing.Size(96, 20);
-			this.chkAllProps.TabIndex = 4;
-			this.chkAllProps.Text = "Props.AllProps";
-			this.chkAllProps.CheckedChanged += new System.EventHandler(this.chkAllProps_CheckedChanged);
-			// 
-			// bFind
-			// 
-			this.bFind.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bFind.Location = new System.Drawing.Point(16, 116);
-			this.bFind.Name = "bFind";
-			this.bFind.Size = new System.Drawing.Size(68, 23);
-			this.bFind.TabIndex = 6;
-			this.bFind.Text = "Common.Find";
-			this.bFind.Click += new System.EventHandler(this.bFind_Click);
-			// 
-			// cmbSearch
-			// 
-			this.cmbSearch.Location = new System.Drawing.Point(4, 92);
-			this.cmbSearch.Name = "cmbSearch";
-			this.cmbSearch.Size = new System.Drawing.Size(92, 21);
-			this.cmbSearch.TabIndex = 7;
-			this.cmbSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cmbSearch_KeyDown);
-			// 
-			// grpProp
-			// 
-			this.grpProp.Controls.Add(this.cEnum);
-			this.grpProp.Controls.Add(this.cPoint3D);
-			this.grpProp.Controls.Add(this.cDateTime);
-			this.grpProp.Controls.Add(this.cTimeSpan);
-			this.grpProp.Controls.Add(this.labMsg);
-			this.grpProp.Controls.Add(this.cBoolean);
-			this.grpProp.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.grpProp.Location = new System.Drawing.Point(380, 4);
-			this.grpProp.Name = "grpProp";
-			this.grpProp.Size = new System.Drawing.Size(112, 136);
-			this.grpProp.TabIndex = 8;
-			this.grpProp.TabStop = false;
-			// 
-			// cEnum
-			// 
-			this.cEnum.Location = new System.Drawing.Point(4, 16);
-			this.cEnum.Name = "cEnum";
-			this.cEnum.Size = new System.Drawing.Size(104, 116);
-			this.cEnum.TabIndex = 5;
-			this.cEnum.Visible = false;
-			// 
-			// cPoint3D
-			// 
-			this.cPoint3D.Location = new System.Drawing.Point(4, 16);
-			this.cPoint3D.Name = "cPoint3D";
-			this.cPoint3D.Size = new System.Drawing.Size(104, 116);
-			this.cPoint3D.TabIndex = 4;
-			this.cPoint3D.Visible = false;
-			// 
-			// cDateTime
-			// 
-			this.cDateTime.Location = new System.Drawing.Point(4, 16);
-			this.cDateTime.Name = "cDateTime";
-			this.cDateTime.Size = new System.Drawing.Size(104, 116);
-			this.cDateTime.TabIndex = 3;
-			this.cDateTime.Visible = false;
-			// 
-			// cTimeSpan
-			// 
-			this.cTimeSpan.Location = new System.Drawing.Point(4, 16);
-			this.cTimeSpan.Name = "cTimeSpan";
-			this.cTimeSpan.Size = new System.Drawing.Size(104, 116);
-			this.cTimeSpan.TabIndex = 0;
-			this.cTimeSpan.Visible = false;
-			// 
-			// labMsg
-			// 
-			this.labMsg.Location = new System.Drawing.Point(4, 16);
-			this.labMsg.Name = "labMsg";
-			this.labMsg.Size = new System.Drawing.Size(104, 116);
-			this.labMsg.TabIndex = 1;
-			this.labMsg.Text = "label1";
-			this.labMsg.Visible = false;
-			// 
-			// cBoolean
-			// 
-			this.cBoolean.Location = new System.Drawing.Point(4, 16);
-			this.cBoolean.Name = "cBoolean";
-			this.cBoolean.Size = new System.Drawing.Size(104, 116);
-			this.cBoolean.TabIndex = 2;
-			this.cBoolean.Visible = false;
-			// 
-			// txGet
-			// 
-			this.txGet.BackColor = System.Drawing.Color.White;
-			this.txGet.ForeColor = System.Drawing.Color.White;
-			this.txGet.Location = new System.Drawing.Point(4, 4);
-			this.txGet.Name = "txGet";
-			this.txGet.ReadOnly = true;
-			this.txGet.Size = new System.Drawing.Size(44, 20);
-			this.txGet.TabIndex = 9;
-			this.txGet.Text = "Props.Get";
-			this.txGet.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			// 
-			// txSet
-			// 
-			this.txSet.BackColor = System.Drawing.Color.White;
-			this.txSet.ForeColor = System.Drawing.Color.White;
-			this.txSet.Location = new System.Drawing.Point(52, 4);
-			this.txSet.Name = "txSet";
-			this.txSet.ReadOnly = true;
-			this.txSet.Size = new System.Drawing.Size(44, 20);
-			this.txSet.TabIndex = 10;
-			this.txSet.Text = "Props.Set";
-			this.txSet.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			// 
-			// panel1
-			// 
-			this.panel1.Controls.Add(this.tProps);
-			this.panel1.Controls.Add(this.splitter);
-			this.panel1.Controls.Add(this.tClasses);
-			this.panel1.Location = new System.Drawing.Point(100, 0);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(276, 140);
-			this.panel1.TabIndex = 11;
-			// 
-			// splitter
-			// 
-			this.splitter.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.splitter.Location = new System.Drawing.Point(160, 0);
-			this.splitter.Name = "splitter";
-			this.splitter.Size = new System.Drawing.Size(3, 140);
-			this.splitter.TabIndex = 2;
-			this.splitter.TabStop = false;
-			this.splitter.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitter_SplitterMoved);
-			// 
-			// Props
-			// 
-			this.Controls.Add(this.panel1);
-			this.Controls.Add(this.txSet);
-			this.Controls.Add(this.txGet);
-			this.Controls.Add(this.grpProp);
-			this.Controls.Add(this.cmbSearch);
-			this.Controls.Add(this.bFind);
-			this.Controls.Add(this.chkAllProps);
-			this.Controls.Add(this.chkAllClasses);
-			this.Controls.Add(this.cmbFilter);
-			this.Name = "Props";
-			this.Size = new System.Drawing.Size(496, 142);
-			this.Load += new System.EventHandler(this.Props_Load);
-			this.grpProp.ResumeLayout(false);
-			this.panel1.ResumeLayout(false);
-			this.ResumeLayout(false);
+            this.tProps = new System.Windows.Forms.TreeView();
+            this.tClasses = new System.Windows.Forms.TreeView();
+            this.cmbFilter = new System.Windows.Forms.ComboBox();
+            this.chkAllClasses = new System.Windows.Forms.CheckBox();
+            this.chkAllProps = new System.Windows.Forms.CheckBox();
+            this.bFind = new System.Windows.Forms.Button();
+            this.cmbSearch = new System.Windows.Forms.ComboBox();
+            this.grpProp = new System.Windows.Forms.GroupBox();
+            this.cEnum = new TheBox.Controls.EnumControl();
+            this.cPoint3D = new TheBox.Controls.Point3DControl();
+            this.cDateTime = new TheBox.Controls.DateTimeControl();
+            this.cTimeSpan = new TheBox.Controls.TimeSpanControl();
+            this.labMsg = new System.Windows.Forms.Label();
+            this.cBoolean = new TheBox.Controls.BooleanControl();
+            this.txGet = new System.Windows.Forms.TextBox();
+            this.txSet = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.splitter = new System.Windows.Forms.Splitter();
+            this.grpProp.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // tProps
+            // 
+            this.tProps.AllowDrop = true;
+            this.tProps.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tProps.HideSelection = false;
+            this.tProps.Location = new System.Drawing.Point(163, 0);
+            this.tProps.Name = "tProps";
+            this.tProps.ShowLines = false;
+            this.tProps.ShowPlusMinus = false;
+            this.tProps.ShowRootLines = false;
+            this.tProps.Size = new System.Drawing.Size(113, 221);
+            this.tProps.Sorted = true;
+            this.tProps.TabIndex = 0;
+            this.tProps.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tProps_AfterSelect);
+            this.tProps.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tClasses_MouseDown);
+            // 
+            // tClasses
+            // 
+            this.tClasses.AllowDrop = true;
+            this.tClasses.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tClasses.HideSelection = false;
+            this.tClasses.Indent = 15;
+            this.tClasses.Location = new System.Drawing.Point(0, 0);
+            this.tClasses.Name = "tClasses";
+            this.tClasses.Size = new System.Drawing.Size(160, 221);
+            this.tClasses.Sorted = true;
+            this.tClasses.TabIndex = 1;
+            this.tClasses.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tClasses_AfterSelect);
+            this.tClasses.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tClasses_MouseDown);
+            // 
+            // cmbFilter
+            // 
+            this.cmbFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbFilter.Items.AddRange(new object[] {
+            "Administrator",
+            "Seer",
+            "GameMaster",
+            "Councelor"});
+            this.cmbFilter.Location = new System.Drawing.Point(4, 28);
+            this.cmbFilter.Name = "cmbFilter";
+            this.cmbFilter.Size = new System.Drawing.Size(92, 23);
+            this.cmbFilter.TabIndex = 2;
+            this.cmbFilter.SelectedIndexChanged += new System.EventHandler(this.cmbFilter_SelectedIndexChanged);
+            // 
+            // chkAllClasses
+            // 
+            this.chkAllClasses.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.chkAllClasses.Location = new System.Drawing.Point(4, 52);
+            this.chkAllClasses.Name = "chkAllClasses";
+            this.chkAllClasses.Size = new System.Drawing.Size(96, 20);
+            this.chkAllClasses.TabIndex = 3;
+            this.chkAllClasses.Text = "Props.AllClasses";
+            this.chkAllClasses.CheckedChanged += new System.EventHandler(this.chkAllClasses_CheckedChanged);
+            // 
+            // chkAllProps
+            // 
+            this.chkAllProps.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.chkAllProps.Location = new System.Drawing.Point(4, 72);
+            this.chkAllProps.Name = "chkAllProps";
+            this.chkAllProps.Size = new System.Drawing.Size(96, 20);
+            this.chkAllProps.TabIndex = 4;
+            this.chkAllProps.Text = "Props.AllProps";
+            this.chkAllProps.CheckedChanged += new System.EventHandler(this.chkAllProps_CheckedChanged);
+            // 
+            // bFind
+            // 
+            this.bFind.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bFind.Location = new System.Drawing.Point(16, 116);
+            this.bFind.Name = "bFind";
+            this.bFind.Size = new System.Drawing.Size(68, 23);
+            this.bFind.TabIndex = 6;
+            this.bFind.Text = "Common.Find";
+            this.bFind.Click += new System.EventHandler(this.bFind_Click);
+            // 
+            // cmbSearch
+            // 
+            this.cmbSearch.Location = new System.Drawing.Point(4, 92);
+            this.cmbSearch.Name = "cmbSearch";
+            this.cmbSearch.Size = new System.Drawing.Size(92, 23);
+            this.cmbSearch.TabIndex = 7;
+            this.cmbSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cmbSearch_KeyDown);
+            // 
+            // grpProp
+            // 
+            this.grpProp.Controls.Add(this.cEnum);
+            this.grpProp.Controls.Add(this.cPoint3D);
+            this.grpProp.Controls.Add(this.cDateTime);
+            this.grpProp.Controls.Add(this.cTimeSpan);
+            this.grpProp.Controls.Add(this.labMsg);
+            this.grpProp.Controls.Add(this.cBoolean);
+            this.grpProp.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.grpProp.Location = new System.Drawing.Point(380, 4);
+            this.grpProp.Name = "grpProp";
+            this.grpProp.Size = new System.Drawing.Size(112, 136);
+            this.grpProp.TabIndex = 8;
+            this.grpProp.TabStop = false;
+            // 
+            // cEnum
+            // 
+            this.cEnum.Location = new System.Drawing.Point(4, 16);
+            this.cEnum.Name = "cEnum";
+            this.cEnum.Size = new System.Drawing.Size(104, 116);
+            this.cEnum.TabIndex = 5;
+            this.cEnum.Visible = false;
+            // 
+            // cPoint3D
+            // 
+            this.cPoint3D.Location = new System.Drawing.Point(4, 16);
+            this.cPoint3D.Name = "cPoint3D";
+            this.cPoint3D.Size = new System.Drawing.Size(104, 116);
+            this.cPoint3D.TabIndex = 4;
+            this.cPoint3D.Visible = false;
+            // 
+            // cDateTime
+            // 
+            this.cDateTime.Location = new System.Drawing.Point(4, 16);
+            this.cDateTime.Name = "cDateTime";
+            this.cDateTime.Size = new System.Drawing.Size(104, 116);
+            this.cDateTime.TabIndex = 3;
+            this.cDateTime.Visible = false;
+            // 
+            // cTimeSpan
+            // 
+            this.cTimeSpan.Location = new System.Drawing.Point(4, 16);
+            this.cTimeSpan.Name = "cTimeSpan";
+            this.cTimeSpan.Size = new System.Drawing.Size(104, 116);
+            this.cTimeSpan.TabIndex = 0;
+            this.cTimeSpan.Visible = false;
+            // 
+            // labMsg
+            // 
+            this.labMsg.Location = new System.Drawing.Point(4, 16);
+            this.labMsg.Name = "labMsg";
+            this.labMsg.Size = new System.Drawing.Size(104, 116);
+            this.labMsg.TabIndex = 1;
+            this.labMsg.Text = "label1";
+            this.labMsg.Visible = false;
+            // 
+            // cBoolean
+            // 
+            this.cBoolean.Location = new System.Drawing.Point(4, 16);
+            this.cBoolean.Name = "cBoolean";
+            this.cBoolean.Size = new System.Drawing.Size(104, 116);
+            this.cBoolean.TabIndex = 2;
+            this.cBoolean.Visible = false;
+            // 
+            // txGet
+            // 
+            this.txGet.BackColor = System.Drawing.Color.White;
+            this.txGet.ForeColor = System.Drawing.Color.White;
+            this.txGet.Location = new System.Drawing.Point(4, 4);
+            this.txGet.Name = "txGet";
+            this.txGet.ReadOnly = true;
+            this.txGet.Size = new System.Drawing.Size(44, 23);
+            this.txGet.TabIndex = 9;
+            this.txGet.Text = "Props.Get";
+            this.txGet.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txSet
+            // 
+            this.txSet.BackColor = System.Drawing.Color.White;
+            this.txSet.ForeColor = System.Drawing.Color.White;
+            this.txSet.Location = new System.Drawing.Point(52, 4);
+            this.txSet.Name = "txSet";
+            this.txSet.ReadOnly = true;
+            this.txSet.Size = new System.Drawing.Size(44, 23);
+            this.txSet.TabIndex = 10;
+            this.txSet.Text = "Props.Set";
+            this.txSet.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.tProps);
+            this.panel1.Controls.Add(this.splitter);
+            this.panel1.Controls.Add(this.tClasses);
+            this.panel1.Location = new System.Drawing.Point(100, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(276, 221);
+            this.panel1.TabIndex = 11;
+            // 
+            // splitter
+            // 
+            this.splitter.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.splitter.Location = new System.Drawing.Point(160, 0);
+            this.splitter.Name = "splitter";
+            this.splitter.Size = new System.Drawing.Size(3, 221);
+            this.splitter.TabIndex = 2;
+            this.splitter.TabStop = false;
+            this.splitter.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitter_SplitterMoved);
+            // 
+            // Props
+            // 
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.txSet);
+            this.Controls.Add(this.txGet);
+            this.Controls.Add(this.grpProp);
+            this.Controls.Add(this.cmbSearch);
+            this.Controls.Add(this.bFind);
+            this.Controls.Add(this.chkAllProps);
+            this.Controls.Add(this.chkAllClasses);
+            this.Controls.Add(this.cmbFilter);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name = "Props";
+            this.Size = new System.Drawing.Size(496, 224);
+            this.Load += new System.EventHandler(this.Props_Load);
+            this.grpProp.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
 		}
 		#endregion
 

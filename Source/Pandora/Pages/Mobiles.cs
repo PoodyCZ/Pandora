@@ -89,444 +89,467 @@ namespace TheBox.Pages
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.tCat = new System.Windows.Forms.TreeView();
-			this.cmCat = new System.Windows.Forms.ContextMenu();
-			this.mCatAddCat = new System.Windows.Forms.MenuItem();
-			this.mCatAddSub = new System.Windows.Forms.MenuItem();
-			this.menuItem3 = new System.Windows.Forms.MenuItem();
-			this.mCatRename = new System.Windows.Forms.MenuItem();
-			this.mCatDelete = new System.Windows.Forms.MenuItem();
-			this.tMob = new System.Windows.Forms.TreeView();
-			this.cmMob = new System.Windows.Forms.ContextMenu();
-			this.mMobAddMob = new System.Windows.Forms.MenuItem();
-			this.mMobAddSpawn = new System.Windows.Forms.MenuItem();
-			this.menuItem4 = new System.Windows.Forms.MenuItem();
-			this.mMobEdit = new System.Windows.Forms.MenuItem();
-			this.mMobDelete = new System.Windows.Forms.MenuItem();
-			this.menuItem7 = new System.Windows.Forms.MenuItem();
-			this.mMobSetBody = new System.Windows.Forms.MenuItem();
-			this.mMobSetBodyMod = new System.Windows.Forms.MenuItem();
-			this.chkName = new System.Windows.Forms.CheckBox();
-			this.bAdd = new System.Windows.Forms.Button();
-			this.bToSpawn = new System.Windows.Forms.Button();
-			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.nRange2 = new System.Windows.Forms.NumericUpDown();
-			this.linkSpawn = new System.Windows.Forms.LinkLabel();
-			this.nTeam = new System.Windows.Forms.NumericUpDown();
-			this.nMaxDelay = new System.Windows.Forms.NumericUpDown();
-			this.nMinDelay = new System.Windows.Forms.NumericUpDown();
-			this.nRange = new System.Windows.Forms.NumericUpDown();
-			this.nAmount = new System.Windows.Forms.NumericUpDown();
-			this.label5 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
-			this.label1 = new System.Windows.Forms.Label();
-			this.label6 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.boxButton1 = new TheBox.Buttons.BoxButton();
-			this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-			this.cbNames = new System.Windows.Forms.ComboBox();
-			this.panel1 = new System.Windows.Forms.Panel();
-			this.splitter = new System.Windows.Forms.Splitter();
-			this.groupBox1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.nRange2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.nTeam)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.nMaxDelay)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.nMinDelay)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.nRange)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.nAmount)).BeginInit();
-			this.panel1.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// tCat
-			// 
-			this.tCat.ContextMenu = this.cmCat;
-			this.tCat.Dock = System.Windows.Forms.DockStyle.Left;
-			this.tCat.HideSelection = false;
-			this.tCat.ImageIndex = -1;
-			this.tCat.Location = new System.Drawing.Point(0, 0);
-			this.tCat.Name = "tCat";
-			this.tCat.SelectedImageIndex = -1;
-			this.tCat.Size = new System.Drawing.Size(152, 140);
-			this.tCat.TabIndex = 0;
-			this.tCat.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			this.tCat.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tCat_AfterSelect);
-			this.tCat.AfterLabelEdit += new System.Windows.Forms.NodeLabelEditEventHandler(this.tCat_AfterLabelEdit);
-			// 
-			// cmCat
-			// 
-			this.cmCat.MenuItems.AddRange(
-				new System.Windows.Forms.MenuItem[]
-					{this.mCatAddCat, this.mCatAddSub, this.menuItem3, this.mCatRename, this.mCatDelete});
-			this.cmCat.Popup += new System.EventHandler(this.cmCat_Popup);
-			// 
-			// mCatAddCat
-			// 
-			this.mCatAddCat.Index = 0;
-			this.mCatAddCat.Text = "NPCs.mCatAddCat";
-			this.mCatAddCat.Click += new System.EventHandler(this.mCatAddCat_Click);
-			// 
-			// mCatAddSub
-			// 
-			this.mCatAddSub.Index = 1;
-			this.mCatAddSub.Text = "NPCs.mCatAddSub";
-			this.mCatAddSub.Click += new System.EventHandler(this.mCatAddSub_Click);
-			// 
-			// menuItem3
-			// 
-			this.menuItem3.Index = 2;
-			this.menuItem3.Text = "-";
-			// 
-			// mCatRename
-			// 
-			this.mCatRename.Index = 3;
-			this.mCatRename.Text = "NPCs.mCatRename";
-			this.mCatRename.Click += new System.EventHandler(this.mCatRename_Click);
-			// 
-			// mCatDelete
-			// 
-			this.mCatDelete.Index = 4;
-			this.mCatDelete.Text = "NPCs.mCatDelete";
-			this.mCatDelete.Click += new System.EventHandler(this.mCatDelete_Click);
-			// 
-			// tMob
-			// 
-			this.tMob.AllowDrop = true;
-			this.tMob.ContextMenu = this.cmMob;
-			this.tMob.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tMob.HideSelection = false;
-			this.tMob.ImageIndex = -1;
-			this.tMob.Location = new System.Drawing.Point(0, 0);
-			this.tMob.Name = "tMob";
-			this.tMob.SelectedImageIndex = -1;
-			this.tMob.ShowLines = false;
-			this.tMob.ShowRootLines = false;
-			this.tMob.Size = new System.Drawing.Size(284, 140);
-			this.tMob.TabIndex = 1;
-			this.tMob.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			this.tMob.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tMob_MouseDown);
-			this.tMob.DoubleClick += new System.EventHandler(this.tMob_DoubleClick);
-			this.tMob.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tMob_AfterSelect);
-			this.tMob.MouseMove += new System.Windows.Forms.MouseEventHandler(this.tMob_MouseMove);
-			// 
-			// cmMob
-			// 
-			this.cmMob.MenuItems.AddRange(
-				new System.Windows.Forms.MenuItem[]
-				{
-					this.mMobAddMob, this.mMobAddSpawn, this.menuItem4, this.mMobEdit, this.mMobDelete, this.menuItem7,
-					this.mMobSetBody, this.mMobSetBodyMod
-				});
-			this.cmMob.Popup += new System.EventHandler(this.cmMob_Popup);
-			// 
-			// mMobAddMob
-			// 
-			this.mMobAddMob.Index = 0;
-			this.mMobAddMob.Text = "NPCs.mMobAddMob";
-			this.mMobAddMob.Click += new System.EventHandler(this.mMobAddMob_Click);
-			// 
-			// mMobAddSpawn
-			// 
-			this.mMobAddSpawn.Index = 1;
-			this.mMobAddSpawn.Text = "NPCs.mMobAddSpawn";
-			this.mMobAddSpawn.Click += new System.EventHandler(this.mMobAddSpawn_Click);
-			// 
-			// menuItem4
-			// 
-			this.menuItem4.Index = 2;
-			this.menuItem4.Text = "-";
-			// 
-			// mMobEdit
-			// 
-			this.mMobEdit.Index = 3;
-			this.mMobEdit.Text = "NPCs.mMobEdit";
-			this.mMobEdit.Click += new System.EventHandler(this.mMobEdit_Click);
-			// 
-			// mMobDelete
-			// 
-			this.mMobDelete.Index = 4;
-			this.mMobDelete.Text = "NPCs.mMobDelete";
-			this.mMobDelete.Click += new System.EventHandler(this.mMobDelete_Click);
-			// 
-			// menuItem7
-			// 
-			this.menuItem7.Index = 5;
-			this.menuItem7.Text = "-";
-			// 
-			// mMobSetBody
-			// 
-			this.mMobSetBody.Index = 6;
-			this.mMobSetBody.Text = "NPCs.mMobBody";
-			this.mMobSetBody.Click += new System.EventHandler(this.mMobSetBody_Click);
-			// 
-			// mMobSetBodyMod
-			// 
-			this.mMobSetBodyMod.Index = 7;
-			this.mMobSetBodyMod.Text = "NPCs.mMobBodyMod";
-			this.mMobSetBodyMod.Click += new System.EventHandler(this.mMobSetBodyMod_Click);
-			// 
-			// chkName
-			// 
-			this.chkName.Enabled = false;
-			this.chkName.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.chkName.Location = new System.Drawing.Point(288, 24);
-			this.chkName.Name = "chkName";
-			this.chkName.Size = new System.Drawing.Size(72, 16);
-			this.chkName.TabIndex = 2;
-			this.chkName.Text = "Common.Name";
-			this.chkName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			this.chkName.CheckedChanged += new System.EventHandler(this.chkName_CheckedChanged);
-			// 
-			// bAdd
-			// 
-			this.bAdd.Enabled = false;
-			this.bAdd.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bAdd.Location = new System.Drawing.Point(288, 0);
-			this.bAdd.Name = "bAdd";
-			this.bAdd.Size = new System.Drawing.Size(84, 23);
-			this.bAdd.TabIndex = 4;
-			this.bAdd.Text = "Common.Add";
-			this.bAdd.Click += new System.EventHandler(this.bAdd_Click);
-			this.bAdd.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			// 
-			// bToSpawn
-			// 
-			this.bToSpawn.Enabled = false;
-			this.bToSpawn.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bToSpawn.Location = new System.Drawing.Point(288, 68);
-			this.bToSpawn.Name = "bToSpawn";
-			this.bToSpawn.Size = new System.Drawing.Size(84, 24);
-			this.bToSpawn.TabIndex = 5;
-			this.bToSpawn.Text = "NPCs.ToSpawn";
-			this.bToSpawn.Click += new System.EventHandler(this.bToSpawn_Click);
-			this.bToSpawn.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			// 
-			// groupBox1
-			// 
-			this.groupBox1.Controls.Add(this.nRange2);
-			this.groupBox1.Controls.Add(this.linkSpawn);
-			this.groupBox1.Controls.Add(this.nTeam);
-			this.groupBox1.Controls.Add(this.nMaxDelay);
-			this.groupBox1.Controls.Add(this.nMinDelay);
-			this.groupBox1.Controls.Add(this.nRange);
-			this.groupBox1.Controls.Add(this.nAmount);
-			this.groupBox1.Controls.Add(this.label5);
-			this.groupBox1.Controls.Add(this.label4);
-			this.groupBox1.Controls.Add(this.label2);
-			this.groupBox1.Controls.Add(this.label1);
-			this.groupBox1.Controls.Add(this.label6);
-			this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.groupBox1.Location = new System.Drawing.Point(376, 0);
-			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(116, 140);
-			this.groupBox1.TabIndex = 6;
-			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "NPCs.Spawn";
-			// 
-			// nRange2
-			// 
-			this.nRange2.Location = new System.Drawing.Point(64, 100);
-			this.nRange2.Maximum = new System.Decimal(new int[] {10000, 0, 0, 0});
-			this.nRange2.Name = "nRange2";
-			this.nRange2.Size = new System.Drawing.Size(48, 20);
-			this.nRange2.TabIndex = 19;
-			this.nRange2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			this.nRange2.ValueChanged += new System.EventHandler(this.nRange2_ValueChanged);
-			// 
-			// linkSpawn
-			// 
-			this.linkSpawn.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-			this.linkSpawn.Location = new System.Drawing.Point(8, 122);
-			this.linkSpawn.Name = "linkSpawn";
-			this.linkSpawn.Size = new System.Drawing.Size(104, 16);
-			this.linkSpawn.TabIndex = 17;
-			this.linkSpawn.TabStop = true;
-			this.linkSpawn.Text = "NPCs.BigSpawn";
-			this.linkSpawn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.linkSpawn.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkSpawn_LinkClicked);
-			// 
-			// nTeam
-			// 
-			this.nTeam.Location = new System.Drawing.Point(8, 100);
-			this.nTeam.Maximum = new System.Decimal(new int[] {10000, 0, 0, 0});
-			this.nTeam.Name = "nTeam";
-			this.nTeam.Size = new System.Drawing.Size(48, 20);
-			this.nTeam.TabIndex = 16;
-			this.nTeam.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			this.nTeam.ValueChanged += new System.EventHandler(this.nTeam_ValueChanged);
-			// 
-			// nMaxDelay
-			// 
-			this.nMaxDelay.Location = new System.Drawing.Point(64, 64);
-			this.nMaxDelay.Maximum = new System.Decimal(new int[] {100000, 0, 0, 0});
-			this.nMaxDelay.Name = "nMaxDelay";
-			this.nMaxDelay.Size = new System.Drawing.Size(48, 20);
-			this.nMaxDelay.TabIndex = 15;
-			this.nMaxDelay.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			this.nMaxDelay.ValueChanged += new System.EventHandler(this.nMaxDelay_ValueChanged);
-			// 
-			// nMinDelay
-			// 
-			this.nMinDelay.Location = new System.Drawing.Point(8, 64);
-			this.nMinDelay.Maximum = new System.Decimal(new int[] {100000, 0, 0, 0});
-			this.nMinDelay.Name = "nMinDelay";
-			this.nMinDelay.Size = new System.Drawing.Size(48, 20);
-			this.nMinDelay.TabIndex = 14;
-			this.nMinDelay.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			this.nMinDelay.ValueChanged += new System.EventHandler(this.nMinDelay_ValueChanged);
-			// 
-			// nRange
-			// 
-			this.nRange.Location = new System.Drawing.Point(64, 28);
-			this.nRange.Maximum = new System.Decimal(new int[] {10000, 0, 0, 0});
-			this.nRange.Name = "nRange";
-			this.nRange.Size = new System.Drawing.Size(48, 20);
-			this.nRange.TabIndex = 13;
-			this.nRange.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			this.nRange.ValueChanged += new System.EventHandler(this.nRange_ValueChanged);
-			// 
-			// nAmount
-			// 
-			this.nAmount.Font = new System.Drawing.Font(
-				"Microsoft Sans Serif",
-				8.25F,
-				System.Drawing.FontStyle.Regular,
-				System.Drawing.GraphicsUnit.Point,
-				((System.Byte)(0)));
-			this.nAmount.Location = new System.Drawing.Point(8, 28);
-			this.nAmount.Maximum = new System.Decimal(new int[] {10000, 0, 0, 0});
-			this.nAmount.Name = "nAmount";
-			this.nAmount.Size = new System.Drawing.Size(48, 20);
-			this.nAmount.TabIndex = 12;
-			this.nAmount.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			this.nAmount.ValueChanged += new System.EventHandler(this.nAmount_ValueChanged);
-			// 
-			// label5
-			// 
-			this.label5.Location = new System.Drawing.Point(8, 86);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(56, 16);
-			this.label5.TabIndex = 11;
-			this.label5.Text = "NPCs.Team";
-			// 
-			// label4
-			// 
-			this.label4.Location = new System.Drawing.Point(64, 14);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(48, 16);
-			this.label4.TabIndex = 10;
-			this.label4.Text = "NPCs.Range";
-			// 
-			// label2
-			// 
-			this.label2.Location = new System.Drawing.Point(8, 50);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(104, 16);
-			this.label2.TabIndex = 8;
-			this.label2.Text = "NPCs.MinTime";
-			// 
-			// label1
-			// 
-			this.label1.Location = new System.Drawing.Point(8, 14);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(48, 16);
-			this.label1.TabIndex = 7;
-			this.label1.Text = "NPCs.Amount";
-			// 
-			// label6
-			// 
-			this.label6.Location = new System.Drawing.Point(64, 86);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(48, 16);
-			this.label6.TabIndex = 20;
-			this.label6.Text = "NPCs.SpawnRange";
-			// 
-			// label3
-			// 
-			this.label3.Location = new System.Drawing.Point(0, 0);
-			this.label3.Name = "label3";
-			this.label3.TabIndex = 0;
-			// 
-			// boxButton1
-			// 
-			this.boxButton1.AllowEdit = true;
-			this.boxButton1.ButtonID = 36;
-			this.boxButton1.Def = null;
-			this.boxButton1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.boxButton1.IsActive = true;
-			this.boxButton1.Location = new System.Drawing.Point(288, 100);
-			this.boxButton1.Name = "boxButton1";
-			this.boxButton1.Size = new System.Drawing.Size(84, 24);
-			this.boxButton1.TabIndex = 7;
-			this.boxButton1.Text = "boxButton1";
-			this.boxButton1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			// 
-			// linkLabel1
-			// 
-			this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-			this.linkLabel1.LinkColor = System.Drawing.SystemColors.WindowText;
-			this.linkLabel1.Location = new System.Drawing.Point(288, 124);
-			this.linkLabel1.Name = "linkLabel1";
-			this.linkLabel1.Size = new System.Drawing.Size(80, 12);
-			this.linkLabel1.TabIndex = 8;
-			this.linkLabel1.TabStop = true;
-			this.linkLabel1.Text = "Common.Find";
-			this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.linkLabel1.LinkClicked +=
-				new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-			// 
-			// cbNames
-			// 
-			this.cbNames.Enabled = false;
-			this.cbNames.Location = new System.Drawing.Point(288, 44);
-			this.cbNames.Name = "cbNames";
-			this.cbNames.Size = new System.Drawing.Size(84, 21);
-			this.cbNames.TabIndex = 9;
-			this.cbNames.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			this.cbNames.Enter += new System.EventHandler(this.cbNames_Enter);
-			// 
-			// panel1
-			// 
-			this.panel1.Controls.Add(this.tMob);
-			this.panel1.Controls.Add(this.splitter);
-			this.panel1.Controls.Add(this.tCat);
-			this.panel1.Location = new System.Drawing.Point(0, 0);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(284, 140);
-			this.panel1.TabIndex = 10;
-			// 
-			// splitter
-			// 
-			this.splitter.Location = new System.Drawing.Point(152, 0);
-			this.splitter.Name = "splitter";
-			this.splitter.Size = new System.Drawing.Size(3, 140);
-			this.splitter.TabIndex = 1;
-			this.splitter.TabStop = false;
-			this.splitter.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitter_SplitterMoved);
-			// 
-			// Mobiles
-			// 
-			this.Controls.Add(this.panel1);
-			this.Controls.Add(this.cbNames);
-			this.Controls.Add(this.linkLabel1);
-			this.Controls.Add(this.boxButton1);
-			this.Controls.Add(this.groupBox1);
-			this.Controls.Add(this.bToSpawn);
-			this.Controls.Add(this.bAdd);
-			this.Controls.Add(this.chkName);
-			this.Name = "Mobiles";
-			this.Size = new System.Drawing.Size(496, 142);
-			this.Load += new System.EventHandler(this.Mobiles_Load);
-			this.Enter += new System.EventHandler(this.Mobiles_Enter);
-			this.groupBox1.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.nRange2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.nTeam)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.nMaxDelay)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.nMinDelay)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.nRange)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.nAmount)).EndInit();
-			this.panel1.ResumeLayout(false);
-			this.ResumeLayout(false);
+            this.tCat = new System.Windows.Forms.TreeView();
+            this.cmCat = new System.Windows.Forms.ContextMenu();
+            this.mCatAddCat = new System.Windows.Forms.MenuItem();
+            this.mCatAddSub = new System.Windows.Forms.MenuItem();
+            this.menuItem3 = new System.Windows.Forms.MenuItem();
+            this.mCatRename = new System.Windows.Forms.MenuItem();
+            this.mCatDelete = new System.Windows.Forms.MenuItem();
+            this.tMob = new System.Windows.Forms.TreeView();
+            this.cmMob = new System.Windows.Forms.ContextMenu();
+            this.mMobAddMob = new System.Windows.Forms.MenuItem();
+            this.mMobAddSpawn = new System.Windows.Forms.MenuItem();
+            this.menuItem4 = new System.Windows.Forms.MenuItem();
+            this.mMobEdit = new System.Windows.Forms.MenuItem();
+            this.mMobDelete = new System.Windows.Forms.MenuItem();
+            this.menuItem7 = new System.Windows.Forms.MenuItem();
+            this.mMobSetBody = new System.Windows.Forms.MenuItem();
+            this.mMobSetBodyMod = new System.Windows.Forms.MenuItem();
+            this.chkName = new System.Windows.Forms.CheckBox();
+            this.bAdd = new System.Windows.Forms.Button();
+            this.bToSpawn = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.nRange2 = new System.Windows.Forms.NumericUpDown();
+            this.linkSpawn = new System.Windows.Forms.LinkLabel();
+            this.nTeam = new System.Windows.Forms.NumericUpDown();
+            this.nMaxDelay = new System.Windows.Forms.NumericUpDown();
+            this.nMinDelay = new System.Windows.Forms.NumericUpDown();
+            this.nRange = new System.Windows.Forms.NumericUpDown();
+            this.nAmount = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.boxButton1 = new TheBox.Buttons.BoxButton();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.cbNames = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.splitter = new System.Windows.Forms.Splitter();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nRange2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nTeam)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nMaxDelay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nMinDelay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nRange)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nAmount)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // tCat
+            // 
+            this.tCat.ContextMenu = this.cmCat;
+            this.tCat.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tCat.HideSelection = false;
+            this.tCat.Location = new System.Drawing.Point(0, 0);
+            this.tCat.Name = "tCat";
+            this.tCat.Size = new System.Drawing.Size(152, 221);
+            this.tCat.TabIndex = 0;
+            this.tCat.AfterLabelEdit += new System.Windows.Forms.NodeLabelEditEventHandler(this.tCat_AfterLabelEdit);
+            this.tCat.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tCat_AfterSelect);
+            this.tCat.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            // 
+            // cmCat
+            // 
+            this.cmCat.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.mCatAddCat,
+            this.mCatAddSub,
+            this.menuItem3,
+            this.mCatRename,
+            this.mCatDelete});
+            this.cmCat.Popup += new System.EventHandler(this.cmCat_Popup);
+            // 
+            // mCatAddCat
+            // 
+            this.mCatAddCat.Index = 0;
+            this.mCatAddCat.Text = "NPCs.mCatAddCat";
+            this.mCatAddCat.Click += new System.EventHandler(this.mCatAddCat_Click);
+            // 
+            // mCatAddSub
+            // 
+            this.mCatAddSub.Index = 1;
+            this.mCatAddSub.Text = "NPCs.mCatAddSub";
+            this.mCatAddSub.Click += new System.EventHandler(this.mCatAddSub_Click);
+            // 
+            // menuItem3
+            // 
+            this.menuItem3.Index = 2;
+            this.menuItem3.Text = "-";
+            // 
+            // mCatRename
+            // 
+            this.mCatRename.Index = 3;
+            this.mCatRename.Text = "NPCs.mCatRename";
+            this.mCatRename.Click += new System.EventHandler(this.mCatRename_Click);
+            // 
+            // mCatDelete
+            // 
+            this.mCatDelete.Index = 4;
+            this.mCatDelete.Text = "NPCs.mCatDelete";
+            this.mCatDelete.Click += new System.EventHandler(this.mCatDelete_Click);
+            // 
+            // tMob
+            // 
+            this.tMob.AllowDrop = true;
+            this.tMob.ContextMenu = this.cmMob;
+            this.tMob.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tMob.HideSelection = false;
+            this.tMob.Location = new System.Drawing.Point(155, 0);
+            this.tMob.Name = "tMob";
+            this.tMob.ShowLines = false;
+            this.tMob.ShowRootLines = false;
+            this.tMob.Size = new System.Drawing.Size(129, 221);
+            this.tMob.TabIndex = 1;
+            this.tMob.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tMob_AfterSelect);
+            this.tMob.DoubleClick += new System.EventHandler(this.tMob_DoubleClick);
+            this.tMob.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            this.tMob.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tMob_MouseDown);
+            this.tMob.MouseMove += new System.Windows.Forms.MouseEventHandler(this.tMob_MouseMove);
+            // 
+            // cmMob
+            // 
+            this.cmMob.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.mMobAddMob,
+            this.mMobAddSpawn,
+            this.menuItem4,
+            this.mMobEdit,
+            this.mMobDelete,
+            this.menuItem7,
+            this.mMobSetBody,
+            this.mMobSetBodyMod});
+            this.cmMob.Popup += new System.EventHandler(this.cmMob_Popup);
+            // 
+            // mMobAddMob
+            // 
+            this.mMobAddMob.Index = 0;
+            this.mMobAddMob.Text = "NPCs.mMobAddMob";
+            this.mMobAddMob.Click += new System.EventHandler(this.mMobAddMob_Click);
+            // 
+            // mMobAddSpawn
+            // 
+            this.mMobAddSpawn.Index = 1;
+            this.mMobAddSpawn.Text = "NPCs.mMobAddSpawn";
+            this.mMobAddSpawn.Click += new System.EventHandler(this.mMobAddSpawn_Click);
+            // 
+            // menuItem4
+            // 
+            this.menuItem4.Index = 2;
+            this.menuItem4.Text = "-";
+            // 
+            // mMobEdit
+            // 
+            this.mMobEdit.Index = 3;
+            this.mMobEdit.Text = "NPCs.mMobEdit";
+            this.mMobEdit.Click += new System.EventHandler(this.mMobEdit_Click);
+            // 
+            // mMobDelete
+            // 
+            this.mMobDelete.Index = 4;
+            this.mMobDelete.Text = "NPCs.mMobDelete";
+            this.mMobDelete.Click += new System.EventHandler(this.mMobDelete_Click);
+            // 
+            // menuItem7
+            // 
+            this.menuItem7.Index = 5;
+            this.menuItem7.Text = "-";
+            // 
+            // mMobSetBody
+            // 
+            this.mMobSetBody.Index = 6;
+            this.mMobSetBody.Text = "NPCs.mMobBody";
+            this.mMobSetBody.Click += new System.EventHandler(this.mMobSetBody_Click);
+            // 
+            // mMobSetBodyMod
+            // 
+            this.mMobSetBodyMod.Index = 7;
+            this.mMobSetBodyMod.Text = "NPCs.mMobBodyMod";
+            this.mMobSetBodyMod.Click += new System.EventHandler(this.mMobSetBodyMod_Click);
+            // 
+            // chkName
+            // 
+            this.chkName.Enabled = false;
+            this.chkName.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.chkName.Location = new System.Drawing.Point(288, 24);
+            this.chkName.Name = "chkName";
+            this.chkName.Size = new System.Drawing.Size(72, 16);
+            this.chkName.TabIndex = 2;
+            this.chkName.Text = "Common.Name";
+            this.chkName.CheckedChanged += new System.EventHandler(this.chkName_CheckedChanged);
+            this.chkName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            // 
+            // bAdd
+            // 
+            this.bAdd.Enabled = false;
+            this.bAdd.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bAdd.Location = new System.Drawing.Point(288, 0);
+            this.bAdd.Name = "bAdd";
+            this.bAdd.Size = new System.Drawing.Size(84, 23);
+            this.bAdd.TabIndex = 4;
+            this.bAdd.Text = "Common.Add";
+            this.bAdd.Click += new System.EventHandler(this.bAdd_Click);
+            this.bAdd.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            // 
+            // bToSpawn
+            // 
+            this.bToSpawn.Enabled = false;
+            this.bToSpawn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bToSpawn.Location = new System.Drawing.Point(288, 68);
+            this.bToSpawn.Name = "bToSpawn";
+            this.bToSpawn.Size = new System.Drawing.Size(84, 24);
+            this.bToSpawn.TabIndex = 5;
+            this.bToSpawn.Text = "NPCs.ToSpawn";
+            this.bToSpawn.Click += new System.EventHandler(this.bToSpawn_Click);
+            this.bToSpawn.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.nRange2);
+            this.groupBox1.Controls.Add(this.linkSpawn);
+            this.groupBox1.Controls.Add(this.nTeam);
+            this.groupBox1.Controls.Add(this.nMaxDelay);
+            this.groupBox1.Controls.Add(this.nMinDelay);
+            this.groupBox1.Controls.Add(this.nRange);
+            this.groupBox1.Controls.Add(this.nAmount);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox1.Location = new System.Drawing.Point(376, 0);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(116, 140);
+            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "NPCs.Spawn";
+            // 
+            // nRange2
+            // 
+            this.nRange2.Location = new System.Drawing.Point(64, 100);
+            this.nRange2.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.nRange2.Name = "nRange2";
+            this.nRange2.Size = new System.Drawing.Size(48, 23);
+            this.nRange2.TabIndex = 19;
+            this.nRange2.ValueChanged += new System.EventHandler(this.nRange2_ValueChanged);
+            this.nRange2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            // 
+            // linkSpawn
+            // 
+            this.linkSpawn.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.linkSpawn.Location = new System.Drawing.Point(8, 122);
+            this.linkSpawn.Name = "linkSpawn";
+            this.linkSpawn.Size = new System.Drawing.Size(104, 16);
+            this.linkSpawn.TabIndex = 17;
+            this.linkSpawn.TabStop = true;
+            this.linkSpawn.Text = "NPCs.BigSpawn";
+            this.linkSpawn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkSpawn.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkSpawn_LinkClicked);
+            // 
+            // nTeam
+            // 
+            this.nTeam.Location = new System.Drawing.Point(8, 100);
+            this.nTeam.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.nTeam.Name = "nTeam";
+            this.nTeam.Size = new System.Drawing.Size(48, 23);
+            this.nTeam.TabIndex = 16;
+            this.nTeam.ValueChanged += new System.EventHandler(this.nTeam_ValueChanged);
+            this.nTeam.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            // 
+            // nMaxDelay
+            // 
+            this.nMaxDelay.Location = new System.Drawing.Point(64, 64);
+            this.nMaxDelay.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.nMaxDelay.Name = "nMaxDelay";
+            this.nMaxDelay.Size = new System.Drawing.Size(48, 23);
+            this.nMaxDelay.TabIndex = 15;
+            this.nMaxDelay.ValueChanged += new System.EventHandler(this.nMaxDelay_ValueChanged);
+            this.nMaxDelay.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            // 
+            // nMinDelay
+            // 
+            this.nMinDelay.Location = new System.Drawing.Point(8, 64);
+            this.nMinDelay.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.nMinDelay.Name = "nMinDelay";
+            this.nMinDelay.Size = new System.Drawing.Size(48, 23);
+            this.nMinDelay.TabIndex = 14;
+            this.nMinDelay.ValueChanged += new System.EventHandler(this.nMinDelay_ValueChanged);
+            this.nMinDelay.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            // 
+            // nRange
+            // 
+            this.nRange.Location = new System.Drawing.Point(64, 28);
+            this.nRange.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.nRange.Name = "nRange";
+            this.nRange.Size = new System.Drawing.Size(48, 23);
+            this.nRange.TabIndex = 13;
+            this.nRange.ValueChanged += new System.EventHandler(this.nRange_ValueChanged);
+            this.nRange.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            // 
+            // nAmount
+            // 
+            this.nAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nAmount.Location = new System.Drawing.Point(8, 28);
+            this.nAmount.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.nAmount.Name = "nAmount";
+            this.nAmount.Size = new System.Drawing.Size(48, 20);
+            this.nAmount.TabIndex = 12;
+            this.nAmount.ValueChanged += new System.EventHandler(this.nAmount_ValueChanged);
+            this.nAmount.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            // 
+            // label5
+            // 
+            this.label5.Location = new System.Drawing.Point(8, 86);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(56, 16);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "NPCs.Team";
+            // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(64, 14);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(48, 16);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "NPCs.Range";
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(8, 50);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(104, 16);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "NPCs.MinTime";
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(8, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(48, 16);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "NPCs.Amount";
+            // 
+            // label6
+            // 
+            this.label6.Location = new System.Drawing.Point(64, 86);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(48, 16);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "NPCs.SpawnRange";
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(100, 23);
+            this.label3.TabIndex = 0;
+            // 
+            // boxButton1
+            // 
+            this.boxButton1.AllowEdit = true;
+            this.boxButton1.ButtonID = 36;
+            this.boxButton1.Def = null;
+            this.boxButton1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.boxButton1.IsActive = true;
+            this.boxButton1.Location = new System.Drawing.Point(288, 100);
+            this.boxButton1.Name = "boxButton1";
+            this.boxButton1.Size = new System.Drawing.Size(84, 24);
+            this.boxButton1.TabIndex = 7;
+            this.boxButton1.Text = "boxButton1";
+            this.boxButton1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.linkLabel1.LinkColor = System.Drawing.SystemColors.WindowText;
+            this.linkLabel1.Location = new System.Drawing.Point(288, 124);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(80, 12);
+            this.linkLabel1.TabIndex = 8;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Common.Find";
+            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // cbNames
+            // 
+            this.cbNames.Enabled = false;
+            this.cbNames.Location = new System.Drawing.Point(288, 44);
+            this.cbNames.Name = "cbNames";
+            this.cbNames.Size = new System.Drawing.Size(84, 23);
+            this.cbNames.TabIndex = 9;
+            this.cbNames.Enter += new System.EventHandler(this.cbNames_Enter);
+            this.cbNames.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.tMob);
+            this.panel1.Controls.Add(this.splitter);
+            this.panel1.Controls.Add(this.tCat);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(284, 221);
+            this.panel1.TabIndex = 10;
+            // 
+            // splitter
+            // 
+            this.splitter.Location = new System.Drawing.Point(152, 0);
+            this.splitter.Name = "splitter";
+            this.splitter.Size = new System.Drawing.Size(3, 221);
+            this.splitter.TabIndex = 1;
+            this.splitter.TabStop = false;
+            this.splitter.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitter_SplitterMoved);
+            // 
+            // Mobiles
+            // 
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.cbNames);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.boxButton1);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.bToSpawn);
+            this.Controls.Add(this.bAdd);
+            this.Controls.Add(this.chkName);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name = "Mobiles";
+            this.Size = new System.Drawing.Size(496, 224);
+            this.Load += new System.EventHandler(this.Mobiles_Load);
+            this.Enter += new System.EventHandler(this.Mobiles_Enter);
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.nRange2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nTeam)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nMaxDelay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nMinDelay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nRange)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nAmount)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.ResumeLayout(false);
+
 		}
 		#endregion
 

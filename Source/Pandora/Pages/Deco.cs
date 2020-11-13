@@ -117,321 +117,350 @@ namespace TheBox.Pages
 		/// </summary>
 		private void InitializeComponent()
 		{
-			var resources = new System.Resources.ResourceManager(typeof(Deco));
-			this.panel = new System.Windows.Forms.Panel();
-			this.tDeco = new System.Windows.Forms.TreeView();
-			this.cmItem = new System.Windows.Forms.ContextMenu();
-			this.menuItem1 = new System.Windows.Forms.MenuItem();
-			this.splitter = new System.Windows.Forms.Splitter();
-			this.tCat = new System.Windows.Forms.TreeView();
-			this.bAdd = new System.Windows.Forms.Button();
-			this.numTile = new System.Windows.Forms.NumericUpDown();
-			this.bTile = new System.Windows.Forms.Button();
-			this.chkHued = new System.Windows.Forms.CheckBox();
-			this.chkStatic = new System.Windows.Forms.CheckBox();
-			this.decoMover1 = new TheBox.Controls.DecoMover();
-			this.lnkFind = new System.Windows.Forms.LinkLabel();
-			this.numNudge = new System.Windows.Forms.NumericUpDown();
-			this.boxButton3 = new TheBox.Buttons.BoxButton();
-			this.boxButton4 = new TheBox.Buttons.BoxButton();
-			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.bNudgeUp = new System.Windows.Forms.Button();
-			this.bNudgeDown = new System.Windows.Forms.Button();
-			this.cmCustom = new System.Windows.Forms.ContextMenu();
-			this.cmCustomCat = new System.Windows.Forms.MenuItem();
-			this.cmCustomItem = new System.Windows.Forms.MenuItem();
-			this.cmCustomDel = new System.Windows.Forms.MenuItem();
-			this.chkRnd = new System.Windows.Forms.CheckBox();
-			this.nRnd = new System.Windows.Forms.NumericUpDown();
-			this.panel.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numTile)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numNudge)).BeginInit();
-			this.groupBox1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.nRnd)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// panel
-			// 
-			this.panel.Controls.Add(this.tDeco);
-			this.panel.Controls.Add(this.splitter);
-			this.panel.Controls.Add(this.tCat);
-			this.panel.Location = new System.Drawing.Point(0, 0);
-			this.panel.Name = "panel";
-			this.panel.Size = new System.Drawing.Size(320, 140);
-			this.panel.TabIndex = 0;
-			// 
-			// tDeco
-			// 
-			this.tDeco.ContextMenu = this.cmItem;
-			this.tDeco.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tDeco.HideSelection = false;
-			this.tDeco.ImageIndex = -1;
-			this.tDeco.Location = new System.Drawing.Point(147, 0);
-			this.tDeco.Name = "tDeco";
-			this.tDeco.SelectedImageIndex = -1;
-			this.tDeco.ShowLines = false;
-			this.tDeco.ShowPlusMinus = false;
-			this.tDeco.ShowRootLines = false;
-			this.tDeco.Size = new System.Drawing.Size(173, 140);
-			this.tDeco.TabIndex = 2;
-			this.tDeco.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			this.tDeco.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tDeco_MouseDown);
-			this.tDeco.DoubleClick += new System.EventHandler(this.tDeco_DoubleClick);
-			this.tDeco.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tDeco_AfterSelect);
-			this.tDeco.MouseMove += new System.Windows.Forms.MouseEventHandler(this.tDeco_MouseMove);
-			// 
-			// cmItem
-			// 
-			this.cmItem.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {this.menuItem1});
-			this.cmItem.Popup += new System.EventHandler(this.cmItem_Popup);
-			// 
-			// menuItem1
-			// 
-			this.menuItem1.Index = 0;
-			this.menuItem1.Text = "Items.ItemID";
-			this.menuItem1.Click += new System.EventHandler(this.menuItem1_Click);
-			// 
-			// splitter
-			// 
-			this.splitter.Location = new System.Drawing.Point(144, 0);
-			this.splitter.Name = "splitter";
-			this.splitter.Size = new System.Drawing.Size(3, 140);
-			this.splitter.TabIndex = 1;
-			this.splitter.TabStop = false;
-			this.splitter.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitter_SplitterMoved);
-			// 
-			// tCat
-			// 
-			this.tCat.Dock = System.Windows.Forms.DockStyle.Left;
-			this.tCat.HideSelection = false;
-			this.tCat.ImageIndex = -1;
-			this.tCat.Location = new System.Drawing.Point(0, 0);
-			this.tCat.Name = "tCat";
-			this.tCat.SelectedImageIndex = -1;
-			this.tCat.Size = new System.Drawing.Size(144, 140);
-			this.tCat.TabIndex = 0;
-			this.tCat.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			this.tCat.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tCat_MouseDown);
-			this.tCat.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tCat_AfterSelect);
-			this.tCat.AfterLabelEdit += new System.Windows.Forms.NodeLabelEditEventHandler(this.tCat_AfterLabelEdit);
-			// 
-			// bAdd
-			// 
-			this.bAdd.Enabled = false;
-			this.bAdd.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bAdd.Location = new System.Drawing.Point(324, 0);
-			this.bAdd.Name = "bAdd";
-			this.bAdd.Size = new System.Drawing.Size(52, 23);
-			this.bAdd.TabIndex = 1;
-			this.bAdd.Text = "Common.Add";
-			this.bAdd.Click += new System.EventHandler(this.bAdd_Click);
-			// 
-			// numTile
-			// 
-			this.numTile.Location = new System.Drawing.Point(440, 0);
-			this.numTile.Maximum = new System.Decimal(new int[] {127, 0, 0, 0});
-			this.numTile.Minimum = new System.Decimal(new int[] {128, 0, 0, -2147483648});
-			this.numTile.Name = "numTile";
-			this.numTile.Size = new System.Drawing.Size(52, 20);
-			this.numTile.TabIndex = 2;
-			this.numTile.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			this.numTile.ValueChanged += new System.EventHandler(this.numTile_ValueChanged);
-			// 
-			// bTile
-			// 
-			this.bTile.Enabled = false;
-			this.bTile.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bTile.Location = new System.Drawing.Point(384, 0);
-			this.bTile.Name = "bTile";
-			this.bTile.Size = new System.Drawing.Size(52, 23);
-			this.bTile.TabIndex = 3;
-			this.bTile.Text = "Deco.Tile";
-			this.bTile.Click += new System.EventHandler(this.bTile_Click);
-			// 
-			// chkHued
-			// 
-			this.chkHued.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.chkHued.Location = new System.Drawing.Point(440, 24);
-			this.chkHued.Name = "chkHued";
-			this.chkHued.Size = new System.Drawing.Size(56, 20);
-			this.chkHued.TabIndex = 4;
-			this.chkHued.Text = "Deco.Hued";
-			this.chkHued.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			this.chkHued.CheckedChanged += new System.EventHandler(this.chkHued_CheckedChanged);
-			// 
-			// chkStatic
-			// 
-			this.chkStatic.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.chkStatic.Location = new System.Drawing.Point(384, 24);
-			this.chkStatic.Name = "chkStatic";
-			this.chkStatic.Size = new System.Drawing.Size(52, 20);
-			this.chkStatic.TabIndex = 5;
-			this.chkStatic.Text = "Deco.Static";
-			this.chkStatic.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			this.chkStatic.CheckedChanged += new System.EventHandler(this.chkStatic_CheckedChanged);
-			// 
-			// decoMover1
-			// 
-			this.decoMover1.BackColor = System.Drawing.SystemColors.Control;
-			this.decoMover1.EventMode = false;
-			this.decoMover1.Location = new System.Drawing.Point(424, 48);
-			this.decoMover1.Name = "decoMover1";
-			this.decoMover1.Size = new System.Drawing.Size(72, 92);
-			this.decoMover1.TabIndex = 6;
-			this.decoMover1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			// 
-			// lnkFind
-			// 
-			this.lnkFind.Location = new System.Drawing.Point(324, 28);
-			this.lnkFind.Name = "lnkFind";
-			this.lnkFind.Size = new System.Drawing.Size(52, 16);
-			this.lnkFind.TabIndex = 7;
-			this.lnkFind.TabStop = true;
-			this.lnkFind.Text = "Common.Find";
-			this.lnkFind.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.lnkFind.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkFind_LinkClicked);
-			// 
-			// numNudge
-			// 
-			this.numNudge.Location = new System.Drawing.Point(24, 16);
-			this.numNudge.Maximum = new System.Decimal(new int[] {127, 0, 0, 0});
-			this.numNudge.Minimum = new System.Decimal(new int[] {1, 0, 0, 0});
-			this.numNudge.Name = "numNudge";
-			this.numNudge.Size = new System.Drawing.Size(48, 20);
-			this.numNudge.TabIndex = 11;
-			this.numNudge.Value = new System.Decimal(new int[] {1, 0, 0, 0});
-			this.numNudge.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			this.numNudge.ValueChanged += new System.EventHandler(this.numNudge_ValueChanged);
-			// 
-			// boxButton3
-			// 
-			this.boxButton3.AllowEdit = true;
-			this.boxButton3.ButtonID = 45;
-			this.boxButton3.Def = null;
-			this.boxButton3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.boxButton3.IsActive = true;
-			this.boxButton3.Location = new System.Drawing.Point(324, 76);
-			this.boxButton3.Name = "boxButton3";
-			this.boxButton3.Size = new System.Drawing.Size(48, 23);
-			this.boxButton3.TabIndex = 14;
-			this.boxButton3.Text = "boxButton3";
-			// 
-			// boxButton4
-			// 
-			this.boxButton4.AllowEdit = true;
-			this.boxButton4.ButtonID = 46;
-			this.boxButton4.Def = null;
-			this.boxButton4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.boxButton4.IsActive = true;
-			this.boxButton4.Location = new System.Drawing.Point(372, 76);
-			this.boxButton4.Name = "boxButton4";
-			this.boxButton4.Size = new System.Drawing.Size(48, 23);
-			this.boxButton4.TabIndex = 15;
-			this.boxButton4.Text = "boxButton4";
-			// 
-			// groupBox1
-			// 
-			this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
-			this.groupBox1.Controls.Add(this.bNudgeUp);
-			this.groupBox1.Controls.Add(this.bNudgeDown);
-			this.groupBox1.Controls.Add(this.numNudge);
-			this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.groupBox1.Location = new System.Drawing.Point(324, 100);
-			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(96, 40);
-			this.groupBox1.TabIndex = 16;
-			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Nudge";
-			// 
-			// bNudgeUp
-			// 
-			this.bNudgeUp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.bNudgeUp.Image = ((System.Drawing.Image)(resources.GetObject("bNudgeUp.Image")));
-			this.bNudgeUp.Location = new System.Drawing.Point(76, 16);
-			this.bNudgeUp.Name = "bNudgeUp";
-			this.bNudgeUp.Size = new System.Drawing.Size(16, 20);
-			this.bNudgeUp.TabIndex = 13;
-			this.bNudgeUp.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bNudgeUp_MouseDown);
-			// 
-			// bNudgeDown
-			// 
-			this.bNudgeDown.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.bNudgeDown.Image = ((System.Drawing.Image)(resources.GetObject("bNudgeDown.Image")));
-			this.bNudgeDown.Location = new System.Drawing.Point(4, 16);
-			this.bNudgeDown.Name = "bNudgeDown";
-			this.bNudgeDown.Size = new System.Drawing.Size(16, 20);
-			this.bNudgeDown.TabIndex = 12;
-			this.bNudgeDown.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bNudgeDown_MouseDown);
-			// 
-			// cmCustom
-			// 
-			this.cmCustom.MenuItems.AddRange(
-				new System.Windows.Forms.MenuItem[] {this.cmCustomCat, this.cmCustomItem, this.cmCustomDel});
-			this.cmCustom.Popup += new System.EventHandler(this.cmCustom_Popup);
-			// 
-			// cmCustomCat
-			// 
-			this.cmCustomCat.Index = 0;
-			this.cmCustomCat.Text = "Deco.cmCat";
-			this.cmCustomCat.Click += new System.EventHandler(this.cmCustomCat_Click);
-			// 
-			// cmCustomItem
-			// 
-			this.cmCustomItem.Index = 1;
-			this.cmCustomItem.Text = "Deco.cmItem";
-			this.cmCustomItem.Click += new System.EventHandler(this.cmCustomItem_Click);
-			// 
-			// cmCustomDel
-			// 
-			this.cmCustomDel.Index = 2;
-			this.cmCustomDel.Text = "Deco.cmDelete";
-			this.cmCustomDel.Click += new System.EventHandler(this.cmCustomDel_Click);
-			// 
-			// chkRnd
-			// 
-			this.chkRnd.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.chkRnd.Location = new System.Drawing.Point(324, 48);
-			this.chkRnd.Name = "chkRnd";
-			this.chkRnd.Size = new System.Drawing.Size(48, 20);
-			this.chkRnd.TabIndex = 17;
-			this.chkRnd.Text = "Rnd";
-			this.chkRnd.CheckedChanged += new System.EventHandler(this.chkRnd_CheckedChanged);
-			// 
-			// nRnd
-			// 
-			this.nRnd.Location = new System.Drawing.Point(376, 48);
-			this.nRnd.Maximum = new System.Decimal(new int[] {15000, 0, 0, 0});
-			this.nRnd.Minimum = new System.Decimal(new int[] {15000, 0, 0, -2147483648});
-			this.nRnd.Name = "nRnd";
-			this.nRnd.Size = new System.Drawing.Size(48, 20);
-			this.nRnd.TabIndex = 18;
-			this.nRnd.ValueChanged += new System.EventHandler(this.nRnd_ValueChanged);
-			// 
-			// Deco
-			// 
-			this.Controls.Add(this.nRnd);
-			this.Controls.Add(this.chkRnd);
-			this.Controls.Add(this.groupBox1);
-			this.Controls.Add(this.boxButton4);
-			this.Controls.Add(this.boxButton3);
-			this.Controls.Add(this.lnkFind);
-			this.Controls.Add(this.decoMover1);
-			this.Controls.Add(this.chkStatic);
-			this.Controls.Add(this.chkHued);
-			this.Controls.Add(this.bTile);
-			this.Controls.Add(this.numTile);
-			this.Controls.Add(this.bAdd);
-			this.Controls.Add(this.panel);
-			this.Name = "Deco";
-			this.Size = new System.Drawing.Size(496, 142);
-			this.Load += new System.EventHandler(this.Deco_Load);
-			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			this.panel.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numTile)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numNudge)).EndInit();
-			this.groupBox1.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.nRnd)).EndInit();
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Deco));
+            this.panel = new System.Windows.Forms.Panel();
+            this.tDeco = new System.Windows.Forms.TreeView();
+            this.cmItem = new System.Windows.Forms.ContextMenu();
+            this.menuItem1 = new System.Windows.Forms.MenuItem();
+            this.splitter = new System.Windows.Forms.Splitter();
+            this.tCat = new System.Windows.Forms.TreeView();
+            this.bAdd = new System.Windows.Forms.Button();
+            this.numTile = new System.Windows.Forms.NumericUpDown();
+            this.bTile = new System.Windows.Forms.Button();
+            this.chkHued = new System.Windows.Forms.CheckBox();
+            this.chkStatic = new System.Windows.Forms.CheckBox();
+            this.lnkFind = new System.Windows.Forms.LinkLabel();
+            this.numNudge = new System.Windows.Forms.NumericUpDown();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.bNudgeUp = new System.Windows.Forms.Button();
+            this.bNudgeDown = new System.Windows.Forms.Button();
+            this.cmCustom = new System.Windows.Forms.ContextMenu();
+            this.cmCustomCat = new System.Windows.Forms.MenuItem();
+            this.cmCustomItem = new System.Windows.Forms.MenuItem();
+            this.cmCustomDel = new System.Windows.Forms.MenuItem();
+            this.chkRnd = new System.Windows.Forms.CheckBox();
+            this.nRnd = new System.Windows.Forms.NumericUpDown();
+            this.boxButton4 = new TheBox.Buttons.BoxButton();
+            this.boxButton3 = new TheBox.Buttons.BoxButton();
+            this.decoMover1 = new TheBox.Controls.DecoMover();
+            this.panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numTile)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numNudge)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nRnd)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // panel
+            // 
+            this.panel.Controls.Add(this.tDeco);
+            this.panel.Controls.Add(this.splitter);
+            this.panel.Controls.Add(this.tCat);
+            this.panel.Location = new System.Drawing.Point(0, 0);
+            this.panel.Name = "panel";
+            this.panel.Size = new System.Drawing.Size(320, 221);
+            this.panel.TabIndex = 0;
+            // 
+            // tDeco
+            // 
+            this.tDeco.ContextMenu = this.cmItem;
+            this.tDeco.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tDeco.HideSelection = false;
+            this.tDeco.Location = new System.Drawing.Point(147, 0);
+            this.tDeco.Name = "tDeco";
+            this.tDeco.ShowLines = false;
+            this.tDeco.ShowPlusMinus = false;
+            this.tDeco.ShowRootLines = false;
+            this.tDeco.Size = new System.Drawing.Size(173, 221);
+            this.tDeco.TabIndex = 2;
+            this.tDeco.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tDeco_AfterSelect);
+            this.tDeco.DoubleClick += new System.EventHandler(this.tDeco_DoubleClick);
+            this.tDeco.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            this.tDeco.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tDeco_MouseDown);
+            this.tDeco.MouseMove += new System.Windows.Forms.MouseEventHandler(this.tDeco_MouseMove);
+            // 
+            // cmItem
+            // 
+            this.cmItem.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.menuItem1});
+            this.cmItem.Popup += new System.EventHandler(this.cmItem_Popup);
+            // 
+            // menuItem1
+            // 
+            this.menuItem1.Index = 0;
+            this.menuItem1.Text = "Items.ItemID";
+            this.menuItem1.Click += new System.EventHandler(this.menuItem1_Click);
+            // 
+            // splitter
+            // 
+            this.splitter.Location = new System.Drawing.Point(144, 0);
+            this.splitter.Name = "splitter";
+            this.splitter.Size = new System.Drawing.Size(3, 221);
+            this.splitter.TabIndex = 1;
+            this.splitter.TabStop = false;
+            this.splitter.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitter_SplitterMoved);
+            // 
+            // tCat
+            // 
+            this.tCat.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tCat.HideSelection = false;
+            this.tCat.Location = new System.Drawing.Point(0, 0);
+            this.tCat.Name = "tCat";
+            this.tCat.Size = new System.Drawing.Size(144, 221);
+            this.tCat.TabIndex = 0;
+            this.tCat.AfterLabelEdit += new System.Windows.Forms.NodeLabelEditEventHandler(this.tCat_AfterLabelEdit);
+            this.tCat.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tCat_AfterSelect);
+            this.tCat.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            this.tCat.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tCat_MouseDown);
+            // 
+            // bAdd
+            // 
+            this.bAdd.Enabled = false;
+            this.bAdd.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bAdd.Location = new System.Drawing.Point(324, 0);
+            this.bAdd.Name = "bAdd";
+            this.bAdd.Size = new System.Drawing.Size(52, 23);
+            this.bAdd.TabIndex = 1;
+            this.bAdd.Text = "Common.Add";
+            this.bAdd.Click += new System.EventHandler(this.bAdd_Click);
+            // 
+            // numTile
+            // 
+            this.numTile.Location = new System.Drawing.Point(440, 0);
+            this.numTile.Maximum = new decimal(new int[] {
+            127,
+            0,
+            0,
+            0});
+            this.numTile.Minimum = new decimal(new int[] {
+            128,
+            0,
+            0,
+            -2147483648});
+            this.numTile.Name = "numTile";
+            this.numTile.Size = new System.Drawing.Size(52, 23);
+            this.numTile.TabIndex = 2;
+            this.numTile.ValueChanged += new System.EventHandler(this.numTile_ValueChanged);
+            this.numTile.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            // 
+            // bTile
+            // 
+            this.bTile.Enabled = false;
+            this.bTile.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bTile.Location = new System.Drawing.Point(384, 0);
+            this.bTile.Name = "bTile";
+            this.bTile.Size = new System.Drawing.Size(52, 23);
+            this.bTile.TabIndex = 3;
+            this.bTile.Text = "Deco.Tile";
+            this.bTile.Click += new System.EventHandler(this.bTile_Click);
+            // 
+            // chkHued
+            // 
+            this.chkHued.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.chkHued.Location = new System.Drawing.Point(440, 24);
+            this.chkHued.Name = "chkHued";
+            this.chkHued.Size = new System.Drawing.Size(56, 20);
+            this.chkHued.TabIndex = 4;
+            this.chkHued.Text = "Deco.Hued";
+            this.chkHued.CheckedChanged += new System.EventHandler(this.chkHued_CheckedChanged);
+            this.chkHued.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            // 
+            // chkStatic
+            // 
+            this.chkStatic.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.chkStatic.Location = new System.Drawing.Point(384, 24);
+            this.chkStatic.Name = "chkStatic";
+            this.chkStatic.Size = new System.Drawing.Size(52, 20);
+            this.chkStatic.TabIndex = 5;
+            this.chkStatic.Text = "Deco.Static";
+            this.chkStatic.CheckedChanged += new System.EventHandler(this.chkStatic_CheckedChanged);
+            this.chkStatic.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            // 
+            // lnkFind
+            // 
+            this.lnkFind.Location = new System.Drawing.Point(324, 28);
+            this.lnkFind.Name = "lnkFind";
+            this.lnkFind.Size = new System.Drawing.Size(52, 16);
+            this.lnkFind.TabIndex = 7;
+            this.lnkFind.TabStop = true;
+            this.lnkFind.Text = "Common.Find";
+            this.lnkFind.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lnkFind.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkFind_LinkClicked);
+            // 
+            // numNudge
+            // 
+            this.numNudge.Location = new System.Drawing.Point(24, 16);
+            this.numNudge.Maximum = new decimal(new int[] {
+            127,
+            0,
+            0,
+            0});
+            this.numNudge.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numNudge.Name = "numNudge";
+            this.numNudge.Size = new System.Drawing.Size(48, 23);
+            this.numNudge.TabIndex = 11;
+            this.numNudge.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numNudge.ValueChanged += new System.EventHandler(this.numNudge_ValueChanged);
+            this.numNudge.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.Controls.Add(this.bNudgeUp);
+            this.groupBox1.Controls.Add(this.bNudgeDown);
+            this.groupBox1.Controls.Add(this.numNudge);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox1.Location = new System.Drawing.Point(324, 105);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(96, 40);
+            this.groupBox1.TabIndex = 16;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Nudge";
+            // 
+            // bNudgeUp
+            // 
+            this.bNudgeUp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bNudgeUp.Image = ((System.Drawing.Image)(resources.GetObject("bNudgeUp.Image")));
+            this.bNudgeUp.Location = new System.Drawing.Point(76, 16);
+            this.bNudgeUp.Name = "bNudgeUp";
+            this.bNudgeUp.Size = new System.Drawing.Size(16, 20);
+            this.bNudgeUp.TabIndex = 13;
+            this.bNudgeUp.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bNudgeUp_MouseDown);
+            // 
+            // bNudgeDown
+            // 
+            this.bNudgeDown.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bNudgeDown.Image = ((System.Drawing.Image)(resources.GetObject("bNudgeDown.Image")));
+            this.bNudgeDown.Location = new System.Drawing.Point(4, 16);
+            this.bNudgeDown.Name = "bNudgeDown";
+            this.bNudgeDown.Size = new System.Drawing.Size(16, 20);
+            this.bNudgeDown.TabIndex = 12;
+            this.bNudgeDown.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bNudgeDown_MouseDown);
+            // 
+            // cmCustom
+            // 
+            this.cmCustom.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.cmCustomCat,
+            this.cmCustomItem,
+            this.cmCustomDel});
+            this.cmCustom.Popup += new System.EventHandler(this.cmCustom_Popup);
+            // 
+            // cmCustomCat
+            // 
+            this.cmCustomCat.Index = 0;
+            this.cmCustomCat.Text = "Deco.cmCat";
+            this.cmCustomCat.Click += new System.EventHandler(this.cmCustomCat_Click);
+            // 
+            // cmCustomItem
+            // 
+            this.cmCustomItem.Index = 1;
+            this.cmCustomItem.Text = "Deco.cmItem";
+            this.cmCustomItem.Click += new System.EventHandler(this.cmCustomItem_Click);
+            // 
+            // cmCustomDel
+            // 
+            this.cmCustomDel.Index = 2;
+            this.cmCustomDel.Text = "Deco.cmDelete";
+            this.cmCustomDel.Click += new System.EventHandler(this.cmCustomDel_Click);
+            // 
+            // chkRnd
+            // 
+            this.chkRnd.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.chkRnd.Location = new System.Drawing.Point(324, 48);
+            this.chkRnd.Name = "chkRnd";
+            this.chkRnd.Size = new System.Drawing.Size(48, 20);
+            this.chkRnd.TabIndex = 17;
+            this.chkRnd.Text = "Rnd";
+            this.chkRnd.CheckedChanged += new System.EventHandler(this.chkRnd_CheckedChanged);
+            // 
+            // nRnd
+            // 
+            this.nRnd.Location = new System.Drawing.Point(376, 48);
+            this.nRnd.Maximum = new decimal(new int[] {
+            15000,
+            0,
+            0,
+            0});
+            this.nRnd.Minimum = new decimal(new int[] {
+            15000,
+            0,
+            0,
+            -2147483648});
+            this.nRnd.Name = "nRnd";
+            this.nRnd.Size = new System.Drawing.Size(48, 23);
+            this.nRnd.TabIndex = 18;
+            this.nRnd.ValueChanged += new System.EventHandler(this.nRnd_ValueChanged);
+            // 
+            // boxButton4
+            // 
+            this.boxButton4.AllowEdit = true;
+            this.boxButton4.ButtonID = 46;
+            this.boxButton4.Def = null;
+            this.boxButton4.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.boxButton4.IsActive = true;
+            this.boxButton4.Location = new System.Drawing.Point(372, 76);
+            this.boxButton4.Name = "boxButton4";
+            this.boxButton4.Size = new System.Drawing.Size(48, 23);
+            this.boxButton4.TabIndex = 15;
+            this.boxButton4.Text = "boxButton4";
+            // 
+            // boxButton3
+            // 
+            this.boxButton3.AllowEdit = true;
+            this.boxButton3.ButtonID = 45;
+            this.boxButton3.Def = null;
+            this.boxButton3.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.boxButton3.IsActive = true;
+            this.boxButton3.Location = new System.Drawing.Point(324, 76);
+            this.boxButton3.Name = "boxButton3";
+            this.boxButton3.Size = new System.Drawing.Size(48, 23);
+            this.boxButton3.TabIndex = 14;
+            this.boxButton3.Text = "boxButton3";
+            // 
+            // decoMover1
+            // 
+            this.decoMover1.BackColor = System.Drawing.SystemColors.Control;
+            this.decoMover1.EventMode = false;
+            this.decoMover1.Location = new System.Drawing.Point(326, 142);
+            this.decoMover1.Name = "decoMover1";
+            this.decoMover1.Size = new System.Drawing.Size(137, 79);
+            this.decoMover1.TabIndex = 6;
+            this.decoMover1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            // 
+            // Deco
+            // 
+            this.Controls.Add(this.nRnd);
+            this.Controls.Add(this.chkRnd);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.boxButton4);
+            this.Controls.Add(this.boxButton3);
+            this.Controls.Add(this.lnkFind);
+            this.Controls.Add(this.decoMover1);
+            this.Controls.Add(this.chkStatic);
+            this.Controls.Add(this.chkHued);
+            this.Controls.Add(this.bTile);
+            this.Controls.Add(this.numTile);
+            this.Controls.Add(this.bAdd);
+            this.Controls.Add(this.panel);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name = "Deco";
+            this.Size = new System.Drawing.Size(507, 224);
+            this.Load += new System.EventHandler(this.Deco_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            this.panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numTile)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numNudge)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.nRnd)).EndInit();
+            this.ResumeLayout(false);
+
 		}
 		#endregion
 

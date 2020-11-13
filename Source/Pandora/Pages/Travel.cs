@@ -144,361 +144,354 @@ namespace TheBox.Pages
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
-			this.tCat = new System.Windows.Forms.TreeView();
-			this.tLoc = new System.Windows.Forms.TreeView();
-			this.bGo = new System.Windows.Forms.Button();
-			this.bSend = new System.Windows.Forms.Button();
-			this.bSetMap = new System.Windows.Forms.Button();
-			this.lnkPoint = new System.Windows.Forms.LinkLabel();
-			this.lnkZoomIn = new System.Windows.Forms.LinkLabel();
-			this.lnkZoomOut = new System.Windows.Forms.LinkLabel();
-			this.lnkWorld = new System.Windows.Forms.LinkLabel();
-			this.listMaps = new System.Windows.Forms.ListBox();
-			this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-			this.LocMenu = new System.Windows.Forms.ContextMenu();
-			this.mLocEdit = new System.Windows.Forms.MenuItem();
-			this.mLocDel = new System.Windows.Forms.MenuItem();
-			this.menuItem3 = new System.Windows.Forms.MenuItem();
-			this.mLocNew = new System.Windows.Forms.MenuItem();
-			this.CatMenu = new System.Windows.Forms.ContextMenu();
-			this.mCatNewCat = new System.Windows.Forms.MenuItem();
-			this.mCatNewSub = new System.Windows.Forms.MenuItem();
-			this.menuItem7 = new System.Windows.Forms.MenuItem();
-			this.mCatRename = new System.Windows.Forms.MenuItem();
-			this.mCatDelete = new System.Windows.Forms.MenuItem();
-			this.menuItem1 = new System.Windows.Forms.MenuItem();
-			this.mCatUp = new System.Windows.Forms.MenuItem();
-			this.mCatDown = new System.Windows.Forms.MenuItem();
-			this.boxButton1 = new TheBox.Buttons.BoxButton();
-			this.panel1 = new System.Windows.Forms.Panel();
-			this.splitter = new System.Windows.Forms.Splitter();
-			this.chkSynch = new System.Windows.Forms.CheckBox();
-			this.bSynch = new System.Windows.Forms.Button();
-			this.tmr = new System.Windows.Forms.Timer(this.components);
-			this.panel1.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// tCat
-			// 
-			this.tCat.Dock = System.Windows.Forms.DockStyle.Left;
-			this.tCat.HideSelection = false;
-			this.tCat.ImageIndex = -1;
-			this.tCat.Location = new System.Drawing.Point(0, 0);
-			this.tCat.Name = "tCat";
-			this.tCat.SelectedImageIndex = -1;
-			this.tCat.Size = new System.Drawing.Size(152, 140);
-			this.tCat.TabIndex = 0;
-			this.tCat.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			this.tCat.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tCat_MouseDown);
-			this.tCat.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tCat_AfterSelect);
-			this.tCat.AfterLabelEdit += new System.Windows.Forms.NodeLabelEditEventHandler(this.tCat_AfterLabelEdit);
-			// 
-			// tLoc
-			// 
-			this.tLoc.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tLoc.HideSelection = false;
-			this.tLoc.ImageIndex = -1;
-			this.tLoc.Location = new System.Drawing.Point(155, 0);
-			this.tLoc.Name = "tLoc";
-			this.tLoc.SelectedImageIndex = -1;
-			this.tLoc.ShowLines = false;
-			this.tLoc.ShowPlusMinus = false;
-			this.tLoc.ShowRootLines = false;
-			this.tLoc.Size = new System.Drawing.Size(161, 140);
-			this.tLoc.TabIndex = 1;
-			this.tLoc.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			this.tLoc.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tLoc_MouseDown);
-			this.tLoc.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tLoc_AfterSelect);
-			// 
-			// bGo
-			// 
-			this.bGo.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bGo.Location = new System.Drawing.Point(320, 0);
-			this.bGo.Name = "bGo";
-			this.bGo.Size = new System.Drawing.Size(96, 24);
-			this.bGo.TabIndex = 3;
-			this.bGo.Text = "Travel.Go";
-			this.bGo.Click += new System.EventHandler(this.bGo_Click);
-			this.bGo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			// 
-			// bSend
-			// 
-			this.bSend.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bSend.Location = new System.Drawing.Point(420, 0);
-			this.bSend.Name = "bSend";
-			this.bSend.Size = new System.Drawing.Size(75, 24);
-			this.bSend.TabIndex = 4;
-			this.bSend.Text = "Travel.Send";
-			this.bSend.Click += new System.EventHandler(this.bSend_Click);
-			this.bSend.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			// 
-			// bSetMap
-			// 
-			this.bSetMap.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bSetMap.Location = new System.Drawing.Point(420, 28);
-			this.bSetMap.Name = "bSetMap";
-			this.bSetMap.Size = new System.Drawing.Size(76, 23);
-			this.bSetMap.TabIndex = 6;
-			this.bSetMap.Text = "Travel.SetMap";
-			this.bSetMap.Click += new System.EventHandler(this.bSetMap_Click);
-			this.bSetMap.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			// 
-			// lnkPoint
-			// 
-			this.lnkPoint.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-			this.lnkPoint.LinkColor = System.Drawing.Color.Navy;
-			this.lnkPoint.Location = new System.Drawing.Point(320, 104);
-			this.lnkPoint.Name = "lnkPoint";
-			this.lnkPoint.Size = new System.Drawing.Size(88, 16);
-			this.lnkPoint.TabIndex = 12;
-			this.lnkPoint.TabStop = true;
-			this.lnkPoint.Text = "5555,5555,555";
-			this.lnkPoint.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.lnkPoint.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkPoint_LinkClicked);
-			// 
-			// lnkZoomIn
-			// 
-			this.lnkZoomIn.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.lnkZoomIn.Font = new System.Drawing.Font(
-				"Microsoft Sans Serif",
-				14.25F,
-				System.Drawing.FontStyle.Bold,
-				System.Drawing.GraphicsUnit.Point,
-				((System.Byte)(0)));
-			this.lnkZoomIn.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-			this.lnkZoomIn.LinkColor = System.Drawing.Color.Red;
-			this.lnkZoomIn.Location = new System.Drawing.Point(476, 112);
-			this.lnkZoomIn.Name = "lnkZoomIn";
-			this.lnkZoomIn.Size = new System.Drawing.Size(16, 16);
-			this.lnkZoomIn.TabIndex = 13;
-			this.lnkZoomIn.TabStop = true;
-			this.lnkZoomIn.Text = "+";
-			this.lnkZoomIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.lnkZoomIn.VisitedLinkColor = System.Drawing.Color.Red;
-			this.lnkZoomIn.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkZoomIn_LinkClicked);
-			// 
-			// lnkZoomOut
-			// 
-			this.lnkZoomOut.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.lnkZoomOut.Font = new System.Drawing.Font(
-				"Microsoft Sans Serif",
-				24F,
-				System.Drawing.FontStyle.Bold,
-				System.Drawing.GraphicsUnit.Point,
-				((System.Byte)(0)));
-			this.lnkZoomOut.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-			this.lnkZoomOut.LinkColor = System.Drawing.Color.Red;
-			this.lnkZoomOut.Location = new System.Drawing.Point(476, 128);
-			this.lnkZoomOut.Name = "lnkZoomOut";
-			this.lnkZoomOut.Size = new System.Drawing.Size(16, 16);
-			this.lnkZoomOut.TabIndex = 14;
-			this.lnkZoomOut.TabStop = true;
-			this.lnkZoomOut.Text = "-";
-			this.lnkZoomOut.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.lnkZoomOut.VisitedLinkColor = System.Drawing.Color.Red;
-			this.lnkZoomOut.LinkClicked +=
-				new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkZoomOut_LinkClicked);
-			// 
-			// lnkWorld
-			// 
-			this.lnkWorld.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-			this.lnkWorld.LinkColor = System.Drawing.Color.Red;
-			this.lnkWorld.Location = new System.Drawing.Point(416, 120);
-			this.lnkWorld.Name = "lnkWorld";
-			this.lnkWorld.Size = new System.Drawing.Size(60, 16);
-			this.lnkWorld.TabIndex = 15;
-			this.lnkWorld.TabStop = true;
-			this.lnkWorld.Text = "Travel.World";
-			this.lnkWorld.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.lnkWorld.VisitedLinkColor = System.Drawing.Color.Red;
-			this.lnkWorld.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkWorld_LinkClicked);
-			// 
-			// listMaps
-			// 
-			this.listMaps.Location = new System.Drawing.Point(320, 28);
-			this.listMaps.Name = "listMaps";
-			this.listMaps.Size = new System.Drawing.Size(96, 69);
-			this.listMaps.TabIndex = 16;
-			this.listMaps.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			this.listMaps.DoubleClick += new System.EventHandler(this.listMaps_DoubleClick);
-			this.listMaps.SelectedIndexChanged += new System.EventHandler(this.listMaps_SelectedIndexChanged);
-			// 
-			// linkLabel1
-			// 
-			this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
-			this.linkLabel1.LinkColor = System.Drawing.Color.Navy;
-			this.linkLabel1.Location = new System.Drawing.Point(320, 120);
-			this.linkLabel1.Name = "linkLabel1";
-			this.linkLabel1.Size = new System.Drawing.Size(80, 16);
-			this.linkLabel1.TabIndex = 17;
-			this.linkLabel1.TabStop = true;
-			this.linkLabel1.Text = "Travel.Find";
-			this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.linkLabel1.LinkClicked +=
-				new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-			// 
-			// LocMenu
-			// 
-			this.LocMenu.MenuItems.AddRange(
-				new System.Windows.Forms.MenuItem[] {this.mLocEdit, this.mLocDel, this.menuItem3, this.mLocNew});
-			// 
-			// mLocEdit
-			// 
-			this.mLocEdit.Index = 0;
-			this.mLocEdit.Text = "Common.Edit";
-			this.mLocEdit.Click += new System.EventHandler(this.mLocEdit_Click);
-			// 
-			// mLocDel
-			// 
-			this.mLocDel.Index = 1;
-			this.mLocDel.Text = "Common.Delete";
-			this.mLocDel.Click += new System.EventHandler(this.mLocDel_Click);
-			// 
-			// menuItem3
-			// 
-			this.menuItem3.Index = 2;
-			this.menuItem3.Text = "-";
-			// 
-			// mLocNew
-			// 
-			this.mLocNew.Index = 3;
-			this.mLocNew.Text = "Travel.NewLoc";
-			this.mLocNew.Click += new System.EventHandler(this.mLocNew_Click);
-			// 
-			// CatMenu
-			// 
-			this.CatMenu.MenuItems.AddRange(
-				new System.Windows.Forms.MenuItem[]
-				{
-					this.mCatNewCat, this.mCatNewSub, this.menuItem7, this.mCatRename, this.mCatDelete, this.menuItem1, this.mCatUp,
-					this.mCatDown
-				});
-			// 
-			// mCatNewCat
-			// 
-			this.mCatNewCat.Index = 0;
-			this.mCatNewCat.Text = "Travel.NewCat";
-			this.mCatNewCat.Click += new System.EventHandler(this.mCatNewCat_Click);
-			// 
-			// mCatNewSub
-			// 
-			this.mCatNewSub.Index = 1;
-			this.mCatNewSub.Text = "Travel.NewSub";
-			this.mCatNewSub.Click += new System.EventHandler(this.mCatNewSub_Click);
-			// 
-			// menuItem7
-			// 
-			this.menuItem7.Index = 2;
-			this.menuItem7.Text = "-";
-			// 
-			// mCatRename
-			// 
-			this.mCatRename.Index = 3;
-			this.mCatRename.Text = "Common.Rename";
-			this.mCatRename.Click += new System.EventHandler(this.mCatRename_Click);
-			// 
-			// mCatDelete
-			// 
-			this.mCatDelete.Index = 4;
-			this.mCatDelete.Text = "Common.Delete";
-			this.mCatDelete.Click += new System.EventHandler(this.mCatDelete_Click);
-			// 
-			// menuItem1
-			// 
-			this.menuItem1.Index = 5;
-			this.menuItem1.Text = "-";
-			// 
-			// mCatUp
-			// 
-			this.mCatUp.Index = 6;
-			this.mCatUp.Text = "Move node up";
-			this.mCatUp.Click += new System.EventHandler(this.mCatUp_Click);
-			// 
-			// mCatDown
-			// 
-			this.mCatDown.Index = 7;
-			this.mCatDown.Text = "Move node down";
-			this.mCatDown.Click += new System.EventHandler(this.mCatDown_Click);
-			// 
-			// boxButton1
-			// 
-			this.boxButton1.AllowEdit = true;
-			this.boxButton1.ButtonID = 35;
-			this.boxButton1.Def = null;
-			this.boxButton1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.boxButton1.IsActive = true;
-			this.boxButton1.Location = new System.Drawing.Point(420, 56);
-			this.boxButton1.Name = "boxButton1";
-			this.boxButton1.Size = new System.Drawing.Size(76, 23);
-			this.boxButton1.TabIndex = 18;
-			this.boxButton1.Text = "boxButton1";
-			// 
-			// panel1
-			// 
-			this.panel1.Controls.Add(this.tLoc);
-			this.panel1.Controls.Add(this.splitter);
-			this.panel1.Controls.Add(this.tCat);
-			this.panel1.Location = new System.Drawing.Point(0, 0);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(316, 140);
-			this.panel1.TabIndex = 19;
-			// 
-			// splitter
-			// 
-			this.splitter.Location = new System.Drawing.Point(152, 0);
-			this.splitter.Name = "splitter";
-			this.splitter.Size = new System.Drawing.Size(3, 140);
-			this.splitter.TabIndex = 1;
-			this.splitter.TabStop = false;
-			this.splitter.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitter_SplitterMoved);
-			// 
-			// chkSynch
-			// 
-			this.chkSynch.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.chkSynch.Location = new System.Drawing.Point(420, 86);
-			this.chkSynch.Name = "chkSynch";
-			this.chkSynch.Size = new System.Drawing.Size(16, 16);
-			this.chkSynch.TabIndex = 20;
-			this.chkSynch.CheckedChanged += new System.EventHandler(this.chkSynch_CheckedChanged);
-			// 
-			// bSynch
-			// 
-			this.bSynch.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bSynch.Location = new System.Drawing.Point(436, 84);
-			this.bSynch.Name = "bSynch";
-			this.bSynch.Size = new System.Drawing.Size(60, 20);
-			this.bSynch.TabIndex = 21;
-			this.bSynch.Text = "Synch";
-			this.bSynch.Click += new System.EventHandler(this.bSynch_Click);
-			// 
-			// tmr
-			// 
-			this.tmr.Enabled = true;
-			this.tmr.Interval = 2000;
-			this.tmr.Tick += new System.EventHandler(this.tmr_Tick);
-			// 
-			// Travel
-			// 
-			this.Controls.Add(this.bSynch);
-			this.Controls.Add(this.chkSynch);
-			this.Controls.Add(this.panel1);
-			this.Controls.Add(this.boxButton1);
-			this.Controls.Add(this.linkLabel1);
-			this.Controls.Add(this.listMaps);
-			this.Controls.Add(this.lnkWorld);
-			this.Controls.Add(this.lnkZoomOut);
-			this.Controls.Add(this.lnkZoomIn);
-			this.Controls.Add(this.lnkPoint);
-			this.Controls.Add(this.bSetMap);
-			this.Controls.Add(this.bSend);
-			this.Controls.Add(this.bGo);
-			this.Name = "Travel";
-			this.Size = new System.Drawing.Size(496, 142);
-			this.Load += new System.EventHandler(this.Travel_Load);
-			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
-			this.panel1.ResumeLayout(false);
-			this.ResumeLayout(false);
+            this.components = new System.ComponentModel.Container();
+            this.tCat = new System.Windows.Forms.TreeView();
+            this.tLoc = new System.Windows.Forms.TreeView();
+            this.bGo = new System.Windows.Forms.Button();
+            this.bSend = new System.Windows.Forms.Button();
+            this.bSetMap = new System.Windows.Forms.Button();
+            this.lnkPoint = new System.Windows.Forms.LinkLabel();
+            this.lnkZoomIn = new System.Windows.Forms.LinkLabel();
+            this.lnkZoomOut = new System.Windows.Forms.LinkLabel();
+            this.lnkWorld = new System.Windows.Forms.LinkLabel();
+            this.listMaps = new System.Windows.Forms.ListBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.LocMenu = new System.Windows.Forms.ContextMenu();
+            this.mLocEdit = new System.Windows.Forms.MenuItem();
+            this.mLocDel = new System.Windows.Forms.MenuItem();
+            this.menuItem3 = new System.Windows.Forms.MenuItem();
+            this.mLocNew = new System.Windows.Forms.MenuItem();
+            this.CatMenu = new System.Windows.Forms.ContextMenu();
+            this.mCatNewCat = new System.Windows.Forms.MenuItem();
+            this.mCatNewSub = new System.Windows.Forms.MenuItem();
+            this.menuItem7 = new System.Windows.Forms.MenuItem();
+            this.mCatRename = new System.Windows.Forms.MenuItem();
+            this.mCatDelete = new System.Windows.Forms.MenuItem();
+            this.menuItem1 = new System.Windows.Forms.MenuItem();
+            this.mCatUp = new System.Windows.Forms.MenuItem();
+            this.mCatDown = new System.Windows.Forms.MenuItem();
+            this.boxButton1 = new TheBox.Buttons.BoxButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.splitter = new System.Windows.Forms.Splitter();
+            this.chkSynch = new System.Windows.Forms.CheckBox();
+            this.bSynch = new System.Windows.Forms.Button();
+            this.tmr = new System.Windows.Forms.Timer(this.components);
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // tCat
+            // 
+            this.tCat.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tCat.HideSelection = false;
+            this.tCat.Location = new System.Drawing.Point(0, 0);
+            this.tCat.Name = "tCat";
+            this.tCat.Size = new System.Drawing.Size(152, 221);
+            this.tCat.TabIndex = 0;
+            this.tCat.AfterLabelEdit += new System.Windows.Forms.NodeLabelEditEventHandler(this.tCat_AfterLabelEdit);
+            this.tCat.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tCat_AfterSelect);
+            this.tCat.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            this.tCat.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tCat_MouseDown);
+            // 
+            // tLoc
+            // 
+            this.tLoc.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tLoc.HideSelection = false;
+            this.tLoc.Location = new System.Drawing.Point(155, 0);
+            this.tLoc.Name = "tLoc";
+            this.tLoc.ShowLines = false;
+            this.tLoc.ShowPlusMinus = false;
+            this.tLoc.ShowRootLines = false;
+            this.tLoc.Size = new System.Drawing.Size(161, 221);
+            this.tLoc.TabIndex = 1;
+            this.tLoc.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tLoc_AfterSelect);
+            this.tLoc.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            this.tLoc.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tLoc_MouseDown);
+            // 
+            // bGo
+            // 
+            this.bGo.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bGo.Location = new System.Drawing.Point(320, 0);
+            this.bGo.Name = "bGo";
+            this.bGo.Size = new System.Drawing.Size(96, 24);
+            this.bGo.TabIndex = 3;
+            this.bGo.Text = "Travel.Go";
+            this.bGo.Click += new System.EventHandler(this.bGo_Click);
+            this.bGo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            // 
+            // bSend
+            // 
+            this.bSend.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bSend.Location = new System.Drawing.Point(420, 0);
+            this.bSend.Name = "bSend";
+            this.bSend.Size = new System.Drawing.Size(75, 24);
+            this.bSend.TabIndex = 4;
+            this.bSend.Text = "Travel.Send";
+            this.bSend.Click += new System.EventHandler(this.bSend_Click);
+            this.bSend.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            // 
+            // bSetMap
+            // 
+            this.bSetMap.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bSetMap.Location = new System.Drawing.Point(420, 28);
+            this.bSetMap.Name = "bSetMap";
+            this.bSetMap.Size = new System.Drawing.Size(76, 23);
+            this.bSetMap.TabIndex = 6;
+            this.bSetMap.Text = "Travel.SetMap";
+            this.bSetMap.Click += new System.EventHandler(this.bSetMap_Click);
+            this.bSetMap.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            // 
+            // lnkPoint
+            // 
+            this.lnkPoint.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.lnkPoint.LinkColor = System.Drawing.Color.Navy;
+            this.lnkPoint.Location = new System.Drawing.Point(321, 176);
+            this.lnkPoint.Name = "lnkPoint";
+            this.lnkPoint.Size = new System.Drawing.Size(88, 16);
+            this.lnkPoint.TabIndex = 12;
+            this.lnkPoint.TabStop = true;
+            this.lnkPoint.Text = "5555,5555,555";
+            this.lnkPoint.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lnkPoint.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkPoint_LinkClicked);
+            // 
+            // lnkZoomIn
+            // 
+            this.lnkZoomIn.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.lnkZoomIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkZoomIn.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.lnkZoomIn.LinkColor = System.Drawing.Color.Red;
+            this.lnkZoomIn.Location = new System.Drawing.Point(477, 184);
+            this.lnkZoomIn.Name = "lnkZoomIn";
+            this.lnkZoomIn.Size = new System.Drawing.Size(16, 16);
+            this.lnkZoomIn.TabIndex = 13;
+            this.lnkZoomIn.TabStop = true;
+            this.lnkZoomIn.Text = "+";
+            this.lnkZoomIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lnkZoomIn.VisitedLinkColor = System.Drawing.Color.Red;
+            this.lnkZoomIn.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkZoomIn_LinkClicked);
+            // 
+            // lnkZoomOut
+            // 
+            this.lnkZoomOut.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.lnkZoomOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkZoomOut.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.lnkZoomOut.LinkColor = System.Drawing.Color.Red;
+            this.lnkZoomOut.Location = new System.Drawing.Point(477, 200);
+            this.lnkZoomOut.Name = "lnkZoomOut";
+            this.lnkZoomOut.Size = new System.Drawing.Size(16, 16);
+            this.lnkZoomOut.TabIndex = 14;
+            this.lnkZoomOut.TabStop = true;
+            this.lnkZoomOut.Text = "-";
+            this.lnkZoomOut.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lnkZoomOut.VisitedLinkColor = System.Drawing.Color.Red;
+            this.lnkZoomOut.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkZoomOut_LinkClicked);
+            // 
+            // lnkWorld
+            // 
+            this.lnkWorld.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.lnkWorld.LinkColor = System.Drawing.Color.Red;
+            this.lnkWorld.Location = new System.Drawing.Point(417, 192);
+            this.lnkWorld.Name = "lnkWorld";
+            this.lnkWorld.Size = new System.Drawing.Size(60, 16);
+            this.lnkWorld.TabIndex = 15;
+            this.lnkWorld.TabStop = true;
+            this.lnkWorld.Text = "Travel.World";
+            this.lnkWorld.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lnkWorld.VisitedLinkColor = System.Drawing.Color.Red;
+            this.lnkWorld.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkWorld_LinkClicked);
+            // 
+            // listMaps
+            // 
+            this.listMaps.ItemHeight = 15;
+            this.listMaps.Location = new System.Drawing.Point(320, 28);
+            this.listMaps.Name = "listMaps";
+            this.listMaps.Size = new System.Drawing.Size(96, 139);
+            this.listMaps.TabIndex = 16;
+            this.listMaps.SelectedIndexChanged += new System.EventHandler(this.listMaps_SelectedIndexChanged);
+            this.listMaps.DoubleClick += new System.EventHandler(this.listMaps_DoubleClick);
+            this.listMaps.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.linkLabel1.LinkColor = System.Drawing.Color.Navy;
+            this.linkLabel1.Location = new System.Drawing.Point(321, 192);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(80, 16);
+            this.linkLabel1.TabIndex = 17;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Travel.Find";
+            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // LocMenu
+            // 
+            this.LocMenu.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.mLocEdit,
+            this.mLocDel,
+            this.menuItem3,
+            this.mLocNew});
+            // 
+            // mLocEdit
+            // 
+            this.mLocEdit.Index = 0;
+            this.mLocEdit.Text = "Common.Edit";
+            this.mLocEdit.Click += new System.EventHandler(this.mLocEdit_Click);
+            // 
+            // mLocDel
+            // 
+            this.mLocDel.Index = 1;
+            this.mLocDel.Text = "Common.Delete";
+            this.mLocDel.Click += new System.EventHandler(this.mLocDel_Click);
+            // 
+            // menuItem3
+            // 
+            this.menuItem3.Index = 2;
+            this.menuItem3.Text = "-";
+            // 
+            // mLocNew
+            // 
+            this.mLocNew.Index = 3;
+            this.mLocNew.Text = "Travel.NewLoc";
+            this.mLocNew.Click += new System.EventHandler(this.mLocNew_Click);
+            // 
+            // CatMenu
+            // 
+            this.CatMenu.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.mCatNewCat,
+            this.mCatNewSub,
+            this.menuItem7,
+            this.mCatRename,
+            this.mCatDelete,
+            this.menuItem1,
+            this.mCatUp,
+            this.mCatDown});
+            // 
+            // mCatNewCat
+            // 
+            this.mCatNewCat.Index = 0;
+            this.mCatNewCat.Text = "Travel.NewCat";
+            this.mCatNewCat.Click += new System.EventHandler(this.mCatNewCat_Click);
+            // 
+            // mCatNewSub
+            // 
+            this.mCatNewSub.Index = 1;
+            this.mCatNewSub.Text = "Travel.NewSub";
+            this.mCatNewSub.Click += new System.EventHandler(this.mCatNewSub_Click);
+            // 
+            // menuItem7
+            // 
+            this.menuItem7.Index = 2;
+            this.menuItem7.Text = "-";
+            // 
+            // mCatRename
+            // 
+            this.mCatRename.Index = 3;
+            this.mCatRename.Text = "Common.Rename";
+            this.mCatRename.Click += new System.EventHandler(this.mCatRename_Click);
+            // 
+            // mCatDelete
+            // 
+            this.mCatDelete.Index = 4;
+            this.mCatDelete.Text = "Common.Delete";
+            this.mCatDelete.Click += new System.EventHandler(this.mCatDelete_Click);
+            // 
+            // menuItem1
+            // 
+            this.menuItem1.Index = 5;
+            this.menuItem1.Text = "-";
+            // 
+            // mCatUp
+            // 
+            this.mCatUp.Index = 6;
+            this.mCatUp.Text = "Move node up";
+            this.mCatUp.Click += new System.EventHandler(this.mCatUp_Click);
+            // 
+            // mCatDown
+            // 
+            this.mCatDown.Index = 7;
+            this.mCatDown.Text = "Move node down";
+            this.mCatDown.Click += new System.EventHandler(this.mCatDown_Click);
+            // 
+            // boxButton1
+            // 
+            this.boxButton1.AllowEdit = true;
+            this.boxButton1.ButtonID = 35;
+            this.boxButton1.Def = null;
+            this.boxButton1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.boxButton1.IsActive = true;
+            this.boxButton1.Location = new System.Drawing.Point(420, 56);
+            this.boxButton1.Name = "boxButton1";
+            this.boxButton1.Size = new System.Drawing.Size(76, 23);
+            this.boxButton1.TabIndex = 18;
+            this.boxButton1.Text = "boxButton1";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.tLoc);
+            this.panel1.Controls.Add(this.splitter);
+            this.panel1.Controls.Add(this.tCat);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(316, 221);
+            this.panel1.TabIndex = 19;
+            // 
+            // splitter
+            // 
+            this.splitter.Location = new System.Drawing.Point(152, 0);
+            this.splitter.Name = "splitter";
+            this.splitter.Size = new System.Drawing.Size(3, 221);
+            this.splitter.TabIndex = 1;
+            this.splitter.TabStop = false;
+            this.splitter.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitter_SplitterMoved);
+            // 
+            // chkSynch
+            // 
+            this.chkSynch.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.chkSynch.Location = new System.Drawing.Point(420, 86);
+            this.chkSynch.Name = "chkSynch";
+            this.chkSynch.Size = new System.Drawing.Size(16, 16);
+            this.chkSynch.TabIndex = 20;
+            this.chkSynch.CheckedChanged += new System.EventHandler(this.chkSynch_CheckedChanged);
+            // 
+            // bSynch
+            // 
+            this.bSynch.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bSynch.Location = new System.Drawing.Point(436, 84);
+            this.bSynch.Name = "bSynch";
+            this.bSynch.Size = new System.Drawing.Size(60, 20);
+            this.bSynch.TabIndex = 21;
+            this.bSynch.Text = "Synch";
+            this.bSynch.Click += new System.EventHandler(this.bSynch_Click);
+            // 
+            // tmr
+            // 
+            this.tmr.Enabled = true;
+            this.tmr.Interval = 2000;
+            this.tmr.Tick += new System.EventHandler(this.tmr_Tick);
+            // 
+            // Travel
+            // 
+            this.Controls.Add(this.bSynch);
+            this.Controls.Add(this.chkSynch);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.boxButton1);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.listMaps);
+            this.Controls.Add(this.lnkWorld);
+            this.Controls.Add(this.lnkZoomOut);
+            this.Controls.Add(this.lnkZoomIn);
+            this.Controls.Add(this.lnkPoint);
+            this.Controls.Add(this.bSetMap);
+            this.Controls.Add(this.bSend);
+            this.Controls.Add(this.bGo);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name = "Travel";
+            this.Size = new System.Drawing.Size(496, 224);
+            this.Load += new System.EventHandler(this.Travel_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
+            this.panel1.ResumeLayout(false);
+            this.ResumeLayout(false);
+
 		}
 		#endregion
 
