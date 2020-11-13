@@ -159,96 +159,98 @@ namespace TheBox.Controls.Params
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.chkUse = new System.Windows.Forms.CheckBox();
-			this.lnk1 = new System.Windows.Forms.LinkLabel();
-			this.lnk2 = new System.Windows.Forms.LinkLabel();
-			this.lnk3 = new System.Windows.Forms.LinkLabel();
-			this.lnk4 = new System.Windows.Forms.LinkLabel();
-			this.labNoCtors = new System.Windows.Forms.Label();
-			this.SuspendLayout();
-			// 
-			// chkUse
-			// 
-			this.chkUse.Enabled = false;
-			this.chkUse.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.chkUse.Location = new System.Drawing.Point(4, 4);
-			this.chkUse.Name = "chkUse";
-			this.chkUse.Size = new System.Drawing.Size(104, 16);
-			this.chkUse.TabIndex = 0;
-			this.chkUse.Text = "Common.Options";
-			this.chkUse.CheckedChanged += new System.EventHandler(this.chkUse_CheckedChanged);
-			// 
-			// lnk1
-			// 
-			this.lnk1.Location = new System.Drawing.Point(108, 4);
-			this.lnk1.Name = "lnk1";
-			this.lnk1.Size = new System.Drawing.Size(24, 16);
-			this.lnk1.TabIndex = 1;
-			this.lnk1.TabStop = true;
-			this.lnk1.Text = "1";
-			this.lnk1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.lnk1.Visible = false;
-			this.lnk1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnk1_LinkClicked);
-			// 
-			// lnk2
-			// 
-			this.lnk2.Location = new System.Drawing.Point(132, 4);
-			this.lnk2.Name = "lnk2";
-			this.lnk2.Size = new System.Drawing.Size(24, 16);
-			this.lnk2.TabIndex = 2;
-			this.lnk2.TabStop = true;
-			this.lnk2.Text = "2";
-			this.lnk2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.lnk2.Visible = false;
-			this.lnk2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnk2_LinkClicked);
-			// 
-			// lnk3
-			// 
-			this.lnk3.Location = new System.Drawing.Point(156, 4);
-			this.lnk3.Name = "lnk3";
-			this.lnk3.Size = new System.Drawing.Size(24, 16);
-			this.lnk3.TabIndex = 3;
-			this.lnk3.TabStop = true;
-			this.lnk3.Text = "3";
-			this.lnk3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.lnk3.Visible = false;
-			this.lnk3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnk3_LinkClicked);
-			// 
-			// lnk4
-			// 
-			this.lnk4.Location = new System.Drawing.Point(180, 4);
-			this.lnk4.Name = "lnk4";
-			this.lnk4.Size = new System.Drawing.Size(24, 16);
-			this.lnk4.TabIndex = 4;
-			this.lnk4.TabStop = true;
-			this.lnk4.Text = "4";
-			this.lnk4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.lnk4.Visible = false;
-			this.lnk4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnk4_LinkClicked);
-			// 
-			// labNoCtors
-			// 
-			this.labNoCtors.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-			this.labNoCtors.Location = new System.Drawing.Point(4, 28);
-			this.labNoCtors.Name = "labNoCtors";
-			this.labNoCtors.Size = new System.Drawing.Size(196, 23);
-			this.labNoCtors.TabIndex = 5;
-			this.labNoCtors.Text = "Items.NoCtor";
-			this.labNoCtors.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.labNoCtors.Visible = false;
-			// 
-			// ConstructorsViewer
-			// 
-			this.Controls.Add(this.labNoCtors);
-			this.Controls.Add(this.lnk4);
-			this.Controls.Add(this.lnk3);
-			this.Controls.Add(this.lnk2);
-			this.Controls.Add(this.lnk1);
-			this.Controls.Add(this.chkUse);
-			this.Name = "ConstructorsViewer";
-			this.Size = new System.Drawing.Size(204, 60);
-			this.Paint += new System.Windows.Forms.PaintEventHandler(this.ConstructorsViewer_Paint);
-			this.ResumeLayout(false);
+            this.chkUse = new System.Windows.Forms.CheckBox();
+            this.lnk1 = new System.Windows.Forms.LinkLabel();
+            this.lnk2 = new System.Windows.Forms.LinkLabel();
+            this.lnk3 = new System.Windows.Forms.LinkLabel();
+            this.lnk4 = new System.Windows.Forms.LinkLabel();
+            this.labNoCtors = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // chkUse
+            // 
+            this.chkUse.Enabled = false;
+            this.chkUse.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.chkUse.Location = new System.Drawing.Point(4, 4);
+            this.chkUse.Name = "chkUse";
+            this.chkUse.Size = new System.Drawing.Size(161, 16);
+            this.chkUse.TabIndex = 0;
+            this.chkUse.Text = "Common.Options";
+            this.chkUse.CheckedChanged += new System.EventHandler(this.chkUse_CheckedChanged);
+            // 
+            // lnk1
+            // 
+            this.lnk1.Location = new System.Drawing.Point(196, 4);
+            this.lnk1.Name = "lnk1";
+            this.lnk1.Size = new System.Drawing.Size(24, 16);
+            this.lnk1.TabIndex = 1;
+            this.lnk1.TabStop = true;
+            this.lnk1.Text = "1";
+            this.lnk1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lnk1.Visible = false;
+            this.lnk1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnk1_LinkClicked);
+            // 
+            // lnk2
+            // 
+            this.lnk2.Location = new System.Drawing.Point(220, 4);
+            this.lnk2.Name = "lnk2";
+            this.lnk2.Size = new System.Drawing.Size(24, 16);
+            this.lnk2.TabIndex = 2;
+            this.lnk2.TabStop = true;
+            this.lnk2.Text = "2";
+            this.lnk2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lnk2.Visible = false;
+            this.lnk2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnk2_LinkClicked);
+            // 
+            // lnk3
+            // 
+            this.lnk3.Location = new System.Drawing.Point(244, 4);
+            this.lnk3.Name = "lnk3";
+            this.lnk3.Size = new System.Drawing.Size(24, 16);
+            this.lnk3.TabIndex = 3;
+            this.lnk3.TabStop = true;
+            this.lnk3.Text = "3";
+            this.lnk3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lnk3.Visible = false;
+            this.lnk3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnk3_LinkClicked);
+            // 
+            // lnk4
+            // 
+            this.lnk4.Location = new System.Drawing.Point(268, 4);
+            this.lnk4.Name = "lnk4";
+            this.lnk4.Size = new System.Drawing.Size(24, 16);
+            this.lnk4.TabIndex = 4;
+            this.lnk4.TabStop = true;
+            this.lnk4.Text = "4";
+            this.lnk4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lnk4.Visible = false;
+            this.lnk4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnk4_LinkClicked);
+            // 
+            // labNoCtors
+            // 
+            this.labNoCtors.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labNoCtors.Location = new System.Drawing.Point(4, 28);
+            this.labNoCtors.Name = "labNoCtors";
+            this.labNoCtors.Size = new System.Drawing.Size(340, 24);
+            this.labNoCtors.TabIndex = 5;
+            this.labNoCtors.Text = "Items.NoCtor";
+            this.labNoCtors.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labNoCtors.Visible = false;
+            // 
+            // ConstructorsViewer
+            // 
+            this.Controls.Add(this.labNoCtors);
+            this.Controls.Add(this.lnk4);
+            this.Controls.Add(this.lnk3);
+            this.Controls.Add(this.lnk2);
+            this.Controls.Add(this.lnk1);
+            this.Controls.Add(this.chkUse);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name = "ConstructorsViewer";
+            this.Size = new System.Drawing.Size(347, 84);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.ConstructorsViewer_Paint);
+            this.ResumeLayout(false);
+
 		}
 		#endregion
 

@@ -134,9 +134,9 @@ namespace TheBox.Pages
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.splitter1);
             this.panel1.Controls.Add(this.tNotes);
-            this.panel1.Location = new System.Drawing.Point(112, 2);
+            this.panel1.Location = new System.Drawing.Point(114, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(382, 219);
+            this.panel1.Size = new System.Drawing.Size(523, 219);
             this.panel1.TabIndex = 1;
             // 
             // txText
@@ -146,7 +146,7 @@ namespace TheBox.Pages
             this.txText.Location = new System.Drawing.Point(124, 24);
             this.txText.Multiline = true;
             this.txText.Name = "txText";
-            this.txText.Size = new System.Drawing.Size(258, 175);
+            this.txText.Size = new System.Drawing.Size(399, 175);
             this.txText.TabIndex = 8;
             this.txText.TextChanged += new System.EventHandler(this.txText_TextChanged);
             // 
@@ -157,7 +157,7 @@ namespace TheBox.Pages
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(124, 199);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(258, 20);
+            this.panel3.Size = new System.Drawing.Size(399, 20);
             this.panel3.TabIndex = 9;
             // 
             // labCreated
@@ -165,14 +165,14 @@ namespace TheBox.Pages
             this.labCreated.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labCreated.Location = new System.Drawing.Point(0, 0);
             this.labCreated.Name = "labCreated";
-            this.labCreated.Size = new System.Drawing.Size(202, 20);
+            this.labCreated.Size = new System.Drawing.Size(343, 20);
             this.labCreated.TabIndex = 7;
             this.labCreated.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lnkLocations
             // 
             this.lnkLocations.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lnkLocations.Location = new System.Drawing.Point(202, 0);
+            this.lnkLocations.Location = new System.Drawing.Point(343, 0);
             this.lnkLocations.Name = "lnkLocations";
             this.lnkLocations.Size = new System.Drawing.Size(56, 20);
             this.lnkLocations.TabIndex = 8;
@@ -188,7 +188,7 @@ namespace TheBox.Pages
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(124, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(258, 24);
+            this.panel2.Size = new System.Drawing.Size(399, 24);
             this.panel2.TabIndex = 5;
             // 
             // txName
@@ -197,7 +197,7 @@ namespace TheBox.Pages
             this.txName.Enabled = false;
             this.txName.Location = new System.Drawing.Point(0, 0);
             this.txName.Name = "txName";
-            this.txName.Size = new System.Drawing.Size(174, 23);
+            this.txName.Size = new System.Drawing.Size(315, 23);
             this.txName.TabIndex = 4;
             this.txName.TextChanged += new System.EventHandler(this.txName_TextChanged);
             // 
@@ -206,7 +206,7 @@ namespace TheBox.Pages
             this.cmbPriority.Dock = System.Windows.Forms.DockStyle.Right;
             this.cmbPriority.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPriority.Enabled = false;
-            this.cmbPriority.Location = new System.Drawing.Point(174, 0);
+            this.cmbPriority.Location = new System.Drawing.Point(315, 0);
             this.cmbPriority.Name = "cmbPriority";
             this.cmbPriority.Size = new System.Drawing.Size(84, 23);
             this.cmbPriority.TabIndex = 3;
@@ -253,7 +253,7 @@ namespace TheBox.Pages
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox1.Location = new System.Drawing.Point(4, 72);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(104, 68);
+            this.groupBox1.Size = new System.Drawing.Size(104, 86);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sorting";
@@ -261,9 +261,9 @@ namespace TheBox.Pages
             // cmbType
             // 
             this.cmbType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbType.Location = new System.Drawing.Point(4, 44);
+            this.cmbType.Location = new System.Drawing.Point(6, 45);
             this.cmbType.Name = "cmbType";
-            this.cmbType.Size = new System.Drawing.Size(96, 23);
+            this.cmbType.Size = new System.Drawing.Size(94, 23);
             this.cmbType.TabIndex = 1;
             this.cmbType.SelectedIndexChanged += new System.EventHandler(this.cmbType_SelectedIndexChanged);
             // 
@@ -279,9 +279,9 @@ namespace TheBox.Pages
             // bAdd
             // 
             this.bAdd.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bAdd.Location = new System.Drawing.Point(20, 8);
+            this.bAdd.Location = new System.Drawing.Point(8, 8);
             this.bAdd.Name = "bAdd";
-            this.bAdd.Size = new System.Drawing.Size(72, 23);
+            this.bAdd.Size = new System.Drawing.Size(96, 23);
             this.bAdd.TabIndex = 3;
             this.bAdd.Text = "Notes.New";
             this.bAdd.Click += new System.EventHandler(this.bAdd_Click);
@@ -289,9 +289,9 @@ namespace TheBox.Pages
             // bDelete
             // 
             this.bDelete.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bDelete.Location = new System.Drawing.Point(20, 40);
+            this.bDelete.Location = new System.Drawing.Point(8, 40);
             this.bDelete.Name = "bDelete";
-            this.bDelete.Size = new System.Drawing.Size(72, 23);
+            this.bDelete.Size = new System.Drawing.Size(96, 23);
             this.bDelete.TabIndex = 4;
             this.bDelete.Text = "Common.Delete";
             this.bDelete.Click += new System.EventHandler(this.bDelete_Click);
@@ -304,7 +304,7 @@ namespace TheBox.Pages
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Notes";
-            this.Size = new System.Drawing.Size(496, 224);
+            this.Size = new System.Drawing.Size(640, 224);
             this.Load += new System.EventHandler(this.Notes_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

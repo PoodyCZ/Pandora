@@ -185,7 +185,7 @@ namespace TheBox.Pages
             this.tCat.HideSelection = false;
             this.tCat.Location = new System.Drawing.Point(0, 0);
             this.tCat.Name = "tCat";
-            this.tCat.Size = new System.Drawing.Size(152, 221);
+            this.tCat.Size = new System.Drawing.Size(173, 221);
             this.tCat.TabIndex = 0;
             this.tCat.AfterLabelEdit += new System.Windows.Forms.NodeLabelEditEventHandler(this.tCat_AfterLabelEdit);
             this.tCat.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tCat_AfterSelect);
@@ -196,12 +196,12 @@ namespace TheBox.Pages
             // 
             this.tLoc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tLoc.HideSelection = false;
-            this.tLoc.Location = new System.Drawing.Point(155, 0);
+            this.tLoc.Location = new System.Drawing.Point(176, 0);
             this.tLoc.Name = "tLoc";
             this.tLoc.ShowLines = false;
             this.tLoc.ShowPlusMinus = false;
             this.tLoc.ShowRootLines = false;
-            this.tLoc.Size = new System.Drawing.Size(161, 221);
+            this.tLoc.Size = new System.Drawing.Size(181, 221);
             this.tLoc.TabIndex = 1;
             this.tLoc.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tLoc_AfterSelect);
             this.tLoc.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
@@ -210,9 +210,9 @@ namespace TheBox.Pages
             // bGo
             // 
             this.bGo.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bGo.Location = new System.Drawing.Point(320, 0);
+            this.bGo.Location = new System.Drawing.Point(363, 3);
             this.bGo.Name = "bGo";
-            this.bGo.Size = new System.Drawing.Size(96, 24);
+            this.bGo.Size = new System.Drawing.Size(115, 24);
             this.bGo.TabIndex = 3;
             this.bGo.Text = "Travel.Go";
             this.bGo.Click += new System.EventHandler(this.bGo_Click);
@@ -221,9 +221,9 @@ namespace TheBox.Pages
             // bSend
             // 
             this.bSend.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bSend.Location = new System.Drawing.Point(420, 0);
+            this.bSend.Location = new System.Drawing.Point(484, 3);
             this.bSend.Name = "bSend";
-            this.bSend.Size = new System.Drawing.Size(75, 24);
+            this.bSend.Size = new System.Drawing.Size(86, 24);
             this.bSend.TabIndex = 4;
             this.bSend.Text = "Travel.Send";
             this.bSend.Click += new System.EventHandler(this.bSend_Click);
@@ -232,9 +232,9 @@ namespace TheBox.Pages
             // bSetMap
             // 
             this.bSetMap.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bSetMap.Location = new System.Drawing.Point(420, 28);
+            this.bSetMap.Location = new System.Drawing.Point(484, 37);
             this.bSetMap.Name = "bSetMap";
-            this.bSetMap.Size = new System.Drawing.Size(76, 23);
+            this.bSetMap.Size = new System.Drawing.Size(86, 23);
             this.bSetMap.TabIndex = 6;
             this.bSetMap.Text = "Travel.SetMap";
             this.bSetMap.Click += new System.EventHandler(this.bSetMap_Click);
@@ -244,9 +244,9 @@ namespace TheBox.Pages
             // 
             this.lnkPoint.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.lnkPoint.LinkColor = System.Drawing.Color.Navy;
-            this.lnkPoint.Location = new System.Drawing.Point(321, 176);
+            this.lnkPoint.Location = new System.Drawing.Point(363, 179);
             this.lnkPoint.Name = "lnkPoint";
-            this.lnkPoint.Size = new System.Drawing.Size(88, 16);
+            this.lnkPoint.Size = new System.Drawing.Size(115, 16);
             this.lnkPoint.TabIndex = 12;
             this.lnkPoint.TabStop = true;
             this.lnkPoint.Text = "5555,5555,555";
@@ -259,9 +259,9 @@ namespace TheBox.Pages
             this.lnkZoomIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnkZoomIn.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.lnkZoomIn.LinkColor = System.Drawing.Color.Red;
-            this.lnkZoomIn.Location = new System.Drawing.Point(477, 184);
+            this.lnkZoomIn.Location = new System.Drawing.Point(567, 146);
             this.lnkZoomIn.Name = "lnkZoomIn";
-            this.lnkZoomIn.Size = new System.Drawing.Size(16, 16);
+            this.lnkZoomIn.Size = new System.Drawing.Size(30, 28);
             this.lnkZoomIn.TabIndex = 13;
             this.lnkZoomIn.TabStop = true;
             this.lnkZoomIn.Text = "+";
@@ -275,9 +275,9 @@ namespace TheBox.Pages
             this.lnkZoomOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnkZoomOut.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.lnkZoomOut.LinkColor = System.Drawing.Color.Red;
-            this.lnkZoomOut.Location = new System.Drawing.Point(477, 200);
+            this.lnkZoomOut.Location = new System.Drawing.Point(567, 174);
             this.lnkZoomOut.Name = "lnkZoomOut";
-            this.lnkZoomOut.Size = new System.Drawing.Size(16, 16);
+            this.lnkZoomOut.Size = new System.Drawing.Size(30, 28);
             this.lnkZoomOut.TabIndex = 14;
             this.lnkZoomOut.TabStop = true;
             this.lnkZoomOut.Text = "-";
@@ -289,7 +289,7 @@ namespace TheBox.Pages
             // 
             this.lnkWorld.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.lnkWorld.LinkColor = System.Drawing.Color.Red;
-            this.lnkWorld.Location = new System.Drawing.Point(417, 192);
+            this.lnkWorld.Location = new System.Drawing.Point(501, 166);
             this.lnkWorld.Name = "lnkWorld";
             this.lnkWorld.Size = new System.Drawing.Size(60, 16);
             this.lnkWorld.TabIndex = 15;
@@ -302,9 +302,9 @@ namespace TheBox.Pages
             // listMaps
             // 
             this.listMaps.ItemHeight = 15;
-            this.listMaps.Location = new System.Drawing.Point(320, 28);
+            this.listMaps.Location = new System.Drawing.Point(363, 37);
             this.listMaps.Name = "listMaps";
-            this.listMaps.Size = new System.Drawing.Size(96, 139);
+            this.listMaps.Size = new System.Drawing.Size(115, 139);
             this.listMaps.TabIndex = 16;
             this.listMaps.SelectedIndexChanged += new System.EventHandler(this.listMaps_SelectedIndexChanged);
             this.listMaps.DoubleClick += new System.EventHandler(this.listMaps_DoubleClick);
@@ -314,9 +314,9 @@ namespace TheBox.Pages
             // 
             this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.linkLabel1.LinkColor = System.Drawing.Color.Navy;
-            this.linkLabel1.Location = new System.Drawing.Point(321, 192);
+            this.linkLabel1.Location = new System.Drawing.Point(363, 199);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(80, 16);
+            this.linkLabel1.Size = new System.Drawing.Size(115, 16);
             this.linkLabel1.TabIndex = 17;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Travel.Find";
@@ -419,9 +419,9 @@ namespace TheBox.Pages
             this.boxButton1.Def = null;
             this.boxButton1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.boxButton1.IsActive = true;
-            this.boxButton1.Location = new System.Drawing.Point(420, 56);
+            this.boxButton1.Location = new System.Drawing.Point(484, 66);
             this.boxButton1.Name = "boxButton1";
-            this.boxButton1.Size = new System.Drawing.Size(76, 23);
+            this.boxButton1.Size = new System.Drawing.Size(85, 23);
             this.boxButton1.TabIndex = 18;
             this.boxButton1.Text = "boxButton1";
             // 
@@ -432,12 +432,12 @@ namespace TheBox.Pages
             this.panel1.Controls.Add(this.tCat);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(316, 221);
+            this.panel1.Size = new System.Drawing.Size(357, 221);
             this.panel1.TabIndex = 19;
             // 
             // splitter
             // 
-            this.splitter.Location = new System.Drawing.Point(152, 0);
+            this.splitter.Location = new System.Drawing.Point(173, 0);
             this.splitter.Name = "splitter";
             this.splitter.Size = new System.Drawing.Size(3, 221);
             this.splitter.TabIndex = 1;
@@ -447,7 +447,7 @@ namespace TheBox.Pages
             // chkSynch
             // 
             this.chkSynch.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.chkSynch.Location = new System.Drawing.Point(420, 86);
+            this.chkSynch.Location = new System.Drawing.Point(484, 109);
             this.chkSynch.Name = "chkSynch";
             this.chkSynch.Size = new System.Drawing.Size(16, 16);
             this.chkSynch.TabIndex = 20;
@@ -456,7 +456,7 @@ namespace TheBox.Pages
             // bSynch
             // 
             this.bSynch.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bSynch.Location = new System.Drawing.Point(436, 84);
+            this.bSynch.Location = new System.Drawing.Point(509, 106);
             this.bSynch.Name = "bSynch";
             this.bSynch.Size = new System.Drawing.Size(60, 20);
             this.bSynch.TabIndex = 21;
@@ -486,7 +486,7 @@ namespace TheBox.Pages
             this.Controls.Add(this.bGo);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Travel";
-            this.Size = new System.Drawing.Size(496, 224);
+            this.Size = new System.Drawing.Size(640, 224);
             this.Load += new System.EventHandler(this.Travel_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
             this.panel1.ResumeLayout(false);

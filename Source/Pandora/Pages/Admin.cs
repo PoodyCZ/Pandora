@@ -144,7 +144,7 @@ namespace TheBox.Pages
             this.boxButton1.IsActive = true;
             this.boxButton1.Location = new System.Drawing.Point(8, 16);
             this.boxButton1.Name = "boxButton1";
-            this.boxButton1.Size = new System.Drawing.Size(75, 23);
+            this.boxButton1.Size = new System.Drawing.Size(92, 33);
             this.boxButton1.TabIndex = 0;
             this.boxButton1.Text = "Profile";
             // 
@@ -155,9 +155,9 @@ namespace TheBox.Pages
             this.boxButton2.Def = null;
             this.boxButton2.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.boxButton2.IsActive = true;
-            this.boxButton2.Location = new System.Drawing.Point(8, 44);
+            this.boxButton2.Location = new System.Drawing.Point(8, 55);
             this.boxButton2.Name = "boxButton2";
-            this.boxButton2.Size = new System.Drawing.Size(75, 23);
+            this.boxButton2.Size = new System.Drawing.Size(92, 33);
             this.boxButton2.TabIndex = 1;
             this.boxButton2.Text = "Generate";
             // 
@@ -168,9 +168,9 @@ namespace TheBox.Pages
             this.boxButton3.Def = null;
             this.boxButton3.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.boxButton3.IsActive = true;
-            this.boxButton3.Location = new System.Drawing.Point(8, 40);
+            this.boxButton3.Location = new System.Drawing.Point(6, 61);
             this.boxButton3.Name = "boxButton3";
-            this.boxButton3.Size = new System.Drawing.Size(75, 23);
+            this.boxButton3.Size = new System.Drawing.Size(92, 33);
             this.boxButton3.TabIndex = 2;
             this.boxButton3.Text = "Save";
             // 
@@ -181,9 +181,9 @@ namespace TheBox.Pages
             this.boxButton4.Def = null;
             this.boxButton4.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.boxButton4.IsActive = true;
-            this.boxButton4.Location = new System.Drawing.Point(8, 64);
+            this.boxButton4.Location = new System.Drawing.Point(6, 100);
             this.boxButton4.Name = "boxButton4";
-            this.boxButton4.Size = new System.Drawing.Size(75, 23);
+            this.boxButton4.Size = new System.Drawing.Size(92, 33);
             this.boxButton4.TabIndex = 3;
             this.boxButton4.Text = "Ban";
             // 
@@ -194,9 +194,9 @@ namespace TheBox.Pages
             this.boxButton5.Def = null;
             this.boxButton5.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.boxButton5.IsActive = true;
-            this.boxButton5.Location = new System.Drawing.Point(8, 16);
+            this.boxButton5.Location = new System.Drawing.Point(6, 22);
             this.boxButton5.Name = "boxButton5";
-            this.boxButton5.Size = new System.Drawing.Size(75, 23);
+            this.boxButton5.Size = new System.Drawing.Size(92, 33);
             this.boxButton5.TabIndex = 4;
             this.boxButton5.Text = "Admin";
             // 
@@ -207,9 +207,9 @@ namespace TheBox.Pages
             this.boxButton6.Def = null;
             this.boxButton6.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.boxButton6.IsActive = true;
-            this.boxButton6.Location = new System.Drawing.Point(8, 112);
+            this.boxButton6.Location = new System.Drawing.Point(6, 178);
             this.boxButton6.Name = "boxButton6";
-            this.boxButton6.Size = new System.Drawing.Size(75, 23);
+            this.boxButton6.Size = new System.Drawing.Size(92, 33);
             this.boxButton6.TabIndex = 4;
             this.boxButton6.Text = "Guards";
             // 
@@ -220,9 +220,9 @@ namespace TheBox.Pages
             this.boxButton7.Def = null;
             this.boxButton7.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.boxButton7.IsActive = true;
-            this.boxButton7.Location = new System.Drawing.Point(8, 44);
+            this.boxButton7.Location = new System.Drawing.Point(8, 58);
             this.boxButton7.Name = "boxButton7";
-            this.boxButton7.Size = new System.Drawing.Size(75, 23);
+            this.boxButton7.Size = new System.Drawing.Size(92, 33);
             this.boxButton7.TabIndex = 3;
             this.boxButton7.Text = "Unfreeze";
             // 
@@ -235,7 +235,7 @@ namespace TheBox.Pages
             this.boxButton8.IsActive = true;
             this.boxButton8.Location = new System.Drawing.Point(8, 16);
             this.boxButton8.Name = "boxButton8";
-            this.boxButton8.Size = new System.Drawing.Size(75, 23);
+            this.boxButton8.Size = new System.Drawing.Size(92, 33);
             this.boxButton8.TabIndex = 2;
             this.boxButton8.Text = "Freeze";
             // 
@@ -246,9 +246,9 @@ namespace TheBox.Pages
             this.boxButton9.Def = null;
             this.boxButton9.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.boxButton9.IsActive = true;
-            this.boxButton9.Location = new System.Drawing.Point(8, 88);
+            this.boxButton9.Location = new System.Drawing.Point(6, 139);
             this.boxButton9.Name = "boxButton9";
-            this.boxButton9.Size = new System.Drawing.Size(75, 23);
+            this.boxButton9.Size = new System.Drawing.Size(92, 33);
             this.boxButton9.TabIndex = 1;
             this.boxButton9.Text = "Firewall";
             // 
@@ -260,9 +260,9 @@ namespace TheBox.Pages
             this.groupBox1.Controls.Add(this.boxButton9);
             this.groupBox1.Controls.Add(this.boxButton6);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.groupBox1.Location = new System.Drawing.Point(4, 0);
+            this.groupBox1.Location = new System.Drawing.Point(4, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(92, 140);
+            this.groupBox1.Size = new System.Drawing.Size(105, 218);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Admin.Control";
@@ -272,9 +272,9 @@ namespace TheBox.Pages
             this.groupBox2.Controls.Add(this.boxButton1);
             this.groupBox2.Controls.Add(this.boxButton2);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.groupBox2.Location = new System.Drawing.Point(196, 0);
+            this.groupBox2.Location = new System.Drawing.Point(235, 6);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(92, 72);
+            this.groupBox2.Size = new System.Drawing.Size(108, 100);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Admin.World";
@@ -284,9 +284,9 @@ namespace TheBox.Pages
             this.groupBox3.Controls.Add(this.boxButton8);
             this.groupBox3.Controls.Add(this.boxButton7);
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.groupBox3.Location = new System.Drawing.Point(100, 0);
+            this.groupBox3.Location = new System.Drawing.Point(115, 3);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(92, 72);
+            this.groupBox3.Size = new System.Drawing.Size(114, 103);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Admin.Statics";
@@ -298,25 +298,25 @@ namespace TheBox.Pages
             this.boxButton10.Def = null;
             this.boxButton10.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.boxButton10.IsActive = true;
-            this.boxButton10.Location = new System.Drawing.Point(108, 80);
+            this.boxButton10.Location = new System.Drawing.Point(123, 112);
             this.boxButton10.Name = "boxButton10";
-            this.boxButton10.Size = new System.Drawing.Size(75, 23);
+            this.boxButton10.Size = new System.Drawing.Size(92, 33);
             this.boxButton10.TabIndex = 6;
             this.boxButton10.Text = "Misc";
             // 
             // cmbFind
             // 
-            this.cmbFind.Location = new System.Drawing.Point(108, 112);
+            this.cmbFind.Location = new System.Drawing.Point(123, 172);
             this.cmbFind.Name = "cmbFind";
-            this.cmbFind.Size = new System.Drawing.Size(116, 23);
+            this.cmbFind.Size = new System.Drawing.Size(147, 23);
             this.cmbFind.TabIndex = 7;
             // 
             // bFind
             // 
             this.bFind.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bFind.Location = new System.Drawing.Point(228, 108);
+            this.bFind.Location = new System.Drawing.Point(276, 166);
             this.bFind.Name = "bFind";
-            this.bFind.Size = new System.Drawing.Size(52, 28);
+            this.bFind.Size = new System.Drawing.Size(92, 33);
             this.bFind.TabIndex = 8;
             this.bFind.Text = "Common.Find";
             this.bFind.Click += new System.EventHandler(this.bFind_Click);
@@ -328,9 +328,9 @@ namespace TheBox.Pages
             this.boxButton11.Def = null;
             this.boxButton11.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.boxButton11.IsActive = true;
-            this.boxButton11.Location = new System.Drawing.Point(204, 80);
+            this.boxButton11.Location = new System.Drawing.Point(243, 112);
             this.boxButton11.Name = "boxButton11";
-            this.boxButton11.Size = new System.Drawing.Size(75, 23);
+            this.boxButton11.Size = new System.Drawing.Size(92, 33);
             this.boxButton11.TabIndex = 9;
             this.boxButton11.Text = "Custom";
             // 
@@ -346,16 +346,16 @@ namespace TheBox.Pages
             this.groupBox4.Controls.Add(this.bFindServer);
             this.groupBox4.Controls.Add(this.labServer);
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.groupBox4.Location = new System.Drawing.Point(292, 0);
+            this.groupBox4.Location = new System.Drawing.Point(384, 3);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(200, 140);
+            this.groupBox4.Size = new System.Drawing.Size(253, 218);
             this.groupBox4.TabIndex = 10;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Admin.Process";
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(4, 40);
+            this.label1.Location = new System.Drawing.Point(10, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(136, 16);
             this.label1.TabIndex = 8;
@@ -363,7 +363,7 @@ namespace TheBox.Pages
             // 
             // cmbArgs
             // 
-            this.cmbArgs.Location = new System.Drawing.Point(4, 56);
+            this.cmbArgs.Location = new System.Drawing.Point(10, 71);
             this.cmbArgs.Name = "cmbArgs";
             this.cmbArgs.Size = new System.Drawing.Size(136, 23);
             this.cmbArgs.TabIndex = 7;
@@ -372,9 +372,9 @@ namespace TheBox.Pages
             // bStartServer
             // 
             this.bStartServer.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bStartServer.Location = new System.Drawing.Point(148, 44);
+            this.bStartServer.Location = new System.Drawing.Point(151, 65);
             this.bStartServer.Name = "bStartServer";
-            this.bStartServer.Size = new System.Drawing.Size(48, 32);
+            this.bStartServer.Size = new System.Drawing.Size(92, 32);
             this.bStartServer.TabIndex = 6;
             this.bStartServer.Text = "Common.Run";
             this.bStartServer.Click += new System.EventHandler(this.bStartServer_Click);
@@ -382,9 +382,9 @@ namespace TheBox.Pages
             // bGetServ
             // 
             this.bGetServ.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bGetServ.Location = new System.Drawing.Point(104, 84);
+            this.bGetServ.Location = new System.Drawing.Point(134, 109);
             this.bGetServ.Name = "bGetServ";
-            this.bGetServ.Size = new System.Drawing.Size(92, 23);
+            this.bGetServ.Size = new System.Drawing.Size(92, 33);
             this.bGetServ.TabIndex = 5;
             this.bGetServ.Text = "Common.Find";
             this.bGetServ.Click += new System.EventHandler(this.bGetServ_Click);
@@ -392,9 +392,9 @@ namespace TheBox.Pages
             // bStop
             // 
             this.bStop.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bStop.Location = new System.Drawing.Point(4, 84);
+            this.bStop.Location = new System.Drawing.Point(36, 109);
             this.bStop.Name = "bStop";
-            this.bStop.Size = new System.Drawing.Size(92, 23);
+            this.bStop.Size = new System.Drawing.Size(92, 33);
             this.bStop.TabIndex = 4;
             this.bStop.Text = "Common.Stop";
             this.bStop.Click += new System.EventHandler(this.bStop_Click);
@@ -402,9 +402,9 @@ namespace TheBox.Pages
             // bShowConsole
             // 
             this.bShowConsole.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bShowConsole.Location = new System.Drawing.Point(104, 112);
+            this.bShowConsole.Location = new System.Drawing.Point(134, 159);
             this.bShowConsole.Name = "bShowConsole";
-            this.bShowConsole.Size = new System.Drawing.Size(92, 23);
+            this.bShowConsole.Size = new System.Drawing.Size(92, 33);
             this.bShowConsole.TabIndex = 3;
             this.bShowConsole.Text = "Admin.Show";
             this.bShowConsole.Click += new System.EventHandler(this.bShowConsole_Click);
@@ -412,9 +412,9 @@ namespace TheBox.Pages
             // bHideConsole
             // 
             this.bHideConsole.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bHideConsole.Location = new System.Drawing.Point(4, 112);
+            this.bHideConsole.Location = new System.Drawing.Point(36, 159);
             this.bHideConsole.Name = "bHideConsole";
-            this.bHideConsole.Size = new System.Drawing.Size(92, 23);
+            this.bHideConsole.Size = new System.Drawing.Size(92, 33);
             this.bHideConsole.TabIndex = 2;
             this.bHideConsole.Text = "Admin.Hide";
             this.bHideConsole.Click += new System.EventHandler(this.bHideConsole_Click);
@@ -424,16 +424,16 @@ namespace TheBox.Pages
             this.bFindServer.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.bFindServer.Location = new System.Drawing.Point(148, 16);
             this.bFindServer.Name = "bFindServer";
-            this.bFindServer.Size = new System.Drawing.Size(48, 23);
+            this.bFindServer.Size = new System.Drawing.Size(92, 33);
             this.bFindServer.TabIndex = 1;
             this.bFindServer.Text = "Common.File";
             this.bFindServer.Click += new System.EventHandler(this.bFindServer_Click);
             // 
             // labServer
             // 
-            this.labServer.Location = new System.Drawing.Point(4, 16);
+            this.labServer.Location = new System.Drawing.Point(7, 21);
             this.labServer.Name = "labServer";
-            this.labServer.Size = new System.Drawing.Size(136, 23);
+            this.labServer.Size = new System.Drawing.Size(136, 31);
             this.labServer.TabIndex = 0;
             this.labServer.Text = "Admin.ProcessNotFound";
             this.labServer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -465,7 +465,7 @@ namespace TheBox.Pages
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Admin";
-            this.Size = new System.Drawing.Size(496, 224);
+            this.Size = new System.Drawing.Size(640, 224);
             this.Load += new System.EventHandler(this.Admin_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -790,6 +790,7 @@ namespace TheBox.Pages
 				bStartServer.PerformClick();
 			}
 		}
-		#endregion
-	}
+        #endregion
+
+    }
 }

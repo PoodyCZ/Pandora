@@ -221,12 +221,12 @@ namespace TheBox.Pages
             this.tProps.AllowDrop = true;
             this.tProps.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tProps.HideSelection = false;
-            this.tProps.Location = new System.Drawing.Point(163, 0);
+            this.tProps.Location = new System.Drawing.Point(214, 0);
             this.tProps.Name = "tProps";
             this.tProps.ShowLines = false;
             this.tProps.ShowPlusMinus = false;
             this.tProps.ShowRootLines = false;
-            this.tProps.Size = new System.Drawing.Size(113, 221);
+            this.tProps.Size = new System.Drawing.Size(205, 221);
             this.tProps.Sorted = true;
             this.tProps.TabIndex = 0;
             this.tProps.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tProps_AfterSelect);
@@ -240,7 +240,7 @@ namespace TheBox.Pages
             this.tClasses.Indent = 15;
             this.tClasses.Location = new System.Drawing.Point(0, 0);
             this.tClasses.Name = "tClasses";
-            this.tClasses.Size = new System.Drawing.Size(160, 221);
+            this.tClasses.Size = new System.Drawing.Size(211, 221);
             this.tClasses.Sorted = true;
             this.tClasses.TabIndex = 1;
             this.tClasses.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tClasses_AfterSelect);
@@ -254,7 +254,7 @@ namespace TheBox.Pages
             "Seer",
             "GameMaster",
             "Councelor"});
-            this.cmbFilter.Location = new System.Drawing.Point(4, 28);
+            this.cmbFilter.Location = new System.Drawing.Point(4, 33);
             this.cmbFilter.Name = "cmbFilter";
             this.cmbFilter.Size = new System.Drawing.Size(92, 23);
             this.cmbFilter.TabIndex = 2;
@@ -263,7 +263,7 @@ namespace TheBox.Pages
             // chkAllClasses
             // 
             this.chkAllClasses.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.chkAllClasses.Location = new System.Drawing.Point(4, 52);
+            this.chkAllClasses.Location = new System.Drawing.Point(4, 62);
             this.chkAllClasses.Name = "chkAllClasses";
             this.chkAllClasses.Size = new System.Drawing.Size(96, 20);
             this.chkAllClasses.TabIndex = 3;
@@ -273,7 +273,7 @@ namespace TheBox.Pages
             // chkAllProps
             // 
             this.chkAllProps.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.chkAllProps.Location = new System.Drawing.Point(4, 72);
+            this.chkAllProps.Location = new System.Drawing.Point(4, 88);
             this.chkAllProps.Name = "chkAllProps";
             this.chkAllProps.Size = new System.Drawing.Size(96, 20);
             this.chkAllProps.TabIndex = 4;
@@ -283,7 +283,7 @@ namespace TheBox.Pages
             // bFind
             // 
             this.bFind.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bFind.Location = new System.Drawing.Point(16, 116);
+            this.bFind.Location = new System.Drawing.Point(15, 141);
             this.bFind.Name = "bFind";
             this.bFind.Size = new System.Drawing.Size(68, 23);
             this.bFind.TabIndex = 6;
@@ -292,7 +292,7 @@ namespace TheBox.Pages
             // 
             // cmbSearch
             // 
-            this.cmbSearch.Location = new System.Drawing.Point(4, 92);
+            this.cmbSearch.Location = new System.Drawing.Point(4, 112);
             this.cmbSearch.Name = "cmbSearch";
             this.cmbSearch.Size = new System.Drawing.Size(92, 23);
             this.cmbSearch.TabIndex = 7;
@@ -307,7 +307,7 @@ namespace TheBox.Pages
             this.grpProp.Controls.Add(this.labMsg);
             this.grpProp.Controls.Add(this.cBoolean);
             this.grpProp.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.grpProp.Location = new System.Drawing.Point(380, 4);
+            this.grpProp.Location = new System.Drawing.Point(525, 3);
             this.grpProp.Name = "grpProp";
             this.grpProp.Size = new System.Drawing.Size(112, 136);
             this.grpProp.TabIndex = 8;
@@ -393,13 +393,13 @@ namespace TheBox.Pages
             this.panel1.Controls.Add(this.tClasses);
             this.panel1.Location = new System.Drawing.Point(100, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(276, 221);
+            this.panel1.Size = new System.Drawing.Size(419, 221);
             this.panel1.TabIndex = 11;
             // 
             // splitter
             // 
             this.splitter.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.splitter.Location = new System.Drawing.Point(160, 0);
+            this.splitter.Location = new System.Drawing.Point(211, 0);
             this.splitter.Name = "splitter";
             this.splitter.Size = new System.Drawing.Size(3, 221);
             this.splitter.TabIndex = 2;
@@ -419,7 +419,7 @@ namespace TheBox.Pages
             this.Controls.Add(this.cmbFilter);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Props";
-            this.Size = new System.Drawing.Size(496, 224);
+            this.Size = new System.Drawing.Size(640, 224);
             this.Load += new System.EventHandler(this.Props_Load);
             this.grpProp.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

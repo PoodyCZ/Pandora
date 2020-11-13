@@ -31,7 +31,6 @@ namespace TheBox.Pages
 		private BoxButton boxButton3;
 		private BoxButton boxButton4;
 		private BoxButton boxButton5;
-		private BoxButton boxButton6;
 		private ComboBox cmbSpeech;
 		private ComboBox cmbWeb;
 		private Button bTell;
@@ -54,11 +53,12 @@ namespace TheBox.Pages
 		private Button bLightGlobal;
 		private Button bLightLocal;
 		private NumericUpDown numLight;
+        private BoxButton boxButton6;
 
-		/// <summary>
-		///     Required designer variable.
-		/// </summary>
-		private readonly Container components = null;
+        /// <summary>
+        ///     Required designer variable.
+        /// </summary>
+        private readonly Container components = null;
 
 		public General()
 		{
@@ -106,7 +106,6 @@ namespace TheBox.Pages
             this.boxButton2 = new TheBox.Buttons.BoxButton();
             this.boxButton1 = new TheBox.Buttons.BoxButton();
             this.boxButton5 = new TheBox.Buttons.BoxButton();
-            this.boxButton6 = new TheBox.Buttons.BoxButton();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.numSkill = new System.Windows.Forms.NumericUpDown();
             this.lnkSkill = new System.Windows.Forms.LinkLabel();
@@ -121,6 +120,7 @@ namespace TheBox.Pages
             this.bLightGlobal = new System.Windows.Forms.Button();
             this.bLightLocal = new System.Windows.Forms.Button();
             this.numLight = new System.Windows.Forms.NumericUpDown();
+            this.boxButton6 = new TheBox.Buttons.BoxButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -135,9 +135,9 @@ namespace TheBox.Pages
             // lnkSound
             // 
             this.lnkSound.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lnkSound.Location = new System.Drawing.Point(4, 40);
+            this.lnkSound.Location = new System.Drawing.Point(16, 57);
             this.lnkSound.Name = "lnkSound";
-            this.lnkSound.Size = new System.Drawing.Size(116, 20);
+            this.lnkSound.Size = new System.Drawing.Size(116, 28);
             this.lnkSound.TabIndex = 0;
             this.lnkSound.TabStop = true;
             this.lnkSound.Text = "General.ChooseSnd";
@@ -153,7 +153,7 @@ namespace TheBox.Pages
             // 
             // cmbWeb
             // 
-            this.cmbWeb.Location = new System.Drawing.Point(4, 16);
+            this.cmbWeb.Location = new System.Drawing.Point(6, 20);
             this.cmbWeb.Name = "cmbWeb";
             this.cmbWeb.Size = new System.Drawing.Size(184, 23);
             this.cmbWeb.TabIndex = 2;
@@ -161,9 +161,9 @@ namespace TheBox.Pages
             // bTell
             // 
             this.bTell.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bTell.Location = new System.Drawing.Point(4, 40);
+            this.bTell.Location = new System.Drawing.Point(6, 49);
             this.bTell.Name = "bTell";
-            this.bTell.Size = new System.Drawing.Size(72, 21);
+            this.bTell.Size = new System.Drawing.Size(70, 28);
             this.bTell.TabIndex = 3;
             this.bTell.Text = "General.Tell";
             this.bTell.Click += new System.EventHandler(this.bTell_Click);
@@ -171,9 +171,9 @@ namespace TheBox.Pages
             // bSM
             // 
             this.bSM.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bSM.Location = new System.Drawing.Point(80, 40);
+            this.bSM.Location = new System.Drawing.Point(82, 49);
             this.bSM.Name = "bSM";
-            this.bSM.Size = new System.Drawing.Size(72, 21);
+            this.bSM.Size = new System.Drawing.Size(70, 28);
             this.bSM.TabIndex = 4;
             this.bSM.Text = "General.SM";
             this.bSM.Click += new System.EventHandler(this.bSM_Click);
@@ -181,9 +181,9 @@ namespace TheBox.Pages
             // bBCast
             // 
             this.bBCast.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bBCast.Location = new System.Drawing.Point(156, 40);
+            this.bBCast.Location = new System.Drawing.Point(158, 49);
             this.bBCast.Name = "bBCast";
-            this.bBCast.Size = new System.Drawing.Size(76, 21);
+            this.bBCast.Size = new System.Drawing.Size(74, 28);
             this.bBCast.TabIndex = 5;
             this.bBCast.Text = "General.BCast";
             this.bBCast.Click += new System.EventHandler(this.bBCast_Click);
@@ -191,9 +191,9 @@ namespace TheBox.Pages
             // bWeb
             // 
             this.bWeb.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bWeb.Location = new System.Drawing.Point(192, 16);
+            this.bWeb.Location = new System.Drawing.Point(192, 20);
             this.bWeb.Name = "bWeb";
-            this.bWeb.Size = new System.Drawing.Size(56, 21);
+            this.bWeb.Size = new System.Drawing.Size(84, 24);
             this.bWeb.TabIndex = 6;
             this.bWeb.Text = "General.www";
             this.bWeb.Click += new System.EventHandler(this.bWeb_Click);
@@ -201,9 +201,9 @@ namespace TheBox.Pages
             // bPriv
             // 
             this.bPriv.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bPriv.Location = new System.Drawing.Point(124, 40);
+            this.bPriv.Location = new System.Drawing.Point(136, 57);
             this.bPriv.Name = "bPriv";
-            this.bPriv.Size = new System.Drawing.Size(64, 21);
+            this.bPriv.Size = new System.Drawing.Size(70, 28);
             this.bPriv.TabIndex = 7;
             this.bPriv.Text = "General.priv";
             this.bPriv.Click += new System.EventHandler(this.bPriv_Click);
@@ -211,9 +211,9 @@ namespace TheBox.Pages
             // bSound
             // 
             this.bSound.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bSound.Location = new System.Drawing.Point(192, 40);
+            this.bSound.Location = new System.Drawing.Point(212, 57);
             this.bSound.Name = "bSound";
-            this.bSound.Size = new System.Drawing.Size(56, 21);
+            this.bSound.Size = new System.Drawing.Size(70, 28);
             this.bSound.TabIndex = 8;
             this.bSound.Text = "General.Snd";
             this.bSound.Click += new System.EventHandler(this.bSound_Click);
@@ -225,9 +225,9 @@ namespace TheBox.Pages
             this.groupBox1.Controls.Add(this.bBCast);
             this.groupBox1.Controls.Add(this.bTell);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.groupBox1.Location = new System.Drawing.Point(4, 76);
+            this.groupBox1.Location = new System.Drawing.Point(4, 98);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(236, 64);
+            this.groupBox1.Size = new System.Drawing.Size(236, 117);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Misc.Speech";
@@ -240,9 +240,9 @@ namespace TheBox.Pages
             this.groupBox2.Controls.Add(this.bSound);
             this.groupBox2.Controls.Add(this.lnkSound);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.groupBox2.Location = new System.Drawing.Point(240, 76);
+            this.groupBox2.Location = new System.Drawing.Point(246, 98);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(252, 64);
+            this.groupBox2.Size = new System.Drawing.Size(391, 117);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Misc.WebSnd";
@@ -258,7 +258,7 @@ namespace TheBox.Pages
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox3.Location = new System.Drawing.Point(4, 0);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(196, 72);
+            this.groupBox3.Size = new System.Drawing.Size(236, 92);
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "General.Cmd";
@@ -270,9 +270,9 @@ namespace TheBox.Pages
             this.boxButton4.Def = null;
             this.boxButton4.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.boxButton4.IsActive = true;
-            this.boxButton4.Location = new System.Drawing.Point(68, 44);
+            this.boxButton4.Location = new System.Drawing.Point(82, 56);
             this.boxButton4.Name = "boxButton4";
-            this.boxButton4.Size = new System.Drawing.Size(60, 23);
+            this.boxButton4.Size = new System.Drawing.Size(70, 28);
             this.boxButton4.TabIndex = 3;
             this.boxButton4.Text = "Restock";
             // 
@@ -283,9 +283,9 @@ namespace TheBox.Pages
             this.boxButton3.Def = null;
             this.boxButton3.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.boxButton3.IsActive = true;
-            this.boxButton3.Location = new System.Drawing.Point(68, 16);
+            this.boxButton3.Location = new System.Drawing.Point(82, 22);
             this.boxButton3.Name = "boxButton3";
-            this.boxButton3.Size = new System.Drawing.Size(60, 23);
+            this.boxButton3.Size = new System.Drawing.Size(70, 28);
             this.boxButton3.TabIndex = 2;
             this.boxButton3.Text = "Players";
             // 
@@ -296,9 +296,9 @@ namespace TheBox.Pages
             this.boxButton2.Def = null;
             this.boxButton2.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.boxButton2.IsActive = true;
-            this.boxButton2.Location = new System.Drawing.Point(4, 44);
+            this.boxButton2.Location = new System.Drawing.Point(6, 56);
             this.boxButton2.Name = "boxButton2";
-            this.boxButton2.Size = new System.Drawing.Size(60, 23);
+            this.boxButton2.Size = new System.Drawing.Size(70, 28);
             this.boxButton2.TabIndex = 1;
             this.boxButton2.Text = "Misc";
             // 
@@ -309,9 +309,9 @@ namespace TheBox.Pages
             this.boxButton1.Def = null;
             this.boxButton1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.boxButton1.IsActive = true;
-            this.boxButton1.Location = new System.Drawing.Point(4, 16);
+            this.boxButton1.Location = new System.Drawing.Point(6, 22);
             this.boxButton1.Name = "boxButton1";
-            this.boxButton1.Size = new System.Drawing.Size(60, 23);
+            this.boxButton1.Size = new System.Drawing.Size(70, 28);
             this.boxButton1.TabIndex = 0;
             this.boxButton1.Text = "Bank";
             // 
@@ -322,24 +322,11 @@ namespace TheBox.Pages
             this.boxButton5.Def = null;
             this.boxButton5.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.boxButton5.IsActive = true;
-            this.boxButton5.Location = new System.Drawing.Point(132, 16);
+            this.boxButton5.Location = new System.Drawing.Point(158, 22);
             this.boxButton5.Name = "boxButton5";
-            this.boxButton5.Size = new System.Drawing.Size(60, 23);
+            this.boxButton5.Size = new System.Drawing.Size(70, 28);
             this.boxButton5.TabIndex = 4;
             this.boxButton5.Text = "Items";
-            // 
-            // boxButton6
-            // 
-            this.boxButton6.AllowEdit = true;
-            this.boxButton6.ButtonID = 75;
-            this.boxButton6.Def = null;
-            this.boxButton6.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.boxButton6.IsActive = true;
-            this.boxButton6.Location = new System.Drawing.Point(132, 44);
-            this.boxButton6.Name = "boxButton6";
-            this.boxButton6.Size = new System.Drawing.Size(60, 23);
-            this.boxButton6.TabIndex = 5;
-            this.boxButton6.Text = "Cast";
             // 
             // groupBox4
             // 
@@ -348,9 +335,9 @@ namespace TheBox.Pages
             this.groupBox4.Controls.Add(this.bGetSkill);
             this.groupBox4.Controls.Add(this.bSetSkill);
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.groupBox4.Location = new System.Drawing.Point(200, 0);
+            this.groupBox4.Location = new System.Drawing.Point(246, 0);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(120, 72);
+            this.groupBox4.Size = new System.Drawing.Size(158, 92);
             this.groupBox4.TabIndex = 12;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Misc.Skills";
@@ -358,14 +345,14 @@ namespace TheBox.Pages
             // numSkill
             // 
             this.numSkill.DecimalPlaces = 1;
-            this.numSkill.Location = new System.Drawing.Point(32, 44);
+            this.numSkill.Location = new System.Drawing.Point(36, 54);
             this.numSkill.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.numSkill.Name = "numSkill";
-            this.numSkill.Size = new System.Drawing.Size(48, 23);
+            this.numSkill.Size = new System.Drawing.Size(59, 23);
             this.numSkill.TabIndex = 1;
             this.numSkill.Value = new decimal(new int[] {
             1099,
@@ -379,7 +366,7 @@ namespace TheBox.Pages
             this.lnkSkill.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lnkSkill.Location = new System.Drawing.Point(4, 16);
             this.lnkSkill.Name = "lnkSkill";
-            this.lnkSkill.Size = new System.Drawing.Size(112, 23);
+            this.lnkSkill.Size = new System.Drawing.Size(148, 23);
             this.lnkSkill.TabIndex = 0;
             this.lnkSkill.TabStop = true;
             this.lnkSkill.Text = "Common.Choose";
@@ -390,7 +377,7 @@ namespace TheBox.Pages
             // 
             this.bGetSkill.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bGetSkill.Image = ((System.Drawing.Image)(resources.GetObject("bGetSkill.Image")));
-            this.bGetSkill.Location = new System.Drawing.Point(4, 44);
+            this.bGetSkill.Location = new System.Drawing.Point(6, 52);
             this.bGetSkill.Name = "bGetSkill";
             this.bGetSkill.Size = new System.Drawing.Size(24, 23);
             this.bGetSkill.TabIndex = 13;
@@ -399,9 +386,9 @@ namespace TheBox.Pages
             // bSetSkill
             // 
             this.bSetSkill.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bSetSkill.Location = new System.Drawing.Point(80, 44);
+            this.bSetSkill.Location = new System.Drawing.Point(101, 52);
             this.bSetSkill.Name = "bSetSkill";
-            this.bSetSkill.Size = new System.Drawing.Size(36, 23);
+            this.bSetSkill.Size = new System.Drawing.Size(51, 28);
             this.bSetSkill.TabIndex = 13;
             this.bSetSkill.Text = "Common.Set";
             this.bSetSkill.Click += new System.EventHandler(this.bSetSkill_Click);
@@ -413,9 +400,9 @@ namespace TheBox.Pages
             this.groupBox5.Controls.Add(this.chkDupe);
             this.groupBox5.Controls.Add(this.bDupe);
             this.groupBox5.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.groupBox5.Location = new System.Drawing.Point(320, 0);
+            this.groupBox5.Location = new System.Drawing.Point(410, 0);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(96, 72);
+            this.groupBox5.Size = new System.Drawing.Size(118, 92);
             this.groupBox5.TabIndex = 13;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "General.Dupe";
@@ -423,7 +410,7 @@ namespace TheBox.Pages
             // bInBag
             // 
             this.bInBag.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bInBag.Location = new System.Drawing.Point(4, 44);
+            this.bInBag.Location = new System.Drawing.Point(8, 59);
             this.bInBag.Name = "bInBag";
             this.bInBag.Size = new System.Drawing.Size(44, 23);
             this.bInBag.TabIndex = 17;
@@ -432,7 +419,7 @@ namespace TheBox.Pages
             // 
             // numDupe
             // 
-            this.numDupe.Location = new System.Drawing.Point(24, 16);
+            this.numDupe.Location = new System.Drawing.Point(38, 27);
             this.numDupe.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -456,7 +443,7 @@ namespace TheBox.Pages
             // chkDupe
             // 
             this.chkDupe.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.chkDupe.Location = new System.Drawing.Point(8, 16);
+            this.chkDupe.Location = new System.Drawing.Point(16, 27);
             this.chkDupe.Name = "chkDupe";
             this.chkDupe.Size = new System.Drawing.Size(16, 20);
             this.chkDupe.TabIndex = 14;
@@ -465,7 +452,7 @@ namespace TheBox.Pages
             // bDupe
             // 
             this.bDupe.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bDupe.Location = new System.Drawing.Point(48, 44);
+            this.bDupe.Location = new System.Drawing.Point(68, 59);
             this.bDupe.Name = "bDupe";
             this.bDupe.Size = new System.Drawing.Size(44, 23);
             this.bDupe.TabIndex = 16;
@@ -478,9 +465,9 @@ namespace TheBox.Pages
             this.groupBox6.Controls.Add(this.bLightLocal);
             this.groupBox6.Controls.Add(this.numLight);
             this.groupBox6.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.groupBox6.Location = new System.Drawing.Point(416, 0);
+            this.groupBox6.Location = new System.Drawing.Point(534, 0);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(76, 72);
+            this.groupBox6.Size = new System.Drawing.Size(103, 92);
             this.groupBox6.TabIndex = 14;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "General.Light";
@@ -488,7 +475,7 @@ namespace TheBox.Pages
             // bLightGlobal
             // 
             this.bLightGlobal.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bLightGlobal.Location = new System.Drawing.Point(40, 44);
+            this.bLightGlobal.Location = new System.Drawing.Point(48, 59);
             this.bLightGlobal.Name = "bLightGlobal";
             this.bLightGlobal.Size = new System.Drawing.Size(32, 23);
             this.bLightGlobal.TabIndex = 2;
@@ -498,7 +485,7 @@ namespace TheBox.Pages
             // bLightLocal
             // 
             this.bLightLocal.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bLightLocal.Location = new System.Drawing.Point(8, 44);
+            this.bLightLocal.Location = new System.Drawing.Point(16, 59);
             this.bLightLocal.Name = "bLightLocal";
             this.bLightLocal.Size = new System.Drawing.Size(32, 23);
             this.bLightLocal.TabIndex = 1;
@@ -507,7 +494,7 @@ namespace TheBox.Pages
             // 
             // numLight
             // 
-            this.numLight.Location = new System.Drawing.Point(16, 16);
+            this.numLight.Location = new System.Drawing.Point(25, 25);
             this.numLight.Minimum = new decimal(new int[] {
             100,
             0,
@@ -517,6 +504,19 @@ namespace TheBox.Pages
             this.numLight.Size = new System.Drawing.Size(48, 23);
             this.numLight.TabIndex = 0;
             this.numLight.ValueChanged += new System.EventHandler(this.numLight_ValueChanged);
+            // 
+            // boxButton6
+            // 
+            this.boxButton6.AllowEdit = true;
+            this.boxButton6.ButtonID = 75;
+            this.boxButton6.Def = null;
+            this.boxButton6.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.boxButton6.IsActive = true;
+            this.boxButton6.Location = new System.Drawing.Point(158, 56);
+            this.boxButton6.Name = "boxButton6";
+            this.boxButton6.Size = new System.Drawing.Size(70, 28);
+            this.boxButton6.TabIndex = 5;
+            this.boxButton6.Text = "Cast";
             // 
             // General
             // 
@@ -528,7 +528,7 @@ namespace TheBox.Pages
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "General";
-            this.Size = new System.Drawing.Size(496, 224);
+            this.Size = new System.Drawing.Size(640, 224);
             this.Load += new System.EventHandler(this.General_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);

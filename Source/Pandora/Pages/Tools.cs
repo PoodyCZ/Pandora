@@ -114,9 +114,9 @@ namespace TheBox.Pages
             this.groupBox1.Controls.Add(this.bRun);
             this.groupBox1.Controls.Add(this.tProgs);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.groupBox1.Location = new System.Drawing.Point(264, 0);
+            this.groupBox1.Location = new System.Drawing.Point(319, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(232, 221);
+            this.groupBox1.Size = new System.Drawing.Size(318, 221);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tools.Launcher";
@@ -125,9 +125,9 @@ namespace TheBox.Pages
             // 
             this.bDelete.Enabled = false;
             this.bDelete.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bDelete.Location = new System.Drawing.Point(160, 112);
+            this.bDelete.Location = new System.Drawing.Point(160, 130);
             this.bDelete.Name = "bDelete";
-            this.bDelete.Size = new System.Drawing.Size(68, 23);
+            this.bDelete.Size = new System.Drawing.Size(68, 32);
             this.bDelete.TabIndex = 4;
             this.bDelete.Text = "Common.Delete";
             this.bDelete.Click += new System.EventHandler(this.bDelete_Click);
@@ -136,9 +136,9 @@ namespace TheBox.Pages
             // 
             this.bEdit.Enabled = false;
             this.bEdit.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bEdit.Location = new System.Drawing.Point(160, 80);
+            this.bEdit.Location = new System.Drawing.Point(160, 92);
             this.bEdit.Name = "bEdit";
-            this.bEdit.Size = new System.Drawing.Size(68, 23);
+            this.bEdit.Size = new System.Drawing.Size(68, 32);
             this.bEdit.TabIndex = 3;
             this.bEdit.Text = "Common.Edit";
             this.bEdit.Click += new System.EventHandler(this.bEdit_Click);
@@ -146,9 +146,9 @@ namespace TheBox.Pages
             // bAdd
             // 
             this.bAdd.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bAdd.Location = new System.Drawing.Point(160, 48);
+            this.bAdd.Location = new System.Drawing.Point(160, 54);
             this.bAdd.Name = "bAdd";
-            this.bAdd.Size = new System.Drawing.Size(68, 23);
+            this.bAdd.Size = new System.Drawing.Size(68, 32);
             this.bAdd.TabIndex = 2;
             this.bAdd.Text = "Common.Add";
             this.bAdd.Click += new System.EventHandler(this.bAdd_Click);
@@ -159,7 +159,7 @@ namespace TheBox.Pages
             this.bRun.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.bRun.Location = new System.Drawing.Point(160, 16);
             this.bRun.Name = "bRun";
-            this.bRun.Size = new System.Drawing.Size(68, 23);
+            this.bRun.Size = new System.Drawing.Size(68, 32);
             this.bRun.TabIndex = 1;
             this.bRun.Text = "Common.Run";
             this.bRun.Click += new System.EventHandler(this.bRun_Click);
@@ -187,9 +187,9 @@ namespace TheBox.Pages
             this.grpServer.Controls.Add(this.bLogin);
             this.grpServer.Controls.Add(this.bClientMap);
             this.grpServer.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.grpServer.Location = new System.Drawing.Point(84, 0);
+            this.grpServer.Location = new System.Drawing.Point(105, 0);
             this.grpServer.Name = "grpServer";
-            this.grpServer.Size = new System.Drawing.Size(176, 140);
+            this.grpServer.Size = new System.Drawing.Size(208, 221);
             this.grpServer.TabIndex = 2;
             this.grpServer.TabStop = false;
             this.grpServer.Text = "Common.Server";
@@ -197,9 +197,9 @@ namespace TheBox.Pages
             // bClientList
             // 
             this.bClientList.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bClientList.Location = new System.Drawing.Point(4, 104);
+            this.bClientList.Location = new System.Drawing.Point(23, 102);
             this.bClientList.Name = "bClientList";
-            this.bClientList.Size = new System.Drawing.Size(80, 23);
+            this.bClientList.Size = new System.Drawing.Size(68, 32);
             this.bClientList.TabIndex = 6;
             this.bClientList.Text = "ClientList.Title";
             this.bClientList.Click += new System.EventHandler(this.bClientList_Click);
@@ -207,9 +207,9 @@ namespace TheBox.Pages
             // bRndTile
             // 
             this.bRndTile.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bRndTile.Location = new System.Drawing.Point(92, 64);
+            this.bRndTile.Location = new System.Drawing.Point(115, 62);
             this.bRndTile.Name = "bRndTile";
-            this.bRndTile.Size = new System.Drawing.Size(80, 23);
+            this.bRndTile.Size = new System.Drawing.Size(68, 32);
             this.bRndTile.TabIndex = 4;
             this.bRndTile.Text = "Server.RndTile";
             this.bRndTile.Click += new System.EventHandler(this.bRndTile_Click);
@@ -217,9 +217,9 @@ namespace TheBox.Pages
             // bScriptExplorer
             // 
             this.bScriptExplorer.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bScriptExplorer.Location = new System.Drawing.Point(4, 64);
+            this.bScriptExplorer.Location = new System.Drawing.Point(23, 62);
             this.bScriptExplorer.Name = "bScriptExplorer";
-            this.bScriptExplorer.Size = new System.Drawing.Size(80, 23);
+            this.bScriptExplorer.Size = new System.Drawing.Size(68, 32);
             this.bScriptExplorer.TabIndex = 3;
             this.bScriptExplorer.Text = "Server.ScriptEx";
             this.bScriptExplorer.Click += new System.EventHandler(this.bScriptExplorer_Click);
@@ -227,9 +227,9 @@ namespace TheBox.Pages
             // bDatafiles
             // 
             this.bDatafiles.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bDatafiles.Location = new System.Drawing.Point(92, 24);
+            this.bDatafiles.Location = new System.Drawing.Point(115, 22);
             this.bDatafiles.Name = "bDatafiles";
-            this.bDatafiles.Size = new System.Drawing.Size(80, 23);
+            this.bDatafiles.Size = new System.Drawing.Size(68, 32);
             this.bDatafiles.TabIndex = 2;
             this.bDatafiles.Text = "Server.Datafiles";
             this.bDatafiles.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bDatafiles_MouseDown);
@@ -237,9 +237,9 @@ namespace TheBox.Pages
             // bLogin
             // 
             this.bLogin.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bLogin.Location = new System.Drawing.Point(4, 24);
+            this.bLogin.Location = new System.Drawing.Point(23, 22);
             this.bLogin.Name = "bLogin";
-            this.bLogin.Size = new System.Drawing.Size(80, 23);
+            this.bLogin.Size = new System.Drawing.Size(68, 32);
             this.bLogin.TabIndex = 1;
             this.bLogin.Text = "Server.Login";
             this.bLogin.Click += new System.EventHandler(this.bLogin_Click);
@@ -247,9 +247,9 @@ namespace TheBox.Pages
             // bClientMap
             // 
             this.bClientMap.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bClientMap.Location = new System.Drawing.Point(92, 104);
+            this.bClientMap.Location = new System.Drawing.Point(115, 102);
             this.bClientMap.Name = "bClientMap";
-            this.bClientMap.Size = new System.Drawing.Size(80, 23);
+            this.bClientMap.Size = new System.Drawing.Size(68, 32);
             this.bClientMap.TabIndex = 5;
             this.bClientMap.Text = "Tools.ClientMap";
             this.bClientMap.Click += new System.EventHandler(this.button1_Click);
@@ -259,7 +259,7 @@ namespace TheBox.Pages
             this.bAbout.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.bAbout.Location = new System.Drawing.Point(4, 88);
             this.bAbout.Name = "bAbout";
-            this.bAbout.Size = new System.Drawing.Size(75, 23);
+            this.bAbout.Size = new System.Drawing.Size(95, 23);
             this.bAbout.TabIndex = 3;
             this.bAbout.Text = "Common.About";
             this.bAbout.Click += new System.EventHandler(this.bAbout_Click);
@@ -269,7 +269,7 @@ namespace TheBox.Pages
             this.bExit.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.bExit.Location = new System.Drawing.Point(4, 116);
             this.bExit.Name = "bExit";
-            this.bExit.Size = new System.Drawing.Size(75, 23);
+            this.bExit.Size = new System.Drawing.Size(95, 23);
             this.bExit.TabIndex = 5;
             this.bExit.Text = "Common.Exit";
             this.bExit.Click += new System.EventHandler(this.bExit_Click);
@@ -279,7 +279,7 @@ namespace TheBox.Pages
             this.bRoofing.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.bRoofing.Location = new System.Drawing.Point(4, 4);
             this.bRoofing.Name = "bRoofing";
-            this.bRoofing.Size = new System.Drawing.Size(75, 23);
+            this.bRoofing.Size = new System.Drawing.Size(95, 23);
             this.bRoofing.TabIndex = 0;
             this.bRoofing.Text = "Roofing.Roofing";
             this.bRoofing.Click += new System.EventHandler(this.bRoofing_Click);
@@ -289,7 +289,7 @@ namespace TheBox.Pages
             this.bOptions.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.bOptions.Location = new System.Drawing.Point(4, 32);
             this.bOptions.Name = "bOptions";
-            this.bOptions.Size = new System.Drawing.Size(75, 52);
+            this.bOptions.Size = new System.Drawing.Size(95, 52);
             this.bOptions.TabIndex = 6;
             this.bOptions.Text = "Common.Options";
             this.bOptions.Click += new System.EventHandler(this.bOptions_Click);
@@ -329,7 +329,7 @@ namespace TheBox.Pages
             this.Controls.Add(this.bRoofing);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Tools";
-            this.Size = new System.Drawing.Size(496, 224);
+            this.Size = new System.Drawing.Size(640, 224);
             this.Load += new System.EventHandler(this.Tools_Load);
             this.groupBox1.ResumeLayout(false);
             this.grpServer.ResumeLayout(false);

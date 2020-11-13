@@ -157,7 +157,7 @@ namespace TheBox.Pages
             this.panel.Controls.Add(this.tCat);
             this.panel.Location = new System.Drawing.Point(0, 0);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(320, 221);
+            this.panel.Size = new System.Drawing.Size(350, 221);
             this.panel.TabIndex = 0;
             // 
             // tDeco
@@ -165,12 +165,12 @@ namespace TheBox.Pages
             this.tDeco.ContextMenu = this.cmItem;
             this.tDeco.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tDeco.HideSelection = false;
-            this.tDeco.Location = new System.Drawing.Point(147, 0);
+            this.tDeco.Location = new System.Drawing.Point(182, 0);
             this.tDeco.Name = "tDeco";
             this.tDeco.ShowLines = false;
             this.tDeco.ShowPlusMinus = false;
             this.tDeco.ShowRootLines = false;
-            this.tDeco.Size = new System.Drawing.Size(173, 221);
+            this.tDeco.Size = new System.Drawing.Size(168, 221);
             this.tDeco.TabIndex = 2;
             this.tDeco.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tDeco_AfterSelect);
             this.tDeco.DoubleClick += new System.EventHandler(this.tDeco_DoubleClick);
@@ -192,7 +192,7 @@ namespace TheBox.Pages
             // 
             // splitter
             // 
-            this.splitter.Location = new System.Drawing.Point(144, 0);
+            this.splitter.Location = new System.Drawing.Point(179, 0);
             this.splitter.Name = "splitter";
             this.splitter.Size = new System.Drawing.Size(3, 221);
             this.splitter.TabIndex = 1;
@@ -205,7 +205,7 @@ namespace TheBox.Pages
             this.tCat.HideSelection = false;
             this.tCat.Location = new System.Drawing.Point(0, 0);
             this.tCat.Name = "tCat";
-            this.tCat.Size = new System.Drawing.Size(144, 221);
+            this.tCat.Size = new System.Drawing.Size(179, 221);
             this.tCat.TabIndex = 0;
             this.tCat.AfterLabelEdit += new System.Windows.Forms.NodeLabelEditEventHandler(this.tCat_AfterLabelEdit);
             this.tCat.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tCat_AfterSelect);
@@ -216,16 +216,16 @@ namespace TheBox.Pages
             // 
             this.bAdd.Enabled = false;
             this.bAdd.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bAdd.Location = new System.Drawing.Point(324, 0);
+            this.bAdd.Location = new System.Drawing.Point(356, 0);
             this.bAdd.Name = "bAdd";
-            this.bAdd.Size = new System.Drawing.Size(52, 23);
+            this.bAdd.Size = new System.Drawing.Size(92, 33);
             this.bAdd.TabIndex = 1;
             this.bAdd.Text = "Common.Add";
             this.bAdd.Click += new System.EventHandler(this.bAdd_Click);
             // 
             // numTile
             // 
-            this.numTile.Location = new System.Drawing.Point(440, 0);
+            this.numTile.Location = new System.Drawing.Point(552, 7);
             this.numTile.Maximum = new decimal(new int[] {
             127,
             0,
@@ -237,7 +237,7 @@ namespace TheBox.Pages
             0,
             -2147483648});
             this.numTile.Name = "numTile";
-            this.numTile.Size = new System.Drawing.Size(52, 23);
+            this.numTile.Size = new System.Drawing.Size(62, 23);
             this.numTile.TabIndex = 2;
             this.numTile.ValueChanged += new System.EventHandler(this.numTile_ValueChanged);
             this.numTile.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
@@ -246,9 +246,9 @@ namespace TheBox.Pages
             // 
             this.bTile.Enabled = false;
             this.bTile.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.bTile.Location = new System.Drawing.Point(384, 0);
+            this.bTile.Location = new System.Drawing.Point(454, 0);
             this.bTile.Name = "bTile";
-            this.bTile.Size = new System.Drawing.Size(52, 23);
+            this.bTile.Size = new System.Drawing.Size(92, 33);
             this.bTile.TabIndex = 3;
             this.bTile.Text = "Deco.Tile";
             this.bTile.Click += new System.EventHandler(this.bTile_Click);
@@ -256,9 +256,9 @@ namespace TheBox.Pages
             // chkHued
             // 
             this.chkHued.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.chkHued.Location = new System.Drawing.Point(440, 24);
+            this.chkHued.Location = new System.Drawing.Point(550, 38);
             this.chkHued.Name = "chkHued";
-            this.chkHued.Size = new System.Drawing.Size(56, 20);
+            this.chkHued.Size = new System.Drawing.Size(84, 20);
             this.chkHued.TabIndex = 4;
             this.chkHued.Text = "Deco.Hued";
             this.chkHued.CheckedChanged += new System.EventHandler(this.chkHued_CheckedChanged);
@@ -267,9 +267,9 @@ namespace TheBox.Pages
             // chkStatic
             // 
             this.chkStatic.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.chkStatic.Location = new System.Drawing.Point(384, 24);
+            this.chkStatic.Location = new System.Drawing.Point(456, 38);
             this.chkStatic.Name = "chkStatic";
-            this.chkStatic.Size = new System.Drawing.Size(52, 20);
+            this.chkStatic.Size = new System.Drawing.Size(88, 20);
             this.chkStatic.TabIndex = 5;
             this.chkStatic.Text = "Deco.Static";
             this.chkStatic.CheckedChanged += new System.EventHandler(this.chkStatic_CheckedChanged);
@@ -277,7 +277,7 @@ namespace TheBox.Pages
             // 
             // lnkFind
             // 
-            this.lnkFind.Location = new System.Drawing.Point(324, 28);
+            this.lnkFind.Location = new System.Drawing.Point(377, 40);
             this.lnkFind.Name = "lnkFind";
             this.lnkFind.Size = new System.Drawing.Size(52, 16);
             this.lnkFind.TabIndex = 7;
@@ -317,7 +317,7 @@ namespace TheBox.Pages
             this.groupBox1.Controls.Add(this.bNudgeDown);
             this.groupBox1.Controls.Add(this.numNudge);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.groupBox1.Location = new System.Drawing.Point(324, 105);
+            this.groupBox1.Location = new System.Drawing.Point(538, 159);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(96, 40);
             this.groupBox1.TabIndex = 16;
@@ -373,16 +373,16 @@ namespace TheBox.Pages
             // chkRnd
             // 
             this.chkRnd.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.chkRnd.Location = new System.Drawing.Point(324, 48);
+            this.chkRnd.Location = new System.Drawing.Point(358, 70);
             this.chkRnd.Name = "chkRnd";
-            this.chkRnd.Size = new System.Drawing.Size(48, 20);
+            this.chkRnd.Size = new System.Drawing.Size(73, 20);
             this.chkRnd.TabIndex = 17;
-            this.chkRnd.Text = "Rnd";
+            this.chkRnd.Text = "Random";
             this.chkRnd.CheckedChanged += new System.EventHandler(this.chkRnd_CheckedChanged);
             // 
             // nRnd
             // 
-            this.nRnd.Location = new System.Drawing.Point(376, 48);
+            this.nRnd.Location = new System.Drawing.Point(426, 70);
             this.nRnd.Maximum = new decimal(new int[] {
             15000,
             0,
@@ -405,9 +405,9 @@ namespace TheBox.Pages
             this.boxButton4.Def = null;
             this.boxButton4.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.boxButton4.IsActive = true;
-            this.boxButton4.Location = new System.Drawing.Point(372, 76);
+            this.boxButton4.Location = new System.Drawing.Point(454, 103);
             this.boxButton4.Name = "boxButton4";
-            this.boxButton4.Size = new System.Drawing.Size(48, 23);
+            this.boxButton4.Size = new System.Drawing.Size(92, 33);
             this.boxButton4.TabIndex = 15;
             this.boxButton4.Text = "boxButton4";
             // 
@@ -418,9 +418,9 @@ namespace TheBox.Pages
             this.boxButton3.Def = null;
             this.boxButton3.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.boxButton3.IsActive = true;
-            this.boxButton3.Location = new System.Drawing.Point(324, 76);
+            this.boxButton3.Location = new System.Drawing.Point(356, 103);
             this.boxButton3.Name = "boxButton3";
-            this.boxButton3.Size = new System.Drawing.Size(48, 23);
+            this.boxButton3.Size = new System.Drawing.Size(92, 33);
             this.boxButton3.TabIndex = 14;
             this.boxButton3.Text = "boxButton3";
             // 
@@ -428,7 +428,7 @@ namespace TheBox.Pages
             // 
             this.decoMover1.BackColor = System.Drawing.SystemColors.Control;
             this.decoMover1.EventMode = false;
-            this.decoMover1.Location = new System.Drawing.Point(326, 142);
+            this.decoMover1.Location = new System.Drawing.Point(356, 142);
             this.decoMover1.Name = "decoMover1";
             this.decoMover1.Size = new System.Drawing.Size(137, 79);
             this.decoMover1.TabIndex = 6;
@@ -451,7 +451,7 @@ namespace TheBox.Pages
             this.Controls.Add(this.panel);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Deco";
-            this.Size = new System.Drawing.Size(507, 224);
+            this.Size = new System.Drawing.Size(640, 224);
             this.Load += new System.EventHandler(this.Deco_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DoKeys);
             this.panel.ResumeLayout(false);

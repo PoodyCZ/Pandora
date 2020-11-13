@@ -261,7 +261,7 @@ namespace TheBox
 		{
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Box));
-            TheBox.Common.MulManager mulManager1 = new TheBox.Common.MulManager();
+            TheBox.Common.MulManager mulManager2 = new TheBox.Common.MulManager();
             this.BigTab = new System.Windows.Forms.TabControl();
             this.TabGeneral = new System.Windows.Forms.TabPage();
             this.general1 = new TheBox.Pages.General();
@@ -373,7 +373,7 @@ namespace TheBox
             this.BigTab.Location = new System.Drawing.Point(0, 20);
             this.BigTab.Name = "BigTab";
             this.BigTab.SelectedIndex = 0;
-            this.BigTab.Size = new System.Drawing.Size(504, 250);
+            this.BigTab.Size = new System.Drawing.Size(650, 250);
             this.BigTab.TabIndex = 0;
             this.BigTab.SelectedIndexChanged += new System.EventHandler(this.BigTab_SelectedIndexChanged);
             this.BigTab.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Box_KeyDown);
@@ -383,7 +383,7 @@ namespace TheBox
             this.TabGeneral.Controls.Add(this.general1);
             this.TabGeneral.Location = new System.Drawing.Point(4, 24);
             this.TabGeneral.Name = "TabGeneral";
-            this.TabGeneral.Size = new System.Drawing.Size(496, 222);
+            this.TabGeneral.Size = new System.Drawing.Size(642, 222);
             this.TabGeneral.TabIndex = 7;
             this.TabGeneral.Text = "Tabs.General";
             // 
@@ -392,16 +392,16 @@ namespace TheBox
             this.general1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.general1.Location = new System.Drawing.Point(0, 0);
             this.general1.Name = "general1";
-            this.general1.Size = new System.Drawing.Size(496, 218);
+            this.general1.Size = new System.Drawing.Size(639, 218);
             this.general1.TabIndex = 0;
             this.general1.Load += new System.EventHandler(this.general1_Load);
             // 
             // TabDeco
             // 
             this.TabDeco.Controls.Add(this.m_TabDeco);
-            this.TabDeco.Location = new System.Drawing.Point(4, 20);
+            this.TabDeco.Location = new System.Drawing.Point(4, 24);
             this.TabDeco.Name = "TabDeco";
-            this.TabDeco.Size = new System.Drawing.Size(496, 226);
+            this.TabDeco.Size = new System.Drawing.Size(642, 222);
             this.TabDeco.TabIndex = 3;
             this.TabDeco.Text = "Tabs.Deco";
             // 
@@ -410,15 +410,15 @@ namespace TheBox
             this.m_TabDeco.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_TabDeco.Location = new System.Drawing.Point(0, 0);
             this.m_TabDeco.Name = "m_TabDeco";
-            this.m_TabDeco.Size = new System.Drawing.Size(496, 223);
+            this.m_TabDeco.Size = new System.Drawing.Size(639, 223);
             this.m_TabDeco.TabIndex = 0;
             // 
             // TabTravel
             // 
             this.TabTravel.Controls.Add(this.m_TravelTab);
-            this.TabTravel.Location = new System.Drawing.Point(4, 20);
+            this.TabTravel.Location = new System.Drawing.Point(4, 24);
             this.TabTravel.Name = "TabTravel";
-            this.TabTravel.Size = new System.Drawing.Size(496, 226);
+            this.TabTravel.Size = new System.Drawing.Size(642, 222);
             this.TabTravel.TabIndex = 0;
             this.TabTravel.Text = "Tabs.Travel";
             // 
@@ -433,9 +433,9 @@ namespace TheBox
             // TabProperties
             // 
             this.TabProperties.Controls.Add(this.m_PageProperties);
-            this.TabProperties.Location = new System.Drawing.Point(4, 20);
+            this.TabProperties.Location = new System.Drawing.Point(4, 24);
             this.TabProperties.Name = "TabProperties";
-            this.TabProperties.Size = new System.Drawing.Size(496, 226);
+            this.TabProperties.Size = new System.Drawing.Size(642, 222);
             this.TabProperties.TabIndex = 2;
             this.TabProperties.Text = "Tabs.Props";
             // 
@@ -445,15 +445,15 @@ namespace TheBox
             this.m_PageProperties.Location = new System.Drawing.Point(0, 0);
             this.m_PageProperties.Name = "m_PageProperties";
             this.m_PageProperties.SelectedProperty = null;
-            this.m_PageProperties.Size = new System.Drawing.Size(496, 230);
+            this.m_PageProperties.Size = new System.Drawing.Size(639, 230);
             this.m_PageProperties.TabIndex = 0;
             // 
             // TabItems
             // 
             this.TabItems.Controls.Add(this.m_ItemsTab);
-            this.TabItems.Location = new System.Drawing.Point(4, 20);
+            this.TabItems.Location = new System.Drawing.Point(4, 24);
             this.TabItems.Name = "TabItems";
-            this.TabItems.Size = new System.Drawing.Size(496, 226);
+            this.TabItems.Size = new System.Drawing.Size(642, 222);
             this.TabItems.TabIndex = 4;
             this.TabItems.Text = "Tabs.Items";
             // 
@@ -462,15 +462,15 @@ namespace TheBox
             this.m_ItemsTab.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_ItemsTab.Location = new System.Drawing.Point(0, 0);
             this.m_ItemsTab.Name = "m_ItemsTab";
-            this.m_ItemsTab.Size = new System.Drawing.Size(496, 226);
+            this.m_ItemsTab.Size = new System.Drawing.Size(639, 226);
             this.m_ItemsTab.TabIndex = 0;
             // 
             // TabNPCs
             // 
             this.TabNPCs.Controls.Add(this.m_PageMobiles);
-            this.TabNPCs.Location = new System.Drawing.Point(4, 20);
+            this.TabNPCs.Location = new System.Drawing.Point(4, 24);
             this.TabNPCs.Name = "TabNPCs";
-            this.TabNPCs.Size = new System.Drawing.Size(496, 226);
+            this.TabNPCs.Size = new System.Drawing.Size(642, 222);
             this.TabNPCs.TabIndex = 1;
             this.TabNPCs.Text = "Tabs.NPCs";
             // 
@@ -479,15 +479,15 @@ namespace TheBox
             this.m_PageMobiles.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_PageMobiles.Location = new System.Drawing.Point(0, 0);
             this.m_PageMobiles.Name = "m_PageMobiles";
-            this.m_PageMobiles.Size = new System.Drawing.Size(496, 226);
+            this.m_PageMobiles.Size = new System.Drawing.Size(639, 226);
             this.m_PageMobiles.TabIndex = 0;
             // 
             // TabAdmin
             // 
             this.TabAdmin.Controls.Add(this.m_TabAdmin);
-            this.TabAdmin.Location = new System.Drawing.Point(4, 20);
+            this.TabAdmin.Location = new System.Drawing.Point(4, 24);
             this.TabAdmin.Name = "TabAdmin";
-            this.TabAdmin.Size = new System.Drawing.Size(496, 226);
+            this.TabAdmin.Size = new System.Drawing.Size(642, 222);
             this.TabAdmin.TabIndex = 6;
             this.TabAdmin.Text = "Tabs.Admin";
             // 
@@ -496,15 +496,15 @@ namespace TheBox
             this.m_TabAdmin.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_TabAdmin.Location = new System.Drawing.Point(0, 0);
             this.m_TabAdmin.Name = "m_TabAdmin";
-            this.m_TabAdmin.Size = new System.Drawing.Size(496, 223);
+            this.m_TabAdmin.Size = new System.Drawing.Size(639, 223);
             this.m_TabAdmin.TabIndex = 0;
             // 
             // TabTools
             // 
             this.TabTools.Controls.Add(this.m_Tools);
-            this.TabTools.Location = new System.Drawing.Point(4, 20);
+            this.TabTools.Location = new System.Drawing.Point(4, 24);
             this.TabTools.Name = "TabTools";
-            this.TabTools.Size = new System.Drawing.Size(496, 226);
+            this.TabTools.Size = new System.Drawing.Size(642, 222);
             this.TabTools.TabIndex = 10;
             this.TabTools.Text = "Tabs.Tools";
             // 
@@ -513,15 +513,15 @@ namespace TheBox
             this.m_Tools.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_Tools.Location = new System.Drawing.Point(0, 0);
             this.m_Tools.Name = "m_Tools";
-            this.m_Tools.Size = new System.Drawing.Size(496, 223);
+            this.m_Tools.Size = new System.Drawing.Size(639, 223);
             this.m_Tools.TabIndex = 0;
             // 
             // TabDoors
             // 
             this.TabDoors.Controls.Add(this.DoorsTab);
-            this.TabDoors.Location = new System.Drawing.Point(4, 20);
+            this.TabDoors.Location = new System.Drawing.Point(4, 24);
             this.TabDoors.Name = "TabDoors";
-            this.TabDoors.Size = new System.Drawing.Size(496, 226);
+            this.TabDoors.Size = new System.Drawing.Size(642, 222);
             this.TabDoors.TabIndex = 9;
             this.TabDoors.Text = "Tabs.Doors";
             // 
@@ -530,15 +530,15 @@ namespace TheBox
             this.DoorsTab.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DoorsTab.Location = new System.Drawing.Point(0, 0);
             this.DoorsTab.Name = "DoorsTab";
-            this.DoorsTab.Size = new System.Drawing.Size(496, 223);
+            this.DoorsTab.Size = new System.Drawing.Size(639, 223);
             this.DoorsTab.TabIndex = 0;
             // 
             // TabLights
             // 
             this.TabLights.Controls.Add(this.LightsTab);
-            this.TabLights.Location = new System.Drawing.Point(4, 20);
+            this.TabLights.Location = new System.Drawing.Point(4, 24);
             this.TabLights.Name = "TabLights";
-            this.TabLights.Size = new System.Drawing.Size(496, 226);
+            this.TabLights.Size = new System.Drawing.Size(642, 222);
             this.TabLights.TabIndex = 8;
             this.TabLights.Text = "Tabs.Lights";
             // 
@@ -547,15 +547,15 @@ namespace TheBox
             this.LightsTab.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LightsTab.Location = new System.Drawing.Point(0, 0);
             this.LightsTab.Name = "LightsTab";
-            this.LightsTab.Size = new System.Drawing.Size(496, 223);
+            this.LightsTab.Size = new System.Drawing.Size(639, 223);
             this.LightsTab.TabIndex = 0;
             // 
             // TabNotes
             // 
             this.TabNotes.Controls.Add(this.m_NotesTab);
-            this.TabNotes.Location = new System.Drawing.Point(4, 20);
+            this.TabNotes.Location = new System.Drawing.Point(4, 24);
             this.TabNotes.Name = "TabNotes";
-            this.TabNotes.Size = new System.Drawing.Size(496, 226);
+            this.TabNotes.Size = new System.Drawing.Size(642, 222);
             this.TabNotes.TabIndex = 5;
             this.TabNotes.Text = "Tabs.Notes";
             // 
@@ -564,7 +564,7 @@ namespace TheBox
             this.m_NotesTab.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_NotesTab.Location = new System.Drawing.Point(0, 0);
             this.m_NotesTab.Name = "m_NotesTab";
-            this.m_NotesTab.Size = new System.Drawing.Size(496, 226);
+            this.m_NotesTab.Size = new System.Drawing.Size(639, 226);
             this.m_NotesTab.TabIndex = 0;
             // 
             // SmallTab
@@ -574,7 +574,7 @@ namespace TheBox
             this.SmallTab.Controls.Add(this.tabProps);
             this.SmallTab.Controls.Add(this.tabCustom);
             this.SmallTab.ItemSize = new System.Drawing.Size(42, 16);
-            this.SmallTab.Location = new System.Drawing.Point(504, 20);
+            this.SmallTab.Location = new System.Drawing.Point(656, 20);
             this.SmallTab.Name = "SmallTab";
             this.SmallTab.SelectedIndex = 0;
             this.SmallTab.Size = new System.Drawing.Size(184, 250);
@@ -624,9 +624,9 @@ namespace TheBox
             this.Map.DrawStatics = false;
             this.Map.Location = new System.Drawing.Point(1, 1);
             this.Map.Map = TheBox.MapViewer.Maps.Felucca;
-            mulManager1.CustomFolder = null;
-            mulManager1.Table = null;
-            this.Map.MulManager = mulManager1;
+            mulManager2.CustomFolder = null;
+            mulManager2.Table = null;
+            this.Map.MulManager = mulManager2;
             this.Map.Name = "Map";
             this.Map.Navigation = TheBox.MapViewer.MapNavigation.LeftMouseButton;
             this.Map.ShowCross = true;
@@ -1128,7 +1128,7 @@ namespace TheBox
             // Box
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(6, 16);
-            this.ClientSize = new System.Drawing.Size(688, 270);
+            this.ClientSize = new System.Drawing.Size(842, 269);
             this.Controls.Add(this.bMenu);
             this.Controls.Add(this.pctCap);
             this.Controls.Add(this.boxButton8);
