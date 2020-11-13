@@ -19,6 +19,13 @@ jobs:
       
       - name: Run msbuild
         run: msbuild Pandora.sln /t:Build /p:Configuration=Release
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2.2.1
+        with:
+          # Artifact name
+          name: PandorasBox          
+          path: Build\Pandora
       
       - name: Create Release
         id: create_release
