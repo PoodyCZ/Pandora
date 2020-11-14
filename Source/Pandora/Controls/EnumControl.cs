@@ -58,44 +58,46 @@ namespace TheBox.Controls
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.label1 = new System.Windows.Forms.Label();
-			this.cmb = new System.Windows.Forms.ComboBox();
-			this.lab = new System.Windows.Forms.Label();
-			this.SuspendLayout();
-			// 
-			// label1
-			// 
-			this.label1.Location = new System.Drawing.Point(4, 4);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(96, 44);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "Props.SelectEnum";
-			// 
-			// cmb
-			// 
-			this.cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cmb.Location = new System.Drawing.Point(4, 52);
-			this.cmb.Name = "cmb";
-			this.cmb.Size = new System.Drawing.Size(96, 21);
-			this.cmb.TabIndex = 1;
-			this.cmb.SelectedIndexChanged += new System.EventHandler(this.cmb_SelectedIndexChanged);
-			// 
-			// lab
-			// 
-			this.lab.Location = new System.Drawing.Point(4, 76);
-			this.lab.Name = "lab";
-			this.lab.Size = new System.Drawing.Size(96, 36);
-			this.lab.TabIndex = 2;
-			this.lab.Text = "label2";
-			// 
-			// EnumControl
-			// 
-			this.Controls.Add(this.lab);
-			this.Controls.Add(this.cmb);
-			this.Controls.Add(this.label1);
-			this.Name = "EnumControl";
-			this.Size = new System.Drawing.Size(104, 116);
-			this.ResumeLayout(false);
+            this.label1 = new System.Windows.Forms.Label();
+            this.cmb = new System.Windows.Forms.ComboBox();
+            this.lab = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(4, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 44);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Props.SelectEnum";
+            // 
+            // cmb
+            // 
+            this.cmb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb.Location = new System.Drawing.Point(4, 52);
+            this.cmb.Name = "cmb";
+            this.cmb.Size = new System.Drawing.Size(96, 23);
+            this.cmb.TabIndex = 1;
+            this.cmb.SelectedIndexChanged += new System.EventHandler(this.cmb_SelectedIndexChanged);
+            // 
+            // lab
+            // 
+            this.lab.Location = new System.Drawing.Point(4, 76);
+            this.lab.Name = "lab";
+            this.lab.Size = new System.Drawing.Size(96, 36);
+            this.lab.TabIndex = 2;
+            this.lab.Text = "label2";
+            // 
+            // EnumControl
+            // 
+            this.Controls.Add(this.lab);
+            this.Controls.Add(this.cmb);
+            this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Name = "EnumControl";
+            this.Size = new System.Drawing.Size(104, 116);
+            this.ResumeLayout(false);
+
 		}
 		#endregion
 

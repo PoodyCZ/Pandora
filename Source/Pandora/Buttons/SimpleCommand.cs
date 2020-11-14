@@ -79,65 +79,69 @@ namespace TheBox.Buttons
 		/// </summary>
 		private void InitializeComponent()
 		{
-			var resources = new System.Resources.ResourceManager(typeof(SimpleCommand));
-			this.txCommand = new System.Windows.Forms.TextBox();
-			this.chkPrefix = new System.Windows.Forms.CheckBox();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.SuspendLayout();
-			// 
-			// txCommand
-			// 
-			this.txCommand.Location = new System.Drawing.Point(8, 8);
-			this.txCommand.Name = "txCommand";
-			this.txCommand.Size = new System.Drawing.Size(200, 20);
-			this.txCommand.TabIndex = 0;
-			this.txCommand.Text = "";
-			// 
-			// chkPrefix
-			// 
-			this.chkPrefix.Checked = true;
-			this.chkPrefix.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.chkPrefix.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.chkPrefix.Location = new System.Drawing.Point(8, 32);
-			this.chkPrefix.Name = "chkPrefix";
-			this.chkPrefix.Size = new System.Drawing.Size(200, 24);
-			this.chkPrefix.TabIndex = 1;
-			this.chkPrefix.Text = "ButtonMenuEditor.UsePrefix";
-			// 
-			// button1
-			// 
-			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.button1.Location = new System.Drawing.Point(136, 56);
-			this.button1.Name = "button1";
-			this.button1.TabIndex = 2;
-			this.button1.Text = "Common.Ok";
-			this.button1.Click += new System.EventHandler(this.button1_Click);
-			// 
-			// button2
-			// 
-			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.button2.Location = new System.Drawing.Point(8, 56);
-			this.button2.Name = "button2";
-			this.button2.TabIndex = 3;
-			this.button2.Text = "Common.Cancel";
-			this.button2.Click += new System.EventHandler(this.button2_Click);
-			// 
-			// SimpleCommand
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(216, 88);
-			this.Controls.Add(this.button2);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.chkPrefix);
-			this.Controls.Add(this.txCommand);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.Name = "SimpleCommand";
-			this.ShowInTaskbar = false;
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Buttons.EnterCommand";
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SimpleCommand));
+            this.txCommand = new System.Windows.Forms.TextBox();
+            this.chkPrefix = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // txCommand
+            // 
+            this.txCommand.Location = new System.Drawing.Point(8, 8);
+            this.txCommand.Name = "txCommand";
+            this.txCommand.Size = new System.Drawing.Size(200, 23);
+            this.txCommand.TabIndex = 0;
+            // 
+            // chkPrefix
+            // 
+            this.chkPrefix.Checked = true;
+            this.chkPrefix.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkPrefix.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.chkPrefix.Location = new System.Drawing.Point(8, 32);
+            this.chkPrefix.Name = "chkPrefix";
+            this.chkPrefix.Size = new System.Drawing.Size(200, 24);
+            this.chkPrefix.TabIndex = 1;
+            this.chkPrefix.Text = "ButtonMenuEditor.UsePrefix";
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button1.Location = new System.Drawing.Point(136, 56);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Common.Ok";
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button2.Location = new System.Drawing.Point(8, 56);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Common.Cancel";
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // SimpleCommand
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(6, 16);
+            this.ClientSize = new System.Drawing.Size(216, 88);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.chkPrefix);
+            this.Controls.Add(this.txCommand);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "SimpleCommand";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Buttons.EnterCommand";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
 		}
 		#endregion
 

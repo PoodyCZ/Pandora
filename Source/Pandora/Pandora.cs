@@ -332,11 +332,11 @@ namespace TheBox
 			{
 				if (UsePrefix)
 				{
-					success = Utility.SendToUO(string.Format("{0}{1}\r\n", Profile.General.CommandPrefix, text));
+					success = Utility.SendToUO($"{Profile.General.CommandPrefix}{text}\r\n", Profile.General.Clipboard);
 				}
 				else
 				{
-					success = Utility.SendToUO(string.Format("{0}\r\n", text));
+					success = Utility.SendToUO($"{text}\r\n", Profile.General.Clipboard);
 				}
 			}
 

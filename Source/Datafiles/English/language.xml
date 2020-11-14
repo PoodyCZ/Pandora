@@ -196,6 +196,7 @@
 		<entry name="CustomizeCommands" text="Go and Send commands" />
 		<entry name="RotateMap" text="Rotate Map" />
 		<entry name="RoomView" text="Use room view for items" />
+		<entry name="Clipboard" text="Send commands to clipboard instead of client" />
 		<entry name="CustomDeco" text="Show Custom Deco section" />
 		<entry name="Send" text="Send" />
 		<entry name="Animate" text="Animate NPCs" />

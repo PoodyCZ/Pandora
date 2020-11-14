@@ -31,7 +31,6 @@ namespace TheBox.Pages
 		private BoxButton boxButton3;
 		private BoxButton boxButton4;
 		private BoxButton boxButton5;
-		private BoxButton boxButton6;
 		private ComboBox cmbSpeech;
 		private ComboBox cmbWeb;
 		private Button bTell;
@@ -54,11 +53,12 @@ namespace TheBox.Pages
 		private Button bLightGlobal;
 		private Button bLightLocal;
 		private NumericUpDown numLight;
+        private BoxButton boxButton6;
 
-		/// <summary>
-		///     Required designer variable.
-		/// </summary>
-		private readonly Container components = null;
+        /// <summary>
+        ///     Required designer variable.
+        /// </summary>
+        private readonly Container components = null;
 
 		public General()
 		{
@@ -88,433 +88,459 @@ namespace TheBox.Pages
 		/// </summary>
 		private void InitializeComponent()
 		{
-			var resources = new System.Resources.ResourceManager(typeof(General));
-			this.lnkSound = new System.Windows.Forms.LinkLabel();
-			this.cmbSpeech = new System.Windows.Forms.ComboBox();
-			this.cmbWeb = new System.Windows.Forms.ComboBox();
-			this.bTell = new System.Windows.Forms.Button();
-			this.bSM = new System.Windows.Forms.Button();
-			this.bBCast = new System.Windows.Forms.Button();
-			this.bWeb = new System.Windows.Forms.Button();
-			this.bPriv = new System.Windows.Forms.Button();
-			this.bSound = new System.Windows.Forms.Button();
-			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.groupBox3 = new System.Windows.Forms.GroupBox();
-			this.boxButton4 = new TheBox.Buttons.BoxButton();
-			this.boxButton3 = new TheBox.Buttons.BoxButton();
-			this.boxButton2 = new TheBox.Buttons.BoxButton();
-			this.boxButton1 = new TheBox.Buttons.BoxButton();
-			this.boxButton5 = new TheBox.Buttons.BoxButton();
-			this.boxButton6 = new TheBox.Buttons.BoxButton();
-			this.groupBox4 = new System.Windows.Forms.GroupBox();
-			this.numSkill = new System.Windows.Forms.NumericUpDown();
-			this.lnkSkill = new System.Windows.Forms.LinkLabel();
-			this.bGetSkill = new System.Windows.Forms.Button();
-			this.bSetSkill = new System.Windows.Forms.Button();
-			this.groupBox5 = new System.Windows.Forms.GroupBox();
-			this.bInBag = new System.Windows.Forms.Button();
-			this.numDupe = new System.Windows.Forms.NumericUpDown();
-			this.chkDupe = new System.Windows.Forms.CheckBox();
-			this.bDupe = new System.Windows.Forms.Button();
-			this.groupBox6 = new System.Windows.Forms.GroupBox();
-			this.bLightGlobal = new System.Windows.Forms.Button();
-			this.bLightLocal = new System.Windows.Forms.Button();
-			this.numLight = new System.Windows.Forms.NumericUpDown();
-			this.groupBox1.SuspendLayout();
-			this.groupBox2.SuspendLayout();
-			this.groupBox3.SuspendLayout();
-			this.groupBox4.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numSkill)).BeginInit();
-			this.groupBox5.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numDupe)).BeginInit();
-			this.groupBox6.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numLight)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// lnkSound
-			// 
-			this.lnkSound.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.lnkSound.Location = new System.Drawing.Point(4, 40);
-			this.lnkSound.Name = "lnkSound";
-			this.lnkSound.Size = new System.Drawing.Size(116, 20);
-			this.lnkSound.TabIndex = 0;
-			this.lnkSound.TabStop = true;
-			this.lnkSound.Text = "General.ChooseSnd";
-			this.lnkSound.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.lnkSound.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lnkSound_MouseDown);
-			// 
-			// cmbSpeech
-			// 
-			this.cmbSpeech.Location = new System.Drawing.Point(4, 16);
-			this.cmbSpeech.Name = "cmbSpeech";
-			this.cmbSpeech.Size = new System.Drawing.Size(228, 21);
-			this.cmbSpeech.TabIndex = 1;
-			// 
-			// cmbWeb
-			// 
-			this.cmbWeb.Location = new System.Drawing.Point(4, 16);
-			this.cmbWeb.Name = "cmbWeb";
-			this.cmbWeb.Size = new System.Drawing.Size(184, 21);
-			this.cmbWeb.TabIndex = 2;
-			// 
-			// bTell
-			// 
-			this.bTell.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bTell.Location = new System.Drawing.Point(4, 40);
-			this.bTell.Name = "bTell";
-			this.bTell.Size = new System.Drawing.Size(72, 21);
-			this.bTell.TabIndex = 3;
-			this.bTell.Text = "General.Tell";
-			this.bTell.Click += new System.EventHandler(this.bTell_Click);
-			// 
-			// bSM
-			// 
-			this.bSM.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bSM.Location = new System.Drawing.Point(80, 40);
-			this.bSM.Name = "bSM";
-			this.bSM.Size = new System.Drawing.Size(72, 21);
-			this.bSM.TabIndex = 4;
-			this.bSM.Text = "General.SM";
-			this.bSM.Click += new System.EventHandler(this.bSM_Click);
-			// 
-			// bBCast
-			// 
-			this.bBCast.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bBCast.Location = new System.Drawing.Point(156, 40);
-			this.bBCast.Name = "bBCast";
-			this.bBCast.Size = new System.Drawing.Size(76, 21);
-			this.bBCast.TabIndex = 5;
-			this.bBCast.Text = "General.BCast";
-			this.bBCast.Click += new System.EventHandler(this.bBCast_Click);
-			// 
-			// bWeb
-			// 
-			this.bWeb.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bWeb.Location = new System.Drawing.Point(192, 16);
-			this.bWeb.Name = "bWeb";
-			this.bWeb.Size = new System.Drawing.Size(56, 21);
-			this.bWeb.TabIndex = 6;
-			this.bWeb.Text = "General.www";
-			this.bWeb.Click += new System.EventHandler(this.bWeb_Click);
-			// 
-			// bPriv
-			// 
-			this.bPriv.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bPriv.Location = new System.Drawing.Point(124, 40);
-			this.bPriv.Name = "bPriv";
-			this.bPriv.Size = new System.Drawing.Size(64, 21);
-			this.bPriv.TabIndex = 7;
-			this.bPriv.Text = "General.priv";
-			this.bPriv.Click += new System.EventHandler(this.bPriv_Click);
-			// 
-			// bSound
-			// 
-			this.bSound.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bSound.Location = new System.Drawing.Point(192, 40);
-			this.bSound.Name = "bSound";
-			this.bSound.Size = new System.Drawing.Size(56, 21);
-			this.bSound.TabIndex = 8;
-			this.bSound.Text = "General.Snd";
-			this.bSound.Click += new System.EventHandler(this.bSound_Click);
-			// 
-			// groupBox1
-			// 
-			this.groupBox1.Controls.Add(this.bSM);
-			this.groupBox1.Controls.Add(this.cmbSpeech);
-			this.groupBox1.Controls.Add(this.bBCast);
-			this.groupBox1.Controls.Add(this.bTell);
-			this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.groupBox1.Location = new System.Drawing.Point(4, 76);
-			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(236, 64);
-			this.groupBox1.TabIndex = 9;
-			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Misc.Speech";
-			// 
-			// groupBox2
-			// 
-			this.groupBox2.Controls.Add(this.cmbWeb);
-			this.groupBox2.Controls.Add(this.bWeb);
-			this.groupBox2.Controls.Add(this.bPriv);
-			this.groupBox2.Controls.Add(this.bSound);
-			this.groupBox2.Controls.Add(this.lnkSound);
-			this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.groupBox2.Location = new System.Drawing.Point(240, 76);
-			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size(252, 64);
-			this.groupBox2.TabIndex = 10;
-			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "Misc.WebSnd";
-			// 
-			// groupBox3
-			// 
-			this.groupBox3.Controls.Add(this.boxButton4);
-			this.groupBox3.Controls.Add(this.boxButton3);
-			this.groupBox3.Controls.Add(this.boxButton2);
-			this.groupBox3.Controls.Add(this.boxButton1);
-			this.groupBox3.Controls.Add(this.boxButton5);
-			this.groupBox3.Controls.Add(this.boxButton6);
-			this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.groupBox3.Location = new System.Drawing.Point(4, 0);
-			this.groupBox3.Name = "groupBox3";
-			this.groupBox3.Size = new System.Drawing.Size(196, 72);
-			this.groupBox3.TabIndex = 11;
-			this.groupBox3.TabStop = false;
-			this.groupBox3.Text = "General.Cmd";
-			// 
-			// boxButton4
-			// 
-			this.boxButton4.AllowEdit = true;
-			this.boxButton4.ButtonID = 73;
-			this.boxButton4.Def = null;
-			this.boxButton4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.boxButton4.IsActive = true;
-			this.boxButton4.Location = new System.Drawing.Point(68, 44);
-			this.boxButton4.Name = "boxButton4";
-			this.boxButton4.Size = new System.Drawing.Size(60, 23);
-			this.boxButton4.TabIndex = 3;
-			this.boxButton4.Text = "Restock";
-			// 
-			// boxButton3
-			// 
-			this.boxButton3.AllowEdit = true;
-			this.boxButton3.ButtonID = 72;
-			this.boxButton3.Def = null;
-			this.boxButton3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.boxButton3.IsActive = true;
-			this.boxButton3.Location = new System.Drawing.Point(68, 16);
-			this.boxButton3.Name = "boxButton3";
-			this.boxButton3.Size = new System.Drawing.Size(60, 23);
-			this.boxButton3.TabIndex = 2;
-			this.boxButton3.Text = "Players";
-			// 
-			// boxButton2
-			// 
-			this.boxButton2.AllowEdit = true;
-			this.boxButton2.ButtonID = 71;
-			this.boxButton2.Def = null;
-			this.boxButton2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.boxButton2.IsActive = true;
-			this.boxButton2.Location = new System.Drawing.Point(4, 44);
-			this.boxButton2.Name = "boxButton2";
-			this.boxButton2.Size = new System.Drawing.Size(60, 23);
-			this.boxButton2.TabIndex = 1;
-			this.boxButton2.Text = "Misc";
-			// 
-			// boxButton1
-			// 
-			this.boxButton1.AllowEdit = true;
-			this.boxButton1.ButtonID = 70;
-			this.boxButton1.Def = null;
-			this.boxButton1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.boxButton1.IsActive = true;
-			this.boxButton1.Location = new System.Drawing.Point(4, 16);
-			this.boxButton1.Name = "boxButton1";
-			this.boxButton1.Size = new System.Drawing.Size(60, 23);
-			this.boxButton1.TabIndex = 0;
-			this.boxButton1.Text = "Bank";
-			// 
-			// boxButton5
-			// 
-			this.boxButton5.AllowEdit = true;
-			this.boxButton5.ButtonID = 74;
-			this.boxButton5.Def = null;
-			this.boxButton5.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.boxButton5.IsActive = true;
-			this.boxButton5.Location = new System.Drawing.Point(132, 16);
-			this.boxButton5.Name = "boxButton5";
-			this.boxButton5.Size = new System.Drawing.Size(60, 23);
-			this.boxButton5.TabIndex = 4;
-			this.boxButton5.Text = "Items";
-			// 
-			// boxButton6
-			// 
-			this.boxButton6.AllowEdit = true;
-			this.boxButton6.ButtonID = 75;
-			this.boxButton6.Def = null;
-			this.boxButton6.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.boxButton6.IsActive = true;
-			this.boxButton6.Location = new System.Drawing.Point(132, 44);
-			this.boxButton6.Name = "boxButton6";
-			this.boxButton6.Size = new System.Drawing.Size(60, 23);
-			this.boxButton6.TabIndex = 5;
-			this.boxButton6.Text = "Cast";
-			// 
-			// groupBox4
-			// 
-			this.groupBox4.Controls.Add(this.numSkill);
-			this.groupBox4.Controls.Add(this.lnkSkill);
-			this.groupBox4.Controls.Add(this.bGetSkill);
-			this.groupBox4.Controls.Add(this.bSetSkill);
-			this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.groupBox4.Location = new System.Drawing.Point(200, 0);
-			this.groupBox4.Name = "groupBox4";
-			this.groupBox4.Size = new System.Drawing.Size(120, 72);
-			this.groupBox4.TabIndex = 12;
-			this.groupBox4.TabStop = false;
-			this.groupBox4.Text = "Misc.Skills";
-			// 
-			// numSkill
-			// 
-			this.numSkill.DecimalPlaces = 1;
-			this.numSkill.Location = new System.Drawing.Point(32, 44);
-			this.numSkill.Maximum = new System.Decimal(new int[] {10000, 0, 0, 0});
-			this.numSkill.Name = "numSkill";
-			this.numSkill.Size = new System.Drawing.Size(48, 20);
-			this.numSkill.TabIndex = 1;
-			this.numSkill.Value = new System.Decimal(new int[] {1099, 0, 0, 65536});
-			this.numSkill.ValueChanged += new System.EventHandler(this.numSkill_ValueChanged);
-			// 
-			// lnkSkill
-			// 
-			this.lnkSkill.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.lnkSkill.Location = new System.Drawing.Point(4, 16);
-			this.lnkSkill.Name = "lnkSkill";
-			this.lnkSkill.Size = new System.Drawing.Size(112, 23);
-			this.lnkSkill.TabIndex = 0;
-			this.lnkSkill.TabStop = true;
-			this.lnkSkill.Text = "Common.Choose";
-			this.lnkSkill.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.lnkSkill.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lnkSkill_MouseDown);
-			// 
-			// bGetSkill
-			// 
-			this.bGetSkill.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-			this.bGetSkill.Image = ((System.Drawing.Image)(resources.GetObject("bGetSkill.Image")));
-			this.bGetSkill.Location = new System.Drawing.Point(4, 44);
-			this.bGetSkill.Name = "bGetSkill";
-			this.bGetSkill.Size = new System.Drawing.Size(24, 23);
-			this.bGetSkill.TabIndex = 13;
-			this.bGetSkill.Click += new System.EventHandler(this.bGetSkill_Click);
-			// 
-			// bSetSkill
-			// 
-			this.bSetSkill.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bSetSkill.Location = new System.Drawing.Point(80, 44);
-			this.bSetSkill.Name = "bSetSkill";
-			this.bSetSkill.Size = new System.Drawing.Size(36, 23);
-			this.bSetSkill.TabIndex = 13;
-			this.bSetSkill.Text = "Common.Set";
-			this.bSetSkill.Click += new System.EventHandler(this.bSetSkill_Click);
-			// 
-			// groupBox5
-			// 
-			this.groupBox5.Controls.Add(this.bInBag);
-			this.groupBox5.Controls.Add(this.numDupe);
-			this.groupBox5.Controls.Add(this.chkDupe);
-			this.groupBox5.Controls.Add(this.bDupe);
-			this.groupBox5.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.groupBox5.Location = new System.Drawing.Point(320, 0);
-			this.groupBox5.Name = "groupBox5";
-			this.groupBox5.Size = new System.Drawing.Size(96, 72);
-			this.groupBox5.TabIndex = 13;
-			this.groupBox5.TabStop = false;
-			this.groupBox5.Text = "General.Dupe";
-			// 
-			// bInBag
-			// 
-			this.bInBag.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bInBag.Location = new System.Drawing.Point(4, 44);
-			this.bInBag.Name = "bInBag";
-			this.bInBag.Size = new System.Drawing.Size(44, 23);
-			this.bInBag.TabIndex = 17;
-			this.bInBag.Text = "General.Bag";
-			this.bInBag.Click += new System.EventHandler(this.bInBag_Click);
-			// 
-			// numDupe
-			// 
-			this.numDupe.Location = new System.Drawing.Point(24, 16);
-			this.numDupe.Maximum = new System.Decimal(new int[] {10000, 0, 0, 0});
-			this.numDupe.Minimum = new System.Decimal(new int[] {1, 0, 0, 0});
-			this.numDupe.Name = "numDupe";
-			this.numDupe.Size = new System.Drawing.Size(60, 20);
-			this.numDupe.TabIndex = 15;
-			this.numDupe.Value = new System.Decimal(new int[] {1, 0, 0, 0});
-			this.numDupe.ValueChanged += new System.EventHandler(this.numDupe_ValueChanged);
-			// 
-			// chkDupe
-			// 
-			this.chkDupe.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.chkDupe.Location = new System.Drawing.Point(8, 16);
-			this.chkDupe.Name = "chkDupe";
-			this.chkDupe.Size = new System.Drawing.Size(16, 20);
-			this.chkDupe.TabIndex = 14;
-			this.chkDupe.CheckedChanged += new System.EventHandler(this.chkDupe_CheckedChanged);
-			// 
-			// bDupe
-			// 
-			this.bDupe.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bDupe.Location = new System.Drawing.Point(48, 44);
-			this.bDupe.Name = "bDupe";
-			this.bDupe.Size = new System.Drawing.Size(44, 23);
-			this.bDupe.TabIndex = 16;
-			this.bDupe.Text = "General.Dupe";
-			this.bDupe.Click += new System.EventHandler(this.bDupe_Click);
-			// 
-			// groupBox6
-			// 
-			this.groupBox6.Controls.Add(this.bLightGlobal);
-			this.groupBox6.Controls.Add(this.bLightLocal);
-			this.groupBox6.Controls.Add(this.numLight);
-			this.groupBox6.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.groupBox6.Location = new System.Drawing.Point(416, 0);
-			this.groupBox6.Name = "groupBox6";
-			this.groupBox6.Size = new System.Drawing.Size(76, 72);
-			this.groupBox6.TabIndex = 14;
-			this.groupBox6.TabStop = false;
-			this.groupBox6.Text = "General.Light";
-			// 
-			// bLightGlobal
-			// 
-			this.bLightGlobal.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bLightGlobal.Location = new System.Drawing.Point(40, 44);
-			this.bLightGlobal.Name = "bLightGlobal";
-			this.bLightGlobal.Size = new System.Drawing.Size(32, 23);
-			this.bLightGlobal.TabIndex = 2;
-			this.bLightGlobal.Text = "General.All";
-			this.bLightGlobal.Click += new System.EventHandler(this.bLightGlobal_Click);
-			// 
-			// bLightLocal
-			// 
-			this.bLightLocal.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bLightLocal.Location = new System.Drawing.Point(8, 44);
-			this.bLightLocal.Name = "bLightLocal";
-			this.bLightLocal.Size = new System.Drawing.Size(32, 23);
-			this.bLightLocal.TabIndex = 1;
-			this.bLightLocal.Text = "General.You";
-			this.bLightLocal.Click += new System.EventHandler(this.bLightLocal_Click);
-			// 
-			// numLight
-			// 
-			this.numLight.Location = new System.Drawing.Point(16, 16);
-			this.numLight.Minimum = new System.Decimal(new int[] {100, 0, 0, -2147483648});
-			this.numLight.Name = "numLight";
-			this.numLight.Size = new System.Drawing.Size(48, 20);
-			this.numLight.TabIndex = 0;
-			this.numLight.ValueChanged += new System.EventHandler(this.numLight_ValueChanged);
-			// 
-			// General
-			// 
-			this.Controls.Add(this.groupBox6);
-			this.Controls.Add(this.groupBox5);
-			this.Controls.Add(this.groupBox4);
-			this.Controls.Add(this.groupBox3);
-			this.Controls.Add(this.groupBox2);
-			this.Controls.Add(this.groupBox1);
-			this.Name = "General";
-			this.Size = new System.Drawing.Size(496, 142);
-			this.Load += new System.EventHandler(this.General_Load);
-			this.groupBox1.ResumeLayout(false);
-			this.groupBox2.ResumeLayout(false);
-			this.groupBox3.ResumeLayout(false);
-			this.groupBox4.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numSkill)).EndInit();
-			this.groupBox5.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numDupe)).EndInit();
-			this.groupBox6.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.numLight)).EndInit();
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(General));
+            this.lnkSound = new System.Windows.Forms.LinkLabel();
+            this.cmbSpeech = new System.Windows.Forms.ComboBox();
+            this.cmbWeb = new System.Windows.Forms.ComboBox();
+            this.bTell = new System.Windows.Forms.Button();
+            this.bSM = new System.Windows.Forms.Button();
+            this.bBCast = new System.Windows.Forms.Button();
+            this.bWeb = new System.Windows.Forms.Button();
+            this.bPriv = new System.Windows.Forms.Button();
+            this.bSound = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.boxButton4 = new TheBox.Buttons.BoxButton();
+            this.boxButton3 = new TheBox.Buttons.BoxButton();
+            this.boxButton2 = new TheBox.Buttons.BoxButton();
+            this.boxButton1 = new TheBox.Buttons.BoxButton();
+            this.boxButton5 = new TheBox.Buttons.BoxButton();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.numSkill = new System.Windows.Forms.NumericUpDown();
+            this.lnkSkill = new System.Windows.Forms.LinkLabel();
+            this.bGetSkill = new System.Windows.Forms.Button();
+            this.bSetSkill = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.bInBag = new System.Windows.Forms.Button();
+            this.numDupe = new System.Windows.Forms.NumericUpDown();
+            this.chkDupe = new System.Windows.Forms.CheckBox();
+            this.bDupe = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.bLightGlobal = new System.Windows.Forms.Button();
+            this.bLightLocal = new System.Windows.Forms.Button();
+            this.numLight = new System.Windows.Forms.NumericUpDown();
+            this.boxButton6 = new TheBox.Buttons.BoxButton();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkill)).BeginInit();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numDupe)).BeginInit();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numLight)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // lnkSound
+            // 
+            this.lnkSound.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lnkSound.Location = new System.Drawing.Point(16, 57);
+            this.lnkSound.Name = "lnkSound";
+            this.lnkSound.Size = new System.Drawing.Size(116, 28);
+            this.lnkSound.TabIndex = 0;
+            this.lnkSound.TabStop = true;
+            this.lnkSound.Text = "General.ChooseSnd";
+            this.lnkSound.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lnkSound.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lnkSound_MouseDown);
+            // 
+            // cmbSpeech
+            // 
+            this.cmbSpeech.Location = new System.Drawing.Point(4, 16);
+            this.cmbSpeech.Name = "cmbSpeech";
+            this.cmbSpeech.Size = new System.Drawing.Size(228, 23);
+            this.cmbSpeech.TabIndex = 1;
+            // 
+            // cmbWeb
+            // 
+            this.cmbWeb.Location = new System.Drawing.Point(6, 20);
+            this.cmbWeb.Name = "cmbWeb";
+            this.cmbWeb.Size = new System.Drawing.Size(184, 23);
+            this.cmbWeb.TabIndex = 2;
+            // 
+            // bTell
+            // 
+            this.bTell.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bTell.Location = new System.Drawing.Point(6, 49);
+            this.bTell.Name = "bTell";
+            this.bTell.Size = new System.Drawing.Size(70, 28);
+            this.bTell.TabIndex = 3;
+            this.bTell.Text = "General.Tell";
+            this.bTell.Click += new System.EventHandler(this.bTell_Click);
+            // 
+            // bSM
+            // 
+            this.bSM.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bSM.Location = new System.Drawing.Point(82, 49);
+            this.bSM.Name = "bSM";
+            this.bSM.Size = new System.Drawing.Size(70, 28);
+            this.bSM.TabIndex = 4;
+            this.bSM.Text = "General.SM";
+            this.bSM.Click += new System.EventHandler(this.bSM_Click);
+            // 
+            // bBCast
+            // 
+            this.bBCast.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bBCast.Location = new System.Drawing.Point(158, 49);
+            this.bBCast.Name = "bBCast";
+            this.bBCast.Size = new System.Drawing.Size(74, 28);
+            this.bBCast.TabIndex = 5;
+            this.bBCast.Text = "General.BCast";
+            this.bBCast.Click += new System.EventHandler(this.bBCast_Click);
+            // 
+            // bWeb
+            // 
+            this.bWeb.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bWeb.Location = new System.Drawing.Point(192, 20);
+            this.bWeb.Name = "bWeb";
+            this.bWeb.Size = new System.Drawing.Size(84, 24);
+            this.bWeb.TabIndex = 6;
+            this.bWeb.Text = "General.www";
+            this.bWeb.Click += new System.EventHandler(this.bWeb_Click);
+            // 
+            // bPriv
+            // 
+            this.bPriv.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bPriv.Location = new System.Drawing.Point(136, 57);
+            this.bPriv.Name = "bPriv";
+            this.bPriv.Size = new System.Drawing.Size(70, 28);
+            this.bPriv.TabIndex = 7;
+            this.bPriv.Text = "General.priv";
+            this.bPriv.Click += new System.EventHandler(this.bPriv_Click);
+            // 
+            // bSound
+            // 
+            this.bSound.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bSound.Location = new System.Drawing.Point(212, 57);
+            this.bSound.Name = "bSound";
+            this.bSound.Size = new System.Drawing.Size(70, 28);
+            this.bSound.TabIndex = 8;
+            this.bSound.Text = "General.Snd";
+            this.bSound.Click += new System.EventHandler(this.bSound_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.bSM);
+            this.groupBox1.Controls.Add(this.cmbSpeech);
+            this.groupBox1.Controls.Add(this.bBCast);
+            this.groupBox1.Controls.Add(this.bTell);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox1.Location = new System.Drawing.Point(4, 98);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(236, 117);
+            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Misc.Speech";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.cmbWeb);
+            this.groupBox2.Controls.Add(this.bWeb);
+            this.groupBox2.Controls.Add(this.bPriv);
+            this.groupBox2.Controls.Add(this.bSound);
+            this.groupBox2.Controls.Add(this.lnkSound);
+            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox2.Location = new System.Drawing.Point(246, 98);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(391, 117);
+            this.groupBox2.TabIndex = 10;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Misc.WebSnd";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.boxButton4);
+            this.groupBox3.Controls.Add(this.boxButton3);
+            this.groupBox3.Controls.Add(this.boxButton2);
+            this.groupBox3.Controls.Add(this.boxButton1);
+            this.groupBox3.Controls.Add(this.boxButton5);
+            this.groupBox3.Controls.Add(this.boxButton6);
+            this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox3.Location = new System.Drawing.Point(4, 0);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(236, 92);
+            this.groupBox3.TabIndex = 11;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "General.Cmd";
+            // 
+            // boxButton4
+            // 
+            this.boxButton4.AllowEdit = true;
+            this.boxButton4.ButtonID = 73;
+            this.boxButton4.Def = null;
+            this.boxButton4.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.boxButton4.IsActive = true;
+            this.boxButton4.Location = new System.Drawing.Point(82, 56);
+            this.boxButton4.Name = "boxButton4";
+            this.boxButton4.Size = new System.Drawing.Size(70, 28);
+            this.boxButton4.TabIndex = 3;
+            this.boxButton4.Text = "Restock";
+            // 
+            // boxButton3
+            // 
+            this.boxButton3.AllowEdit = true;
+            this.boxButton3.ButtonID = 72;
+            this.boxButton3.Def = null;
+            this.boxButton3.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.boxButton3.IsActive = true;
+            this.boxButton3.Location = new System.Drawing.Point(82, 22);
+            this.boxButton3.Name = "boxButton3";
+            this.boxButton3.Size = new System.Drawing.Size(70, 28);
+            this.boxButton3.TabIndex = 2;
+            this.boxButton3.Text = "Players";
+            // 
+            // boxButton2
+            // 
+            this.boxButton2.AllowEdit = true;
+            this.boxButton2.ButtonID = 71;
+            this.boxButton2.Def = null;
+            this.boxButton2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.boxButton2.IsActive = true;
+            this.boxButton2.Location = new System.Drawing.Point(6, 56);
+            this.boxButton2.Name = "boxButton2";
+            this.boxButton2.Size = new System.Drawing.Size(70, 28);
+            this.boxButton2.TabIndex = 1;
+            this.boxButton2.Text = "Misc";
+            // 
+            // boxButton1
+            // 
+            this.boxButton1.AllowEdit = true;
+            this.boxButton1.ButtonID = 70;
+            this.boxButton1.Def = null;
+            this.boxButton1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.boxButton1.IsActive = true;
+            this.boxButton1.Location = new System.Drawing.Point(6, 22);
+            this.boxButton1.Name = "boxButton1";
+            this.boxButton1.Size = new System.Drawing.Size(70, 28);
+            this.boxButton1.TabIndex = 0;
+            this.boxButton1.Text = "Bank";
+            // 
+            // boxButton5
+            // 
+            this.boxButton5.AllowEdit = true;
+            this.boxButton5.ButtonID = 74;
+            this.boxButton5.Def = null;
+            this.boxButton5.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.boxButton5.IsActive = true;
+            this.boxButton5.Location = new System.Drawing.Point(158, 22);
+            this.boxButton5.Name = "boxButton5";
+            this.boxButton5.Size = new System.Drawing.Size(70, 28);
+            this.boxButton5.TabIndex = 4;
+            this.boxButton5.Text = "Items";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.numSkill);
+            this.groupBox4.Controls.Add(this.lnkSkill);
+            this.groupBox4.Controls.Add(this.bGetSkill);
+            this.groupBox4.Controls.Add(this.bSetSkill);
+            this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox4.Location = new System.Drawing.Point(246, 0);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(158, 92);
+            this.groupBox4.TabIndex = 12;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Misc.Skills";
+            // 
+            // numSkill
+            // 
+            this.numSkill.DecimalPlaces = 1;
+            this.numSkill.Location = new System.Drawing.Point(36, 54);
+            this.numSkill.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.numSkill.Name = "numSkill";
+            this.numSkill.Size = new System.Drawing.Size(59, 23);
+            this.numSkill.TabIndex = 1;
+            this.numSkill.Value = new decimal(new int[] {
+            1099,
+            0,
+            0,
+            65536});
+            this.numSkill.ValueChanged += new System.EventHandler(this.numSkill_ValueChanged);
+            // 
+            // lnkSkill
+            // 
+            this.lnkSkill.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lnkSkill.Location = new System.Drawing.Point(4, 16);
+            this.lnkSkill.Name = "lnkSkill";
+            this.lnkSkill.Size = new System.Drawing.Size(148, 23);
+            this.lnkSkill.TabIndex = 0;
+            this.lnkSkill.TabStop = true;
+            this.lnkSkill.Text = "Common.Choose";
+            this.lnkSkill.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lnkSkill.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lnkSkill_MouseDown);
+            // 
+            // bGetSkill
+            // 
+            this.bGetSkill.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bGetSkill.Image = ((System.Drawing.Image)(resources.GetObject("bGetSkill.Image")));
+            this.bGetSkill.Location = new System.Drawing.Point(6, 52);
+            this.bGetSkill.Name = "bGetSkill";
+            this.bGetSkill.Size = new System.Drawing.Size(24, 23);
+            this.bGetSkill.TabIndex = 13;
+            this.bGetSkill.Click += new System.EventHandler(this.bGetSkill_Click);
+            // 
+            // bSetSkill
+            // 
+            this.bSetSkill.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bSetSkill.Location = new System.Drawing.Point(101, 52);
+            this.bSetSkill.Name = "bSetSkill";
+            this.bSetSkill.Size = new System.Drawing.Size(51, 28);
+            this.bSetSkill.TabIndex = 13;
+            this.bSetSkill.Text = "Common.Set";
+            this.bSetSkill.Click += new System.EventHandler(this.bSetSkill_Click);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.bInBag);
+            this.groupBox5.Controls.Add(this.numDupe);
+            this.groupBox5.Controls.Add(this.chkDupe);
+            this.groupBox5.Controls.Add(this.bDupe);
+            this.groupBox5.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox5.Location = new System.Drawing.Point(410, 0);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(118, 92);
+            this.groupBox5.TabIndex = 13;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "General.Dupe";
+            // 
+            // bInBag
+            // 
+            this.bInBag.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bInBag.Location = new System.Drawing.Point(8, 59);
+            this.bInBag.Name = "bInBag";
+            this.bInBag.Size = new System.Drawing.Size(44, 23);
+            this.bInBag.TabIndex = 17;
+            this.bInBag.Text = "General.Bag";
+            this.bInBag.Click += new System.EventHandler(this.bInBag_Click);
+            // 
+            // numDupe
+            // 
+            this.numDupe.Location = new System.Drawing.Point(38, 27);
+            this.numDupe.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.numDupe.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numDupe.Name = "numDupe";
+            this.numDupe.Size = new System.Drawing.Size(60, 23);
+            this.numDupe.TabIndex = 15;
+            this.numDupe.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numDupe.ValueChanged += new System.EventHandler(this.numDupe_ValueChanged);
+            // 
+            // chkDupe
+            // 
+            this.chkDupe.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.chkDupe.Location = new System.Drawing.Point(16, 27);
+            this.chkDupe.Name = "chkDupe";
+            this.chkDupe.Size = new System.Drawing.Size(16, 20);
+            this.chkDupe.TabIndex = 14;
+            this.chkDupe.CheckedChanged += new System.EventHandler(this.chkDupe_CheckedChanged);
+            // 
+            // bDupe
+            // 
+            this.bDupe.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bDupe.Location = new System.Drawing.Point(68, 59);
+            this.bDupe.Name = "bDupe";
+            this.bDupe.Size = new System.Drawing.Size(44, 23);
+            this.bDupe.TabIndex = 16;
+            this.bDupe.Text = "General.Dupe";
+            this.bDupe.Click += new System.EventHandler(this.bDupe_Click);
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.bLightGlobal);
+            this.groupBox6.Controls.Add(this.bLightLocal);
+            this.groupBox6.Controls.Add(this.numLight);
+            this.groupBox6.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox6.Location = new System.Drawing.Point(534, 0);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(103, 92);
+            this.groupBox6.TabIndex = 14;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "General.Light";
+            // 
+            // bLightGlobal
+            // 
+            this.bLightGlobal.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bLightGlobal.Location = new System.Drawing.Point(48, 59);
+            this.bLightGlobal.Name = "bLightGlobal";
+            this.bLightGlobal.Size = new System.Drawing.Size(32, 23);
+            this.bLightGlobal.TabIndex = 2;
+            this.bLightGlobal.Text = "General.All";
+            this.bLightGlobal.Click += new System.EventHandler(this.bLightGlobal_Click);
+            // 
+            // bLightLocal
+            // 
+            this.bLightLocal.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bLightLocal.Location = new System.Drawing.Point(16, 59);
+            this.bLightLocal.Name = "bLightLocal";
+            this.bLightLocal.Size = new System.Drawing.Size(32, 23);
+            this.bLightLocal.TabIndex = 1;
+            this.bLightLocal.Text = "General.You";
+            this.bLightLocal.Click += new System.EventHandler(this.bLightLocal_Click);
+            // 
+            // numLight
+            // 
+            this.numLight.Location = new System.Drawing.Point(25, 25);
+            this.numLight.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
+            this.numLight.Name = "numLight";
+            this.numLight.Size = new System.Drawing.Size(48, 23);
+            this.numLight.TabIndex = 0;
+            this.numLight.ValueChanged += new System.EventHandler(this.numLight_ValueChanged);
+            // 
+            // boxButton6
+            // 
+            this.boxButton6.AllowEdit = true;
+            this.boxButton6.ButtonID = 75;
+            this.boxButton6.Def = null;
+            this.boxButton6.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.boxButton6.IsActive = true;
+            this.boxButton6.Location = new System.Drawing.Point(158, 56);
+            this.boxButton6.Name = "boxButton6";
+            this.boxButton6.Size = new System.Drawing.Size(70, 28);
+            this.boxButton6.TabIndex = 5;
+            this.boxButton6.Text = "Cast";
+            // 
+            // General
+            // 
+            this.Controls.Add(this.groupBox6);
+            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name = "General";
+            this.Size = new System.Drawing.Size(640, 224);
+            this.Load += new System.EventHandler(this.General_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numSkill)).EndInit();
+            this.groupBox5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numDupe)).EndInit();
+            this.groupBox6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numLight)).EndInit();
+            this.ResumeLayout(false);
+
 		}
 		#endregion
 

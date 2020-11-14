@@ -104,205 +104,204 @@ namespace TheBox.Pages
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.b0 = new System.Windows.Forms.Button();
-			this.b1 = new System.Windows.Forms.Button();
-			this.b2 = new System.Windows.Forms.Button();
-			this.b3 = new System.Windows.Forms.Button();
-			this.b4 = new System.Windows.Forms.Button();
-			this.b5 = new System.Windows.Forms.Button();
-			this.b6 = new System.Windows.Forms.Button();
-			this.b7 = new System.Windows.Forms.Button();
-			this.b8 = new System.Windows.Forms.Button();
-			this.b9 = new System.Windows.Forms.Button();
-			this.cmbCategories = new System.Windows.Forms.ComboBox();
-			this.bNoLight = new System.Windows.Forms.Button();
-			this.labLight = new System.Windows.Forms.Label();
-			this.lnkDecoLight = new System.Windows.Forms.LinkLabel();
-			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.groupBox1.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// b0
-			// 
-			this.b0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.b0.Location = new System.Drawing.Point(0, 0);
-			this.b0.Name = "b0";
-			this.b0.Size = new System.Drawing.Size(68, 68);
-			this.b0.TabIndex = 0;
-			this.b0.MouseEnter += new System.EventHandler(this.OnButton);
-			this.b0.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnButtonDown);
-			// 
-			// b1
-			// 
-			this.b1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.b1.Location = new System.Drawing.Point(72, 0);
-			this.b1.Name = "b1";
-			this.b1.Size = new System.Drawing.Size(68, 68);
-			this.b1.TabIndex = 1;
-			this.b1.MouseEnter += new System.EventHandler(this.OnButton);
-			this.b1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnButtonDown);
-			// 
-			// b2
-			// 
-			this.b2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.b2.Location = new System.Drawing.Point(144, 0);
-			this.b2.Name = "b2";
-			this.b2.Size = new System.Drawing.Size(68, 68);
-			this.b2.TabIndex = 2;
-			this.b2.MouseEnter += new System.EventHandler(this.OnButton);
-			this.b2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnButtonDown);
-			// 
-			// b3
-			// 
-			this.b3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.b3.Location = new System.Drawing.Point(216, 0);
-			this.b3.Name = "b3";
-			this.b3.Size = new System.Drawing.Size(68, 68);
-			this.b3.TabIndex = 3;
-			this.b3.MouseEnter += new System.EventHandler(this.OnButton);
-			this.b3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnButtonDown);
-			// 
-			// b4
-			// 
-			this.b4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.b4.Location = new System.Drawing.Point(288, 0);
-			this.b4.Name = "b4";
-			this.b4.Size = new System.Drawing.Size(68, 68);
-			this.b4.TabIndex = 4;
-			this.b4.MouseEnter += new System.EventHandler(this.OnButton);
-			this.b4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnButtonDown);
-			// 
-			// b5
-			// 
-			this.b5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.b5.Location = new System.Drawing.Point(0, 72);
-			this.b5.Name = "b5";
-			this.b5.Size = new System.Drawing.Size(68, 68);
-			this.b5.TabIndex = 5;
-			this.b5.MouseEnter += new System.EventHandler(this.OnButton);
-			this.b5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnButtonDown);
-			// 
-			// b6
-			// 
-			this.b6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.b6.Location = new System.Drawing.Point(72, 72);
-			this.b6.Name = "b6";
-			this.b6.Size = new System.Drawing.Size(68, 68);
-			this.b6.TabIndex = 6;
-			this.b6.MouseEnter += new System.EventHandler(this.OnButton);
-			this.b6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnButtonDown);
-			// 
-			// b7
-			// 
-			this.b7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.b7.Location = new System.Drawing.Point(144, 72);
-			this.b7.Name = "b7";
-			this.b7.Size = new System.Drawing.Size(68, 68);
-			this.b7.TabIndex = 7;
-			this.b7.MouseEnter += new System.EventHandler(this.OnButton);
-			this.b7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnButtonDown);
-			// 
-			// b8
-			// 
-			this.b8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.b8.Location = new System.Drawing.Point(216, 72);
-			this.b8.Name = "b8";
-			this.b8.Size = new System.Drawing.Size(68, 68);
-			this.b8.TabIndex = 8;
-			this.b8.MouseEnter += new System.EventHandler(this.OnButton);
-			this.b8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnButtonDown);
-			// 
-			// b9
-			// 
-			this.b9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.b9.Location = new System.Drawing.Point(288, 72);
-			this.b9.Name = "b9";
-			this.b9.Size = new System.Drawing.Size(68, 68);
-			this.b9.TabIndex = 9;
-			this.b9.MouseEnter += new System.EventHandler(this.OnButton);
-			this.b9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnButtonDown);
-			// 
-			// cmbCategories
-			// 
-			this.cmbCategories.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cmbCategories.DropDownWidth = 132;
-			this.cmbCategories.Location = new System.Drawing.Point(360, 36);
-			this.cmbCategories.MaxDropDownItems = 10;
-			this.cmbCategories.Name = "cmbCategories";
-			this.cmbCategories.Size = new System.Drawing.Size(132, 21);
-			this.cmbCategories.TabIndex = 10;
-			this.cmbCategories.SelectedIndexChanged += new System.EventHandler(this.cmbCategories_SelectedIndexChanged);
-			// 
-			// bNoLight
-			// 
-			this.bNoLight.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bNoLight.Location = new System.Drawing.Point(360, 64);
-			this.bNoLight.Name = "bNoLight";
-			this.bNoLight.Size = new System.Drawing.Size(132, 23);
-			this.bNoLight.TabIndex = 11;
-			this.bNoLight.Text = "Lights.NoLight";
-			this.bNoLight.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bNoLight_MouseDown);
-			// 
-			// labLight
-			// 
-			this.labLight.Font = new System.Drawing.Font(
-				"Microsoft Sans Serif",
-				8.25F,
-				System.Drawing.FontStyle.Regular,
-				System.Drawing.GraphicsUnit.Point,
-				((System.Byte)(0)));
-			this.labLight.Location = new System.Drawing.Point(360, 0);
-			this.labLight.Name = "labLight";
-			this.labLight.Size = new System.Drawing.Size(132, 32);
-			this.labLight.TabIndex = 12;
-			this.labLight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.labLight.Paint += new System.Windows.Forms.PaintEventHandler(this.labLight_Paint);
-			// 
-			// lnkDecoLight
-			// 
-			this.lnkDecoLight.Location = new System.Drawing.Point(12, 16);
-			this.lnkDecoLight.Name = "lnkDecoLight";
-			this.lnkDecoLight.Size = new System.Drawing.Size(108, 28);
-			this.lnkDecoLight.TabIndex = 14;
-			this.lnkDecoLight.TabStop = true;
-			this.lnkDecoLight.Text = "linkLabel1";
-			this.lnkDecoLight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.lnkDecoLight.LinkClicked +=
-				new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkDecoLight_LinkClicked);
-			this.lnkDecoLight.Paint += new System.Windows.Forms.PaintEventHandler(this.linkLabel1_Paint);
-			// 
-			// groupBox1
-			// 
-			this.groupBox1.Controls.Add(this.lnkDecoLight);
-			this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.groupBox1.Location = new System.Drawing.Point(360, 92);
-			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(132, 48);
-			this.groupBox1.TabIndex = 15;
-			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Lights.SetDeco";
-			// 
-			// Lights
-			// 
-			this.Controls.Add(this.groupBox1);
-			this.Controls.Add(this.labLight);
-			this.Controls.Add(this.bNoLight);
-			this.Controls.Add(this.cmbCategories);
-			this.Controls.Add(this.b9);
-			this.Controls.Add(this.b8);
-			this.Controls.Add(this.b7);
-			this.Controls.Add(this.b6);
-			this.Controls.Add(this.b5);
-			this.Controls.Add(this.b4);
-			this.Controls.Add(this.b3);
-			this.Controls.Add(this.b2);
-			this.Controls.Add(this.b1);
-			this.Controls.Add(this.b0);
-			this.Name = "Lights";
-			this.Size = new System.Drawing.Size(496, 142);
-			this.Load += new System.EventHandler(this.Lights_Load);
-			this.groupBox1.ResumeLayout(false);
-			this.ResumeLayout(false);
+            this.b0 = new System.Windows.Forms.Button();
+            this.b1 = new System.Windows.Forms.Button();
+            this.b2 = new System.Windows.Forms.Button();
+            this.b3 = new System.Windows.Forms.Button();
+            this.b4 = new System.Windows.Forms.Button();
+            this.b5 = new System.Windows.Forms.Button();
+            this.b6 = new System.Windows.Forms.Button();
+            this.b7 = new System.Windows.Forms.Button();
+            this.b8 = new System.Windows.Forms.Button();
+            this.b9 = new System.Windows.Forms.Button();
+            this.cmbCategories = new System.Windows.Forms.ComboBox();
+            this.bNoLight = new System.Windows.Forms.Button();
+            this.labLight = new System.Windows.Forms.Label();
+            this.lnkDecoLight = new System.Windows.Forms.LinkLabel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // b0
+            // 
+            this.b0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b0.Location = new System.Drawing.Point(3, 3);
+            this.b0.Name = "b0";
+            this.b0.Size = new System.Drawing.Size(90, 90);
+            this.b0.TabIndex = 0;
+            this.b0.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnButtonDown);
+            this.b0.MouseEnter += new System.EventHandler(this.OnButton);
+            // 
+            // b1
+            // 
+            this.b1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b1.Location = new System.Drawing.Point(99, 3);
+            this.b1.Name = "b1";
+            this.b1.Size = new System.Drawing.Size(90, 90);
+            this.b1.TabIndex = 1;
+            this.b1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnButtonDown);
+            this.b1.MouseEnter += new System.EventHandler(this.OnButton);
+            // 
+            // b2
+            // 
+            this.b2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b2.Location = new System.Drawing.Point(195, 3);
+            this.b2.Name = "b2";
+            this.b2.Size = new System.Drawing.Size(90, 90);
+            this.b2.TabIndex = 2;
+            this.b2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnButtonDown);
+            this.b2.MouseEnter += new System.EventHandler(this.OnButton);
+            // 
+            // b3
+            // 
+            this.b3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b3.Location = new System.Drawing.Point(291, 3);
+            this.b3.Name = "b3";
+            this.b3.Size = new System.Drawing.Size(90, 90);
+            this.b3.TabIndex = 3;
+            this.b3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnButtonDown);
+            this.b3.MouseEnter += new System.EventHandler(this.OnButton);
+            // 
+            // b4
+            // 
+            this.b4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b4.Location = new System.Drawing.Point(387, 3);
+            this.b4.Name = "b4";
+            this.b4.Size = new System.Drawing.Size(90, 90);
+            this.b4.TabIndex = 4;
+            this.b4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnButtonDown);
+            this.b4.MouseEnter += new System.EventHandler(this.OnButton);
+            // 
+            // b5
+            // 
+            this.b5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b5.Location = new System.Drawing.Point(3, 99);
+            this.b5.Name = "b5";
+            this.b5.Size = new System.Drawing.Size(90, 90);
+            this.b5.TabIndex = 5;
+            this.b5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnButtonDown);
+            this.b5.MouseEnter += new System.EventHandler(this.OnButton);
+            // 
+            // b6
+            // 
+            this.b6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b6.Location = new System.Drawing.Point(99, 99);
+            this.b6.Name = "b6";
+            this.b6.Size = new System.Drawing.Size(90, 90);
+            this.b6.TabIndex = 6;
+            this.b6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnButtonDown);
+            this.b6.MouseEnter += new System.EventHandler(this.OnButton);
+            // 
+            // b7
+            // 
+            this.b7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b7.Location = new System.Drawing.Point(195, 99);
+            this.b7.Name = "b7";
+            this.b7.Size = new System.Drawing.Size(90, 90);
+            this.b7.TabIndex = 7;
+            this.b7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnButtonDown);
+            this.b7.MouseEnter += new System.EventHandler(this.OnButton);
+            // 
+            // b8
+            // 
+            this.b8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b8.Location = new System.Drawing.Point(291, 99);
+            this.b8.Name = "b8";
+            this.b8.Size = new System.Drawing.Size(90, 90);
+            this.b8.TabIndex = 8;
+            this.b8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnButtonDown);
+            this.b8.MouseEnter += new System.EventHandler(this.OnButton);
+            // 
+            // b9
+            // 
+            this.b9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b9.Location = new System.Drawing.Point(387, 99);
+            this.b9.Name = "b9";
+            this.b9.Size = new System.Drawing.Size(90, 90);
+            this.b9.TabIndex = 9;
+            this.b9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OnButtonDown);
+            this.b9.MouseEnter += new System.EventHandler(this.OnButton);
+            // 
+            // cmbCategories
+            // 
+            this.cmbCategories.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCategories.DropDownWidth = 132;
+            this.cmbCategories.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCategories.Location = new System.Drawing.Point(495, 47);
+            this.cmbCategories.MaxDropDownItems = 10;
+            this.cmbCategories.Name = "cmbCategories";
+            this.cmbCategories.Size = new System.Drawing.Size(132, 23);
+            this.cmbCategories.TabIndex = 10;
+            this.cmbCategories.SelectedIndexChanged += new System.EventHandler(this.cmbCategories_SelectedIndexChanged);
+            // 
+            // bNoLight
+            // 
+            this.bNoLight.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bNoLight.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bNoLight.Location = new System.Drawing.Point(495, 75);
+            this.bNoLight.Name = "bNoLight";
+            this.bNoLight.Size = new System.Drawing.Size(132, 23);
+            this.bNoLight.TabIndex = 11;
+            this.bNoLight.Text = "Lights.NoLight";
+            this.bNoLight.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bNoLight_MouseDown);
+            // 
+            // labLight
+            // 
+            this.labLight.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labLight.Location = new System.Drawing.Point(492, 3);
+            this.labLight.Name = "labLight";
+            this.labLight.Size = new System.Drawing.Size(132, 32);
+            this.labLight.TabIndex = 12;
+            this.labLight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labLight.Paint += new System.Windows.Forms.PaintEventHandler(this.labLight_Paint);
+            // 
+            // lnkDecoLight
+            // 
+            this.lnkDecoLight.Location = new System.Drawing.Point(12, 16);
+            this.lnkDecoLight.Name = "lnkDecoLight";
+            this.lnkDecoLight.Size = new System.Drawing.Size(108, 28);
+            this.lnkDecoLight.TabIndex = 14;
+            this.lnkDecoLight.TabStop = true;
+            this.lnkDecoLight.Text = "linkLabel1";
+            this.lnkDecoLight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lnkDecoLight.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkDecoLight_LinkClicked);
+            this.lnkDecoLight.Paint += new System.Windows.Forms.PaintEventHandler(this.linkLabel1_Paint);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.lnkDecoLight);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(495, 103);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(132, 48);
+            this.groupBox1.TabIndex = 15;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Lights.SetDeco";
+            // 
+            // Lights
+            // 
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.labLight);
+            this.Controls.Add(this.bNoLight);
+            this.Controls.Add(this.cmbCategories);
+            this.Controls.Add(this.b9);
+            this.Controls.Add(this.b8);
+            this.Controls.Add(this.b7);
+            this.Controls.Add(this.b6);
+            this.Controls.Add(this.b5);
+            this.Controls.Add(this.b4);
+            this.Controls.Add(this.b3);
+            this.Controls.Add(this.b2);
+            this.Controls.Add(this.b1);
+            this.Controls.Add(this.b0);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name = "Lights";
+            this.Size = new System.Drawing.Size(640, 224);
+            this.Load += new System.EventHandler(this.Lights_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.ResumeLayout(false);
+
 		}
 		#endregion
 

@@ -90,6 +90,10 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Pandora\Pandora.csproj">
+      <Project>{22374E67-1ED8-4E2A-AED6-3068D7DD2BA5}</Project>
+      <Name>Pandora</Name>
+    </ProjectReference>
     <Reference Include="System">
       <Name>System</Name>
     </Reference>

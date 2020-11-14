@@ -105,206 +105,215 @@ namespace TheBox.Buttons
 		/// </summary>
 		private void InitializeComponent()
 		{
-			var resources = new System.Resources.ResourceManager(typeof(ButtonEditor));
-			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.linkLeft = new System.Windows.Forms.LinkLabel();
-			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.linkRight = new System.Windows.Forms.LinkLabel();
-			this.groupBox3 = new System.Windows.Forms.GroupBox();
-			this.bPreview = new TheBox.Buttons.BoxButton();
-			this.bCancel = new System.Windows.Forms.Button();
-			this.bOk = new System.Windows.Forms.Button();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.txCaption = new System.Windows.Forms.TextBox();
-			this.cMenu = new System.Windows.Forms.ContextMenu();
-			this.mNone = new System.Windows.Forms.MenuItem();
-			this.mSingleCommand = new System.Windows.Forms.MenuItem();
-			this.mMenu = new System.Windows.Forms.MenuItem();
-			this.mLastCommand = new System.Windows.Forms.MenuItem();
-			this.mMultiCommand = new System.Windows.Forms.MenuItem();
-			this.mModifiersCommand = new System.Windows.Forms.MenuItem();
-			this.groupBox1.SuspendLayout();
-			this.groupBox2.SuspendLayout();
-			this.groupBox3.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// groupBox1
-			// 
-			this.groupBox1.Controls.Add(this.linkLeft);
-			this.groupBox1.Location = new System.Drawing.Point(16, 8);
-			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(200, 80);
-			this.groupBox1.TabIndex = 0;
-			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Buttons.LeftMouse";
-			// 
-			// linkLeft
-			// 
-			this.linkLeft.Location = new System.Drawing.Point(16, 32);
-			this.linkLeft.Name = "linkLeft";
-			this.linkLeft.Size = new System.Drawing.Size(176, 23);
-			this.linkLeft.TabIndex = 0;
-			this.linkLeft.TabStop = true;
-			this.linkLeft.Text = "Common.None";
-			this.linkLeft.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.linkLeft.MouseDown += new System.Windows.Forms.MouseEventHandler(this.linkLeft_MouseDown);
-			// 
-			// groupBox2
-			// 
-			this.groupBox2.Controls.Add(this.linkRight);
-			this.groupBox2.Location = new System.Drawing.Point(240, 8);
-			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size(200, 80);
-			this.groupBox2.TabIndex = 1;
-			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "Buttons.RightMouse";
-			// 
-			// linkRight
-			// 
-			this.linkRight.Location = new System.Drawing.Point(16, 32);
-			this.linkRight.Name = "linkRight";
-			this.linkRight.Size = new System.Drawing.Size(176, 23);
-			this.linkRight.TabIndex = 0;
-			this.linkRight.TabStop = true;
-			this.linkRight.Text = "Common.None";
-			this.linkRight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this.linkRight.MouseDown += new System.Windows.Forms.MouseEventHandler(this.linkRight_MouseDown);
-			// 
-			// groupBox3
-			// 
-			this.groupBox3.Controls.Add(this.bPreview);
-			this.groupBox3.Location = new System.Drawing.Point(16, 96);
-			this.groupBox3.Name = "groupBox3";
-			this.groupBox3.TabIndex = 0;
-			this.groupBox3.TabStop = false;
-			this.groupBox3.Text = "Common.Preview";
-			// 
-			// bPreview
-			// 
-			this.bPreview.AllowEdit = false;
-			this.bPreview.ButtonID = -1;
-			this.bPreview.Def = null;
-			this.bPreview.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bPreview.IsActive = false;
-			this.bPreview.Location = new System.Drawing.Point(64, 40);
-			this.bPreview.Name = "bPreview";
-			this.bPreview.Size = new System.Drawing.Size(80, 23);
-			this.bPreview.TabIndex = 0;
-			this.bPreview.Text = "Common.Preview";
-			// 
-			// bCancel
-			// 
-			this.bCancel.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bCancel.Location = new System.Drawing.Point(288, 384);
-			this.bCancel.Name = "bCancel";
-			this.bCancel.TabIndex = 2;
-			this.bCancel.Text = "Common.Cancel";
-			this.bCancel.Click += new System.EventHandler(this.bCancel_Click);
-			// 
-			// bOk
-			// 
-			this.bOk.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bOk.Location = new System.Drawing.Point(376, 384);
-			this.bOk.Name = "bOk";
-			this.bOk.TabIndex = 1;
-			this.bOk.Text = "Common.Ok";
-			this.bOk.Click += new System.EventHandler(this.bOk_Click);
-			// 
-			// textBox1
-			// 
-			this.textBox1.Location = new System.Drawing.Point(16, 208);
-			this.textBox1.Multiline = true;
-			this.textBox1.Name = "textBox1";
-			this.textBox1.ReadOnly = true;
-			this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-			this.textBox1.Size = new System.Drawing.Size(432, 168);
-			this.textBox1.TabIndex = 3;
-			this.textBox1.Text = "Buttons.Intstructions";
-			// 
-			// label1
-			// 
-			this.label1.Location = new System.Drawing.Point(240, 104);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(200, 23);
-			this.label1.TabIndex = 4;
-			this.label1.Text = "ButtonMenuEditor.Caption";
-			// 
-			// txCaption
-			// 
-			this.txCaption.Location = new System.Drawing.Point(240, 128);
-			this.txCaption.Name = "txCaption";
-			this.txCaption.Size = new System.Drawing.Size(200, 20);
-			this.txCaption.TabIndex = 5;
-			this.txCaption.Text = "";
-			this.txCaption.TextChanged += new System.EventHandler(this.txCaption_TextChanged);
-			// 
-			// cMenu
-			// 
-			this.cMenu.MenuItems.AddRange(
-				new System.Windows.Forms.MenuItem[]
-					{this.mNone, this.mSingleCommand, this.mMenu, this.mLastCommand, this.mMultiCommand, this.mModifiersCommand});
-			this.cMenu.Popup += new System.EventHandler(this.cMenu_Popup);
-			// 
-			// mNone
-			// 
-			this.mNone.Index = 0;
-			this.mNone.Text = "Common.None";
-			this.mNone.Click += new System.EventHandler(this.mNone_Click);
-			// 
-			// mSingleCommand
-			// 
-			this.mSingleCommand.Index = 1;
-			this.mSingleCommand.Text = "Buttons.Single";
-			this.mSingleCommand.Click += new System.EventHandler(this.mSingleCommand_Click);
-			// 
-			// mMenu
-			// 
-			this.mMenu.Index = 2;
-			this.mMenu.Text = "Common.Menu";
-			this.mMenu.Click += new System.EventHandler(this.mMenu_Click);
-			// 
-			// mLastCommand
-			// 
-			this.mLastCommand.Index = 3;
-			this.mLastCommand.Text = "Buttons.LastCommand";
-			this.mLastCommand.Click += new System.EventHandler(this.mLastCommand_Click);
-			// 
-			// mMultiCommand
-			// 
-			this.mMultiCommand.Index = 4;
-			this.mMultiCommand.Text = "Buttons.Multi";
-			this.mMultiCommand.Click += new System.EventHandler(this.mMultiCommand_Click);
-			// 
-			// mModifiersCommand
-			// 
-			this.mModifiersCommand.Index = 5;
-			this.mModifiersCommand.Text = "Buttons.Modifiers";
-			this.mModifiersCommand.Click += new System.EventHandler(this.mModifiersCommand_Click);
-			// 
-			// ButtonEditor
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(458, 416);
-			this.Controls.Add(this.txCaption);
-			this.Controls.Add(this.textBox1);
-			this.Controls.Add(this.label1);
-			this.Controls.Add(this.bOk);
-			this.Controls.Add(this.bCancel);
-			this.Controls.Add(this.groupBox3);
-			this.Controls.Add(this.groupBox2);
-			this.Controls.Add(this.groupBox1);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.Name = "ButtonEditor";
-			this.ShowInTaskbar = false;
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "Buttons.Title";
-			this.Closing += new System.ComponentModel.CancelEventHandler(this.ButtonEditor_Closing);
-			this.groupBox1.ResumeLayout(false);
-			this.groupBox2.ResumeLayout(false);
-			this.groupBox3.ResumeLayout(false);
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ButtonEditor));
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.linkLeft = new System.Windows.Forms.LinkLabel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.linkRight = new System.Windows.Forms.LinkLabel();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.bPreview = new TheBox.Buttons.BoxButton();
+            this.bCancel = new System.Windows.Forms.Button();
+            this.bOk = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txCaption = new System.Windows.Forms.TextBox();
+            this.cMenu = new System.Windows.Forms.ContextMenu();
+            this.mNone = new System.Windows.Forms.MenuItem();
+            this.mSingleCommand = new System.Windows.Forms.MenuItem();
+            this.mMenu = new System.Windows.Forms.MenuItem();
+            this.mLastCommand = new System.Windows.Forms.MenuItem();
+            this.mMultiCommand = new System.Windows.Forms.MenuItem();
+            this.mModifiersCommand = new System.Windows.Forms.MenuItem();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.linkLeft);
+            this.groupBox1.Location = new System.Drawing.Point(16, 8);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 80);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Buttons.LeftMouse";
+            // 
+            // linkLeft
+            // 
+            this.linkLeft.Location = new System.Drawing.Point(16, 32);
+            this.linkLeft.Name = "linkLeft";
+            this.linkLeft.Size = new System.Drawing.Size(176, 23);
+            this.linkLeft.TabIndex = 0;
+            this.linkLeft.TabStop = true;
+            this.linkLeft.Text = "Common.None";
+            this.linkLeft.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkLeft.MouseDown += new System.Windows.Forms.MouseEventHandler(this.linkLeft_MouseDown);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.linkRight);
+            this.groupBox2.Location = new System.Drawing.Point(240, 8);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(200, 80);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Buttons.RightMouse";
+            // 
+            // linkRight
+            // 
+            this.linkRight.Location = new System.Drawing.Point(16, 32);
+            this.linkRight.Name = "linkRight";
+            this.linkRight.Size = new System.Drawing.Size(176, 23);
+            this.linkRight.TabIndex = 0;
+            this.linkRight.TabStop = true;
+            this.linkRight.Text = "Common.None";
+            this.linkRight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkRight.MouseDown += new System.Windows.Forms.MouseEventHandler(this.linkRight_MouseDown);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.bPreview);
+            this.groupBox3.Location = new System.Drawing.Point(16, 96);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(200, 100);
+            this.groupBox3.TabIndex = 0;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Common.Preview";
+            // 
+            // bPreview
+            // 
+            this.bPreview.AllowEdit = false;
+            this.bPreview.ButtonID = -1;
+            this.bPreview.Def = null;
+            this.bPreview.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bPreview.IsActive = false;
+            this.bPreview.Location = new System.Drawing.Point(64, 40);
+            this.bPreview.Name = "bPreview";
+            this.bPreview.Size = new System.Drawing.Size(80, 23);
+            this.bPreview.TabIndex = 0;
+            this.bPreview.Text = "Common.Preview";
+            // 
+            // bCancel
+            // 
+            this.bCancel.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bCancel.Location = new System.Drawing.Point(288, 384);
+            this.bCancel.Name = "bCancel";
+            this.bCancel.Size = new System.Drawing.Size(75, 23);
+            this.bCancel.TabIndex = 2;
+            this.bCancel.Text = "Common.Cancel";
+            this.bCancel.Click += new System.EventHandler(this.bCancel_Click);
+            // 
+            // bOk
+            // 
+            this.bOk.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bOk.Location = new System.Drawing.Point(376, 384);
+            this.bOk.Name = "bOk";
+            this.bOk.Size = new System.Drawing.Size(75, 23);
+            this.bOk.TabIndex = 1;
+            this.bOk.Text = "Common.Ok";
+            this.bOk.Click += new System.EventHandler(this.bOk_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(16, 208);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox1.Size = new System.Drawing.Size(432, 168);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.Text = "Buttons.Intstructions";
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(240, 104);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(200, 23);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "ButtonMenuEditor.Caption";
+            // 
+            // txCaption
+            // 
+            this.txCaption.Location = new System.Drawing.Point(240, 128);
+            this.txCaption.Name = "txCaption";
+            this.txCaption.Size = new System.Drawing.Size(200, 23);
+            this.txCaption.TabIndex = 5;
+            this.txCaption.TextChanged += new System.EventHandler(this.txCaption_TextChanged);
+            // 
+            // cMenu
+            // 
+            this.cMenu.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.mNone,
+            this.mSingleCommand,
+            this.mMenu,
+            this.mLastCommand,
+            this.mMultiCommand,
+            this.mModifiersCommand});
+            this.cMenu.Popup += new System.EventHandler(this.cMenu_Popup);
+            // 
+            // mNone
+            // 
+            this.mNone.Index = 0;
+            this.mNone.Text = "Common.None";
+            this.mNone.Click += new System.EventHandler(this.mNone_Click);
+            // 
+            // mSingleCommand
+            // 
+            this.mSingleCommand.Index = 1;
+            this.mSingleCommand.Text = "Buttons.Single";
+            this.mSingleCommand.Click += new System.EventHandler(this.mSingleCommand_Click);
+            // 
+            // mMenu
+            // 
+            this.mMenu.Index = 2;
+            this.mMenu.Text = "Common.Menu";
+            this.mMenu.Click += new System.EventHandler(this.mMenu_Click);
+            // 
+            // mLastCommand
+            // 
+            this.mLastCommand.Index = 3;
+            this.mLastCommand.Text = "Buttons.LastCommand";
+            this.mLastCommand.Click += new System.EventHandler(this.mLastCommand_Click);
+            // 
+            // mMultiCommand
+            // 
+            this.mMultiCommand.Index = 4;
+            this.mMultiCommand.Text = "Buttons.Multi";
+            this.mMultiCommand.Click += new System.EventHandler(this.mMultiCommand_Click);
+            // 
+            // mModifiersCommand
+            // 
+            this.mModifiersCommand.Index = 5;
+            this.mModifiersCommand.Text = "Buttons.Modifiers";
+            this.mModifiersCommand.Click += new System.EventHandler(this.mModifiersCommand_Click);
+            // 
+            // ButtonEditor
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(6, 16);
+            this.ClientSize = new System.Drawing.Size(458, 416);
+            this.Controls.Add(this.txCaption);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.bOk);
+            this.Controls.Add(this.bCancel);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "ButtonEditor";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Buttons.Title";
+            this.Closing += new System.ComponentModel.CancelEventHandler(this.ButtonEditor_Closing);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
 		}
 		#endregion
 

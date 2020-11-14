@@ -82,13 +82,9 @@ namespace TheBox.TravelAgent
 		private MenuItem miLocUpdate;
 		private MenuItem miMerge;
 		private LinkLabel lnk4;
+        private IContainer components;
 
-		/// <summary>
-		///     Required designer variable.
-		/// </summary>
-		private readonly Container components = null;
-
-		public TravelAgentForm()
+        public TravelAgentForm()
 		{
 			InitializeComponent();
 			m_FacetNode = new TreeNode("Facet");
@@ -118,503 +114,535 @@ namespace TheBox.TravelAgent
 		/// </summary>
 		private void InitializeComponent()
 		{
-			var resources = new System.Resources.ResourceManager(typeof(TravelAgentForm));
-			this.mMain = new System.Windows.Forms.MainMenu();
-			this.menuItem1 = new System.Windows.Forms.MenuItem();
-			this.miNew = new System.Windows.Forms.MenuItem();
-			this.miOpen = new System.Windows.Forms.MenuItem();
-			this.miMerge = new System.Windows.Forms.MenuItem();
-			this.miSave = new System.Windows.Forms.MenuItem();
-			this.menuItem7 = new System.Windows.Forms.MenuItem();
-			this.menuItem4 = new System.Windows.Forms.MenuItem();
-			this.miImport = new System.Windows.Forms.MenuItem();
-			this.menuItem9 = new System.Windows.Forms.MenuItem();
-			this.miExit = new System.Windows.Forms.MenuItem();
-			this.tCat = new System.Windows.Forms.TreeView();
-			this.cmCat = new System.Windows.Forms.ContextMenu();
-			this.miCatRename = new System.Windows.Forms.MenuItem();
-			this.miCatDelete = new System.Windows.Forms.MenuItem();
-			this.tLoc = new System.Windows.Forms.TreeView();
-			this.cmLoc = new System.Windows.Forms.ContextMenu();
-			this.miLocRename = new System.Windows.Forms.MenuItem();
-			this.miLocDelete = new System.Windows.Forms.MenuItem();
-			this.menuItem2 = new System.Windows.Forms.MenuItem();
-			this.miLocUpdate = new System.Windows.Forms.MenuItem();
-			this.miUpdateClient = new System.Windows.Forms.MenuItem();
-			this.miUpdateMap = new System.Windows.Forms.MenuItem();
-			this.label2 = new System.Windows.Forms.Label();
-			this.label1 = new System.Windows.Forms.Label();
-			this.txCat = new System.Windows.Forms.TextBox();
-			this.txLoc = new System.Windows.Forms.TextBox();
-			this.bAddCat = new System.Windows.Forms.Button();
-			this.bAddLoc = new System.Windows.Forms.Button();
-			this.m_Map = new TheBox.MapViewer.MapViewer();
-			this.label3 = new System.Windows.Forms.Label();
-			this.lnk0 = new System.Windows.Forms.LinkLabel();
-			this.lnk1 = new System.Windows.Forms.LinkLabel();
-			this.lnk2 = new System.Windows.Forms.LinkLabel();
-			this.lnk3 = new System.Windows.Forms.LinkLabel();
-			this.rClient = new System.Windows.Forms.RadioButton();
-			this.rMap = new System.Windows.Forms.RadioButton();
-			this.rManually = new System.Windows.Forms.RadioButton();
-			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.grpPoint = new System.Windows.Forms.GroupBox();
-			this.label6 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.nZ = new System.Windows.Forms.NumericUpDown();
-			this.nY = new System.Windows.Forms.NumericUpDown();
-			this.nX = new System.Windows.Forms.NumericUpDown();
-			this.label4 = new System.Windows.Forms.Label();
-			this.BrowseFolder = new System.Windows.Forms.FolderBrowserDialog();
-			this.OpenFile = new System.Windows.Forms.OpenFileDialog();
-			this.lnk4 = new System.Windows.Forms.LinkLabel();
-			this.groupBox1.SuspendLayout();
-			this.grpPoint.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.nZ)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.nY)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.nX)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// mMain
-			// 
-			this.mMain.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {this.menuItem1});
-			// 
-			// menuItem1
-			// 
-			this.menuItem1.Index = 0;
-			this.menuItem1.MenuItems.AddRange(
-				new System.Windows.Forms.MenuItem[]
-				{
-					this.miNew, this.miOpen, this.miMerge, this.miSave, this.menuItem7, this.menuItem4, this.menuItem9, this.miExit
-				});
-			this.menuItem1.Text = "File";
-			this.menuItem1.Click += new System.EventHandler(this.menuItem1_Click);
-			// 
-			// miNew
-			// 
-			this.miNew.Index = 0;
-			this.miNew.Text = "New";
-			this.miNew.Click += new System.EventHandler(this.miNew_Click);
-			// 
-			// miOpen
-			// 
-			this.miOpen.Index = 1;
-			this.miOpen.Text = "Open";
-			this.miOpen.Click += new System.EventHandler(this.miOpen_Click);
-			// 
-			// miMerge
-			// 
-			this.miMerge.Index = 2;
-			this.miMerge.Text = "Merge";
-			this.miMerge.Click += new System.EventHandler(this.miMerge_Click);
-			// 
-			// miSave
-			// 
-			this.miSave.Index = 3;
-			this.miSave.Text = "Save";
-			this.miSave.Click += new System.EventHandler(this.miSave_Click);
-			// 
-			// menuItem7
-			// 
-			this.menuItem7.Index = 4;
-			this.menuItem7.Text = "-";
-			// 
-			// menuItem4
-			// 
-			this.menuItem4.Index = 5;
-			this.menuItem4.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {this.miImport});
-			this.menuItem4.Text = "Import";
-			// 
-			// miImport
-			// 
-			this.miImport.Index = 0;
-			this.miImport.Text = "Pandora\'s Box 1";
-			this.miImport.Click += new System.EventHandler(this.miImport_Click);
-			// 
-			// menuItem9
-			// 
-			this.menuItem9.Index = 6;
-			this.menuItem9.Text = "-";
-			// 
-			// miExit
-			// 
-			this.miExit.Index = 7;
-			this.miExit.Text = "Exit";
-			this.miExit.Click += new System.EventHandler(this.miExit_Click);
-			// 
-			// tCat
-			// 
-			this.tCat.ContextMenu = this.cmCat;
-			this.tCat.HideSelection = false;
-			this.tCat.ImageIndex = -1;
-			this.tCat.LabelEdit = true;
-			this.tCat.Location = new System.Drawing.Point(4, 16);
-			this.tCat.Name = "tCat";
-			this.tCat.SelectedImageIndex = -1;
-			this.tCat.Size = new System.Drawing.Size(132, 192);
-			this.tCat.Sorted = true;
-			this.tCat.TabIndex = 0;
-			this.tCat.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tCat_AfterSelect);
-			// 
-			// cmCat
-			// 
-			this.cmCat.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {this.miCatRename, this.miCatDelete});
-			this.cmCat.Popup += new System.EventHandler(this.cmCat_Popup);
-			// 
-			// miCatRename
-			// 
-			this.miCatRename.Index = 0;
-			this.miCatRename.Text = "Rename";
-			this.miCatRename.Click += new System.EventHandler(this.miCatRename_Click);
-			// 
-			// miCatDelete
-			// 
-			this.miCatDelete.Index = 1;
-			this.miCatDelete.Text = "Delete";
-			this.miCatDelete.Click += new System.EventHandler(this.miCatDelete_Click);
-			// 
-			// tLoc
-			// 
-			this.tLoc.ContextMenu = this.cmLoc;
-			this.tLoc.HideSelection = false;
-			this.tLoc.ImageIndex = -1;
-			this.tLoc.LabelEdit = true;
-			this.tLoc.Location = new System.Drawing.Point(140, 16);
-			this.tLoc.Name = "tLoc";
-			this.tLoc.SelectedImageIndex = -1;
-			this.tLoc.ShowLines = false;
-			this.tLoc.ShowPlusMinus = false;
-			this.tLoc.ShowRootLines = false;
-			this.tLoc.Size = new System.Drawing.Size(128, 192);
-			this.tLoc.Sorted = true;
-			this.tLoc.TabIndex = 2;
-			this.tLoc.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tLoc_AfterSelect);
-			this.tLoc.AfterLabelEdit += new System.Windows.Forms.NodeLabelEditEventHandler(this.tLoc_AfterLabelEdit);
-			// 
-			// cmLoc
-			// 
-			this.cmLoc.MenuItems.AddRange(
-				new System.Windows.Forms.MenuItem[] {this.miLocRename, this.miLocDelete, this.menuItem2, this.miLocUpdate});
-			this.cmLoc.Popup += new System.EventHandler(this.cmLoc_Popup);
-			// 
-			// miLocRename
-			// 
-			this.miLocRename.Index = 0;
-			this.miLocRename.Text = "Rename";
-			this.miLocRename.Click += new System.EventHandler(this.miLocRename_Click);
-			// 
-			// miLocDelete
-			// 
-			this.miLocDelete.Index = 1;
-			this.miLocDelete.Text = "Delete";
-			this.miLocDelete.Click += new System.EventHandler(this.miLocDelete_Click);
-			// 
-			// menuItem2
-			// 
-			this.menuItem2.Index = 2;
-			this.menuItem2.Text = "-";
-			// 
-			// miLocUpdate
-			// 
-			this.miLocUpdate.Index = 3;
-			this.miLocUpdate.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {this.miUpdateClient, this.miUpdateMap});
-			this.miLocUpdate.Text = "Update Location";
-			// 
-			// miUpdateClient
-			// 
-			this.miUpdateClient.Index = 0;
-			this.miUpdateClient.Text = "From the Client";
-			this.miUpdateClient.Click += new System.EventHandler(this.miUpdateClient_Click);
-			// 
-			// miUpdateMap
-			// 
-			this.miUpdateMap.Index = 1;
-			this.miUpdateMap.Text = "From the Map";
-			this.miUpdateMap.Click += new System.EventHandler(this.miUpdateMap_Click);
-			// 
-			// label2
-			// 
-			this.label2.Location = new System.Drawing.Point(136, 0);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(100, 14);
-			this.label2.TabIndex = 3;
-			this.label2.Text = "Locations";
-			// 
-			// label1
-			// 
-			this.label1.Location = new System.Drawing.Point(4, 0);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(64, 16);
-			this.label1.TabIndex = 1;
-			this.label1.Text = "Categories";
-			// 
-			// txCat
-			// 
-			this.txCat.Location = new System.Drawing.Point(4, 212);
-			this.txCat.Name = "txCat";
-			this.txCat.Size = new System.Drawing.Size(132, 20);
-			this.txCat.TabIndex = 4;
-			this.txCat.Text = "";
-			this.txCat.TextChanged += new System.EventHandler(this.txCat_TextChanged);
-			this.txCat.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txCat_KeyUp);
-			// 
-			// txLoc
-			// 
-			this.txLoc.Location = new System.Drawing.Point(140, 212);
-			this.txLoc.Name = "txLoc";
-			this.txLoc.Size = new System.Drawing.Size(128, 20);
-			this.txLoc.TabIndex = 5;
-			this.txLoc.Text = "";
-			this.txLoc.TextChanged += new System.EventHandler(this.txLoc_TextChanged);
-			this.txLoc.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txLoc_KeyUp);
-			// 
-			// bAddCat
-			// 
-			this.bAddCat.Enabled = false;
-			this.bAddCat.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bAddCat.Location = new System.Drawing.Point(92, 236);
-			this.bAddCat.Name = "bAddCat";
-			this.bAddCat.Size = new System.Drawing.Size(44, 23);
-			this.bAddCat.TabIndex = 6;
-			this.bAddCat.Text = "Add";
-			this.bAddCat.Click += new System.EventHandler(this.bAddCat_Click);
-			// 
-			// bAddLoc
-			// 
-			this.bAddLoc.Enabled = false;
-			this.bAddLoc.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.bAddLoc.Location = new System.Drawing.Point(216, 236);
-			this.bAddLoc.Name = "bAddLoc";
-			this.bAddLoc.Size = new System.Drawing.Size(52, 23);
-			this.bAddLoc.TabIndex = 7;
-			this.bAddLoc.Text = "Add";
-			this.bAddLoc.Click += new System.EventHandler(this.bAddLoc_Click);
-			// 
-			// m_Map
-			// 
-			this.m_Map.Center = new System.Drawing.Point(0, 0);
-			this.m_Map.DisplayErrors = true;
-			this.m_Map.DrawStatics = true;
-			this.m_Map.Location = new System.Drawing.Point(272, 16);
-			this.m_Map.Map = TheBox.MapViewer.Maps.Felucca;
-			this.m_Map.Name = "m_Map";
-			this.m_Map.Navigation = TheBox.MapViewer.MapNavigation.None;
-			this.m_Map.ShowCross = true;
-			this.m_Map.Size = new System.Drawing.Size(192, 192);
-			this.m_Map.TabIndex = 8;
-			this.m_Map.Text = "mapViewer1";
-			this.m_Map.WheelZoom = false;
-			this.m_Map.XRayView = false;
-			this.m_Map.ZoomLevel = 0;
-			this.m_Map.MouseDown += new System.Windows.Forms.MouseEventHandler(this.m_Map_MouseDown);
-			// 
-			// label3
-			// 
-			this.label3.Location = new System.Drawing.Point(272, 0);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(60, 16);
-			this.label3.TabIndex = 9;
-			this.label3.Text = "View Map:";
-			// 
-			// lnk0
-			// 
-			this.lnk0.Location = new System.Drawing.Point(332, 0);
-			this.lnk0.Name = "lnk0";
-			this.lnk0.Size = new System.Drawing.Size(16, 16);
-			this.lnk0.TabIndex = 10;
-			this.lnk0.TabStop = true;
-			this.lnk0.Text = "0";
-			this.lnk0.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnk0_LinkClicked);
-			// 
-			// lnk1
-			// 
-			this.lnk1.Location = new System.Drawing.Point(356, 0);
-			this.lnk1.Name = "lnk1";
-			this.lnk1.Size = new System.Drawing.Size(16, 16);
-			this.lnk1.TabIndex = 11;
-			this.lnk1.TabStop = true;
-			this.lnk1.Text = "1";
-			this.lnk1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnk1_LinkClicked);
-			// 
-			// lnk2
-			// 
-			this.lnk2.Location = new System.Drawing.Point(380, 0);
-			this.lnk2.Name = "lnk2";
-			this.lnk2.Size = new System.Drawing.Size(16, 16);
-			this.lnk2.TabIndex = 12;
-			this.lnk2.TabStop = true;
-			this.lnk2.Text = "2";
-			this.lnk2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnk2_LinkClicked);
-			// 
-			// lnk3
-			// 
-			this.lnk3.Location = new System.Drawing.Point(404, 0);
-			this.lnk3.Name = "lnk3";
-			this.lnk3.Size = new System.Drawing.Size(16, 16);
-			this.lnk3.TabIndex = 13;
-			this.lnk3.TabStop = true;
-			this.lnk3.Text = "3";
-			this.lnk3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnk3_LinkClicked);
-			// 
-			// rClient
-			// 
-			this.rClient.Checked = true;
-			this.rClient.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.rClient.Location = new System.Drawing.Point(8, 20);
-			this.rClient.Name = "rClient";
-			this.rClient.Size = new System.Drawing.Size(164, 16);
-			this.rClient.TabIndex = 14;
-			this.rClient.TabStop = true;
-			this.rClient.Text = "Get location from the client";
-			// 
-			// rMap
-			// 
-			this.rMap.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.rMap.Location = new System.Drawing.Point(8, 40);
-			this.rMap.Name = "rMap";
-			this.rMap.Size = new System.Drawing.Size(164, 16);
-			this.rMap.TabIndex = 15;
-			this.rMap.Text = "Get location from the map";
-			// 
-			// rManually
-			// 
-			this.rManually.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.rManually.Location = new System.Drawing.Point(8, 60);
-			this.rManually.Name = "rManually";
-			this.rManually.Size = new System.Drawing.Size(164, 16);
-			this.rManually.TabIndex = 16;
-			this.rManually.Text = "Set location manually";
-			// 
-			// groupBox1
-			// 
-			this.groupBox1.Controls.Add(this.rManually);
-			this.groupBox1.Controls.Add(this.rMap);
-			this.groupBox1.Controls.Add(this.rClient);
-			this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.groupBox1.Location = new System.Drawing.Point(272, 212);
-			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(192, 84);
-			this.groupBox1.TabIndex = 17;
-			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "When adding new locations:";
-			// 
-			// grpPoint
-			// 
-			this.grpPoint.Controls.Add(this.label6);
-			this.grpPoint.Controls.Add(this.label5);
-			this.grpPoint.Controls.Add(this.nZ);
-			this.grpPoint.Controls.Add(this.nY);
-			this.grpPoint.Controls.Add(this.nX);
-			this.grpPoint.Controls.Add(this.label4);
-			this.grpPoint.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.grpPoint.Location = new System.Drawing.Point(4, 260);
-			this.grpPoint.Name = "grpPoint";
-			this.grpPoint.Size = new System.Drawing.Size(264, 36);
-			this.grpPoint.TabIndex = 18;
-			this.grpPoint.TabStop = false;
-			this.grpPoint.Text = "Point Edit";
-			// 
-			// label6
-			// 
-			this.label6.Location = new System.Drawing.Point(184, 16);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(17, 14);
-			this.label6.TabIndex = 21;
-			this.label6.Text = "Z";
-			// 
-			// label5
-			// 
-			this.label5.Location = new System.Drawing.Point(96, 16);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(17, 14);
-			this.label5.TabIndex = 20;
-			this.label5.Text = "Y";
-			// 
-			// nZ
-			// 
-			this.nZ.Location = new System.Drawing.Point(204, 12);
-			this.nZ.Maximum = new System.Decimal(new int[] {127, 0, 0, 0});
-			this.nZ.Minimum = new System.Decimal(new int[] {127, 0, 0, -2147483648});
-			this.nZ.Name = "nZ";
-			this.nZ.Size = new System.Drawing.Size(52, 20);
-			this.nZ.TabIndex = 2;
-			this.nZ.ValueChanged += new System.EventHandler(this.nZ_ValueChanged);
-			// 
-			// nY
-			// 
-			this.nY.Location = new System.Drawing.Point(116, 12);
-			this.nY.Maximum = new System.Decimal(new int[] {5000, 0, 0, 0});
-			this.nY.Name = "nY";
-			this.nY.Size = new System.Drawing.Size(52, 20);
-			this.nY.TabIndex = 1;
-			this.nY.ValueChanged += new System.EventHandler(this.nY_ValueChanged);
-			// 
-			// nX
-			// 
-			this.nX.Location = new System.Drawing.Point(28, 12);
-			this.nX.Maximum = new System.Decimal(new int[] {6500, 0, 0, 0});
-			this.nX.Name = "nX";
-			this.nX.Size = new System.Drawing.Size(52, 20);
-			this.nX.TabIndex = 0;
-			this.nX.ValueChanged += new System.EventHandler(this.nX_ValueChanged);
-			// 
-			// label4
-			// 
-			this.label4.Location = new System.Drawing.Point(8, 16);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(17, 14);
-			this.label4.TabIndex = 19;
-			this.label4.Text = "X";
-			// 
-			// OpenFile
-			// 
-			this.OpenFile.Filter = "Xml Files (*.xml)|*.xml";
-			// 
-			// lnk4
-			// 
-			this.lnk4.Location = new System.Drawing.Point(428, 0);
-			this.lnk4.Name = "lnk4";
-			this.lnk4.Size = new System.Drawing.Size(16, 16);
-			this.lnk4.TabIndex = 19;
-			this.lnk4.TabStop = true;
-			this.lnk4.Text = "4";
-			this.lnk4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnk4_LinkClicked);
-			// 
-			// TravelAgentForm
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(466, 298);
-			this.Controls.Add(this.lnk4);
-			this.Controls.Add(this.grpPoint);
-			this.Controls.Add(this.groupBox1);
-			this.Controls.Add(this.lnk3);
-			this.Controls.Add(this.lnk2);
-			this.Controls.Add(this.lnk1);
-			this.Controls.Add(this.lnk0);
-			this.Controls.Add(this.label3);
-			this.Controls.Add(this.m_Map);
-			this.Controls.Add(this.bAddLoc);
-			this.Controls.Add(this.bAddCat);
-			this.Controls.Add(this.txLoc);
-			this.Controls.Add(this.txCat);
-			this.Controls.Add(this.label2);
-			this.Controls.Add(this.tLoc);
-			this.Controls.Add(this.label1);
-			this.Controls.Add(this.tCat);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.MaximizeBox = false;
-			this.Menu = this.mMain;
-			this.Name = "TravelAgentForm";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Travel Agent for Pandora\'s Box";
-			this.Closing += new System.ComponentModel.CancelEventHandler(this.TravelAgentForm_Closing);
-			this.groupBox1.ResumeLayout(false);
-			this.grpPoint.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.nZ)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.nY)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.nX)).EndInit();
-			this.ResumeLayout(false);
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TravelAgentForm));
+            TheBox.Common.MulManager mulManager1 = new TheBox.Common.MulManager();
+            this.mMain = new System.Windows.Forms.MainMenu(this.components);
+            this.menuItem1 = new System.Windows.Forms.MenuItem();
+            this.miNew = new System.Windows.Forms.MenuItem();
+            this.miOpen = new System.Windows.Forms.MenuItem();
+            this.miMerge = new System.Windows.Forms.MenuItem();
+            this.miSave = new System.Windows.Forms.MenuItem();
+            this.menuItem7 = new System.Windows.Forms.MenuItem();
+            this.menuItem4 = new System.Windows.Forms.MenuItem();
+            this.miImport = new System.Windows.Forms.MenuItem();
+            this.menuItem9 = new System.Windows.Forms.MenuItem();
+            this.miExit = new System.Windows.Forms.MenuItem();
+            this.tCat = new System.Windows.Forms.TreeView();
+            this.cmCat = new System.Windows.Forms.ContextMenu();
+            this.miCatRename = new System.Windows.Forms.MenuItem();
+            this.miCatDelete = new System.Windows.Forms.MenuItem();
+            this.tLoc = new System.Windows.Forms.TreeView();
+            this.cmLoc = new System.Windows.Forms.ContextMenu();
+            this.miLocRename = new System.Windows.Forms.MenuItem();
+            this.miLocDelete = new System.Windows.Forms.MenuItem();
+            this.menuItem2 = new System.Windows.Forms.MenuItem();
+            this.miLocUpdate = new System.Windows.Forms.MenuItem();
+            this.miUpdateClient = new System.Windows.Forms.MenuItem();
+            this.miUpdateMap = new System.Windows.Forms.MenuItem();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txCat = new System.Windows.Forms.TextBox();
+            this.txLoc = new System.Windows.Forms.TextBox();
+            this.bAddCat = new System.Windows.Forms.Button();
+            this.bAddLoc = new System.Windows.Forms.Button();
+            this.m_Map = new TheBox.MapViewer.MapViewer();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lnk0 = new System.Windows.Forms.LinkLabel();
+            this.lnk1 = new System.Windows.Forms.LinkLabel();
+            this.lnk2 = new System.Windows.Forms.LinkLabel();
+            this.lnk3 = new System.Windows.Forms.LinkLabel();
+            this.rClient = new System.Windows.Forms.RadioButton();
+            this.rMap = new System.Windows.Forms.RadioButton();
+            this.rManually = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grpPoint = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.nZ = new System.Windows.Forms.NumericUpDown();
+            this.nY = new System.Windows.Forms.NumericUpDown();
+            this.nX = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
+            this.BrowseFolder = new System.Windows.Forms.FolderBrowserDialog();
+            this.OpenFile = new System.Windows.Forms.OpenFileDialog();
+            this.lnk4 = new System.Windows.Forms.LinkLabel();
+            this.groupBox1.SuspendLayout();
+            this.grpPoint.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nZ)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nY)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nX)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // mMain
+            // 
+            this.mMain.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.menuItem1});
+            // 
+            // menuItem1
+            // 
+            this.menuItem1.Index = 0;
+            this.menuItem1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.miNew,
+            this.miOpen,
+            this.miMerge,
+            this.miSave,
+            this.menuItem7,
+            this.menuItem4,
+            this.menuItem9,
+            this.miExit});
+            this.menuItem1.Text = "File";
+            this.menuItem1.Click += new System.EventHandler(this.menuItem1_Click);
+            // 
+            // miNew
+            // 
+            this.miNew.Index = 0;
+            this.miNew.Text = "New";
+            this.miNew.Click += new System.EventHandler(this.miNew_Click);
+            // 
+            // miOpen
+            // 
+            this.miOpen.Index = 1;
+            this.miOpen.Text = "Open";
+            this.miOpen.Click += new System.EventHandler(this.miOpen_Click);
+            // 
+            // miMerge
+            // 
+            this.miMerge.Index = 2;
+            this.miMerge.Text = "Merge";
+            this.miMerge.Click += new System.EventHandler(this.miMerge_Click);
+            // 
+            // miSave
+            // 
+            this.miSave.Index = 3;
+            this.miSave.Text = "Save";
+            this.miSave.Click += new System.EventHandler(this.miSave_Click);
+            // 
+            // menuItem7
+            // 
+            this.menuItem7.Index = 4;
+            this.menuItem7.Text = "-";
+            // 
+            // menuItem4
+            // 
+            this.menuItem4.Index = 5;
+            this.menuItem4.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.miImport});
+            this.menuItem4.Text = "Import";
+            // 
+            // miImport
+            // 
+            this.miImport.Index = 0;
+            this.miImport.Text = "Pandora\'s Box 1";
+            this.miImport.Click += new System.EventHandler(this.miImport_Click);
+            // 
+            // menuItem9
+            // 
+            this.menuItem9.Index = 6;
+            this.menuItem9.Text = "-";
+            // 
+            // miExit
+            // 
+            this.miExit.Index = 7;
+            this.miExit.Text = "Exit";
+            this.miExit.Click += new System.EventHandler(this.miExit_Click);
+            // 
+            // tCat
+            // 
+            this.tCat.ContextMenu = this.cmCat;
+            this.tCat.HideSelection = false;
+            this.tCat.LabelEdit = true;
+            this.tCat.Location = new System.Drawing.Point(4, 16);
+            this.tCat.Name = "tCat";
+            this.tCat.Size = new System.Drawing.Size(132, 192);
+            this.tCat.Sorted = true;
+            this.tCat.TabIndex = 0;
+            this.tCat.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tCat_AfterSelect);
+            // 
+            // cmCat
+            // 
+            this.cmCat.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.miCatRename,
+            this.miCatDelete});
+            this.cmCat.Popup += new System.EventHandler(this.cmCat_Popup);
+            // 
+            // miCatRename
+            // 
+            this.miCatRename.Index = 0;
+            this.miCatRename.Text = "Rename";
+            this.miCatRename.Click += new System.EventHandler(this.miCatRename_Click);
+            // 
+            // miCatDelete
+            // 
+            this.miCatDelete.Index = 1;
+            this.miCatDelete.Text = "Delete";
+            this.miCatDelete.Click += new System.EventHandler(this.miCatDelete_Click);
+            // 
+            // tLoc
+            // 
+            this.tLoc.ContextMenu = this.cmLoc;
+            this.tLoc.HideSelection = false;
+            this.tLoc.LabelEdit = true;
+            this.tLoc.Location = new System.Drawing.Point(140, 16);
+            this.tLoc.Name = "tLoc";
+            this.tLoc.ShowLines = false;
+            this.tLoc.ShowPlusMinus = false;
+            this.tLoc.ShowRootLines = false;
+            this.tLoc.Size = new System.Drawing.Size(128, 192);
+            this.tLoc.Sorted = true;
+            this.tLoc.TabIndex = 2;
+            this.tLoc.AfterLabelEdit += new System.Windows.Forms.NodeLabelEditEventHandler(this.tLoc_AfterLabelEdit);
+            this.tLoc.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tLoc_AfterSelect);
+            // 
+            // cmLoc
+            // 
+            this.cmLoc.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.miLocRename,
+            this.miLocDelete,
+            this.menuItem2,
+            this.miLocUpdate});
+            this.cmLoc.Popup += new System.EventHandler(this.cmLoc_Popup);
+            // 
+            // miLocRename
+            // 
+            this.miLocRename.Index = 0;
+            this.miLocRename.Text = "Rename";
+            this.miLocRename.Click += new System.EventHandler(this.miLocRename_Click);
+            // 
+            // miLocDelete
+            // 
+            this.miLocDelete.Index = 1;
+            this.miLocDelete.Text = "Delete";
+            this.miLocDelete.Click += new System.EventHandler(this.miLocDelete_Click);
+            // 
+            // menuItem2
+            // 
+            this.menuItem2.Index = 2;
+            this.menuItem2.Text = "-";
+            // 
+            // miLocUpdate
+            // 
+            this.miLocUpdate.Index = 3;
+            this.miLocUpdate.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.miUpdateClient,
+            this.miUpdateMap});
+            this.miLocUpdate.Text = "Update Location";
+            // 
+            // miUpdateClient
+            // 
+            this.miUpdateClient.Index = 0;
+            this.miUpdateClient.Text = "From the Client";
+            this.miUpdateClient.Click += new System.EventHandler(this.miUpdateClient_Click);
+            // 
+            // miUpdateMap
+            // 
+            this.miUpdateMap.Index = 1;
+            this.miUpdateMap.Text = "From the Map";
+            this.miUpdateMap.Click += new System.EventHandler(this.miUpdateMap_Click);
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(136, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 14);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Locations";
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 16);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Categories";
+            // 
+            // txCat
+            // 
+            this.txCat.Location = new System.Drawing.Point(4, 212);
+            this.txCat.Name = "txCat";
+            this.txCat.Size = new System.Drawing.Size(132, 23);
+            this.txCat.TabIndex = 4;
+            this.txCat.TextChanged += new System.EventHandler(this.txCat_TextChanged);
+            this.txCat.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txCat_KeyUp);
+            // 
+            // txLoc
+            // 
+            this.txLoc.Location = new System.Drawing.Point(140, 212);
+            this.txLoc.Name = "txLoc";
+            this.txLoc.Size = new System.Drawing.Size(128, 23);
+            this.txLoc.TabIndex = 5;
+            this.txLoc.TextChanged += new System.EventHandler(this.txLoc_TextChanged);
+            this.txLoc.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txLoc_KeyUp);
+            // 
+            // bAddCat
+            // 
+            this.bAddCat.Enabled = false;
+            this.bAddCat.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bAddCat.Location = new System.Drawing.Point(92, 236);
+            this.bAddCat.Name = "bAddCat";
+            this.bAddCat.Size = new System.Drawing.Size(44, 23);
+            this.bAddCat.TabIndex = 6;
+            this.bAddCat.Text = "Add";
+            this.bAddCat.Click += new System.EventHandler(this.bAddCat_Click);
+            // 
+            // bAddLoc
+            // 
+            this.bAddLoc.Enabled = false;
+            this.bAddLoc.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.bAddLoc.Location = new System.Drawing.Point(216, 236);
+            this.bAddLoc.Name = "bAddLoc";
+            this.bAddLoc.Size = new System.Drawing.Size(52, 23);
+            this.bAddLoc.TabIndex = 7;
+            this.bAddLoc.Text = "Add";
+            this.bAddLoc.Click += new System.EventHandler(this.bAddLoc_Click);
+            // 
+            // m_Map
+            // 
+            this.m_Map.Center = new System.Drawing.Point(0, 0);
+            this.m_Map.DisplayErrors = true;
+            this.m_Map.DrawObjects = ((System.Collections.Generic.List<TheBox.MapViewer.DrawObjects.IMapDrawable>)(resources.GetObject("m_Map.DrawObjects")));
+            this.m_Map.DrawStatics = true;
+            this.m_Map.Location = new System.Drawing.Point(272, 16);
+            this.m_Map.Map = TheBox.MapViewer.Maps.Felucca;
+            mulManager1.CustomFolder = null;
+            mulManager1.Table = null;
+            this.m_Map.MulManager = mulManager1;
+            this.m_Map.Name = "m_Map";
+            this.m_Map.Navigation = TheBox.MapViewer.MapNavigation.None;
+            this.m_Map.ShowCross = true;
+            this.m_Map.Size = new System.Drawing.Size(192, 192);
+            this.m_Map.TabIndex = 8;
+            this.m_Map.Text = "mapViewer1";
+            this.m_Map.WheelZoom = false;
+            this.m_Map.XRayView = false;
+            this.m_Map.ZoomLevel = 0;
+            this.m_Map.MouseDown += new System.Windows.Forms.MouseEventHandler(this.m_Map_MouseDown);
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(272, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 16);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "View Map:";
+            // 
+            // lnk0
+            // 
+            this.lnk0.Location = new System.Drawing.Point(332, 0);
+            this.lnk0.Name = "lnk0";
+            this.lnk0.Size = new System.Drawing.Size(16, 16);
+            this.lnk0.TabIndex = 10;
+            this.lnk0.TabStop = true;
+            this.lnk0.Text = "0";
+            this.lnk0.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnk0_LinkClicked);
+            // 
+            // lnk1
+            // 
+            this.lnk1.Location = new System.Drawing.Point(356, 0);
+            this.lnk1.Name = "lnk1";
+            this.lnk1.Size = new System.Drawing.Size(16, 16);
+            this.lnk1.TabIndex = 11;
+            this.lnk1.TabStop = true;
+            this.lnk1.Text = "1";
+            this.lnk1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnk1_LinkClicked);
+            // 
+            // lnk2
+            // 
+            this.lnk2.Location = new System.Drawing.Point(380, 0);
+            this.lnk2.Name = "lnk2";
+            this.lnk2.Size = new System.Drawing.Size(16, 16);
+            this.lnk2.TabIndex = 12;
+            this.lnk2.TabStop = true;
+            this.lnk2.Text = "2";
+            this.lnk2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnk2_LinkClicked);
+            // 
+            // lnk3
+            // 
+            this.lnk3.Location = new System.Drawing.Point(404, 0);
+            this.lnk3.Name = "lnk3";
+            this.lnk3.Size = new System.Drawing.Size(16, 16);
+            this.lnk3.TabIndex = 13;
+            this.lnk3.TabStop = true;
+            this.lnk3.Text = "3";
+            this.lnk3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnk3_LinkClicked);
+            // 
+            // rClient
+            // 
+            this.rClient.Checked = true;
+            this.rClient.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.rClient.Location = new System.Drawing.Point(8, 20);
+            this.rClient.Name = "rClient";
+            this.rClient.Size = new System.Drawing.Size(164, 16);
+            this.rClient.TabIndex = 14;
+            this.rClient.TabStop = true;
+            this.rClient.Text = "Get location from the client";
+            // 
+            // rMap
+            // 
+            this.rMap.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.rMap.Location = new System.Drawing.Point(8, 40);
+            this.rMap.Name = "rMap";
+            this.rMap.Size = new System.Drawing.Size(164, 16);
+            this.rMap.TabIndex = 15;
+            this.rMap.Text = "Get location from the map";
+            // 
+            // rManually
+            // 
+            this.rManually.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.rManually.Location = new System.Drawing.Point(8, 60);
+            this.rManually.Name = "rManually";
+            this.rManually.Size = new System.Drawing.Size(164, 16);
+            this.rManually.TabIndex = 16;
+            this.rManually.Text = "Set location manually";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rManually);
+            this.groupBox1.Controls.Add(this.rMap);
+            this.groupBox1.Controls.Add(this.rClient);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.groupBox1.Location = new System.Drawing.Point(272, 212);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(192, 84);
+            this.groupBox1.TabIndex = 17;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "When adding new locations:";
+            // 
+            // grpPoint
+            // 
+            this.grpPoint.Controls.Add(this.label6);
+            this.grpPoint.Controls.Add(this.label5);
+            this.grpPoint.Controls.Add(this.nZ);
+            this.grpPoint.Controls.Add(this.nY);
+            this.grpPoint.Controls.Add(this.nX);
+            this.grpPoint.Controls.Add(this.label4);
+            this.grpPoint.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.grpPoint.Location = new System.Drawing.Point(4, 260);
+            this.grpPoint.Name = "grpPoint";
+            this.grpPoint.Size = new System.Drawing.Size(264, 36);
+            this.grpPoint.TabIndex = 18;
+            this.grpPoint.TabStop = false;
+            this.grpPoint.Text = "Point Edit";
+            // 
+            // label6
+            // 
+            this.label6.Location = new System.Drawing.Point(184, 16);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(17, 14);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Z";
+            // 
+            // label5
+            // 
+            this.label5.Location = new System.Drawing.Point(96, 16);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(17, 14);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "Y";
+            // 
+            // nZ
+            // 
+            this.nZ.Location = new System.Drawing.Point(204, 12);
+            this.nZ.Maximum = new decimal(new int[] {
+            127,
+            0,
+            0,
+            0});
+            this.nZ.Minimum = new decimal(new int[] {
+            127,
+            0,
+            0,
+            -2147483648});
+            this.nZ.Name = "nZ";
+            this.nZ.Size = new System.Drawing.Size(52, 23);
+            this.nZ.TabIndex = 2;
+            this.nZ.ValueChanged += new System.EventHandler(this.nZ_ValueChanged);
+            // 
+            // nY
+            // 
+            this.nY.Location = new System.Drawing.Point(116, 12);
+            this.nY.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.nY.Name = "nY";
+            this.nY.Size = new System.Drawing.Size(52, 23);
+            this.nY.TabIndex = 1;
+            this.nY.ValueChanged += new System.EventHandler(this.nY_ValueChanged);
+            // 
+            // nX
+            // 
+            this.nX.Location = new System.Drawing.Point(28, 12);
+            this.nX.Maximum = new decimal(new int[] {
+            6500,
+            0,
+            0,
+            0});
+            this.nX.Name = "nX";
+            this.nX.Size = new System.Drawing.Size(52, 23);
+            this.nX.TabIndex = 0;
+            this.nX.ValueChanged += new System.EventHandler(this.nX_ValueChanged);
+            // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(8, 16);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(17, 14);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "X";
+            // 
+            // OpenFile
+            // 
+            this.OpenFile.Filter = "Xml Files (*.xml)|*.xml";
+            // 
+            // lnk4
+            // 
+            this.lnk4.Location = new System.Drawing.Point(428, 0);
+            this.lnk4.Name = "lnk4";
+            this.lnk4.Size = new System.Drawing.Size(16, 16);
+            this.lnk4.TabIndex = 19;
+            this.lnk4.TabStop = true;
+            this.lnk4.Text = "4";
+            this.lnk4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnk4_LinkClicked);
+            // 
+            // TravelAgentForm
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(6, 16);
+            this.ClientSize = new System.Drawing.Size(466, 298);
+            this.Controls.Add(this.lnk4);
+            this.Controls.Add(this.grpPoint);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.lnk3);
+            this.Controls.Add(this.lnk2);
+            this.Controls.Add(this.lnk1);
+            this.Controls.Add(this.lnk0);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.m_Map);
+            this.Controls.Add(this.bAddLoc);
+            this.Controls.Add(this.bAddCat);
+            this.Controls.Add(this.txLoc);
+            this.Controls.Add(this.txCat);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.tLoc);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tCat);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.Menu = this.mMain;
+            this.Name = "TravelAgentForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Travel Agent for Pandora\'s Box";
+            this.Closing += new System.ComponentModel.CancelEventHandler(this.TravelAgentForm_Closing);
+            this.groupBox1.ResumeLayout(false);
+            this.grpPoint.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.nZ)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nY)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nX)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
 		}
 		#endregion
 

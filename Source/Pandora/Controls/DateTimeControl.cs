@@ -56,46 +56,49 @@ namespace TheBox.Controls
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-			this.button1 = new System.Windows.Forms.Button();
-			this.label1 = new System.Windows.Forms.Label();
-			this.SuspendLayout();
-			// 
-			// dateTimePicker1
-			// 
-			this.dateTimePicker1.CustomFormat = "";
-			this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-			this.dateTimePicker1.Location = new System.Drawing.Point(8, 40);
-			this.dateTimePicker1.Name = "dateTimePicker1";
-			this.dateTimePicker1.Size = new System.Drawing.Size(88, 20);
-			this.dateTimePicker1.TabIndex = 0;
-			// 
-			// button1
-			// 
-			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-			this.button1.Location = new System.Drawing.Point(16, 72);
-			this.button1.Name = "button1";
-			this.button1.TabIndex = 1;
-			this.button1.Text = "->";
-			this.button1.Click += new System.EventHandler(this.button1_Click);
-			// 
-			// label1
-			// 
-			this.label1.Location = new System.Drawing.Point(8, 8);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(88, 23);
-			this.label1.TabIndex = 2;
-			this.label1.Text = "Props.DateTime";
-			this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			// 
-			// DateTimeControl
-			// 
-			this.Controls.Add(this.label1);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.dateTimePicker1);
-			this.Name = "DateTimeControl";
-			this.Size = new System.Drawing.Size(104, 116);
-			this.ResumeLayout(false);
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker1.Location = new System.Drawing.Point(8, 40);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(88, 23);
+            this.dateTimePicker1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button1.Location = new System.Drawing.Point(16, 72);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "->";
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(8, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(88, 23);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Props.DateTime";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // DateTimeControl
+            // 
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Name = "DateTimeControl";
+            this.Size = new System.Drawing.Size(104, 116);
+            this.ResumeLayout(false);
+
 		}
 		#endregion
 
