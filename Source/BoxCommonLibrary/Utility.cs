@@ -78,8 +78,14 @@ namespace TheBox.Common
 		// Issue 38:  	 Message when client not found - Tarion
 		// Changed return value to boolean
 		// End Issue 38
-		public static bool SendToUO(string message)
+		public static bool SendToUO(string message, bool clipboard)
 		{
+			if (clipboard)
+			{
+				Clipboard.SetText(message);
+				return true;
+			}
+
 			var handle = GetClientWindow();
 
 			if (handle.ToInt32() == 0)

@@ -133,7 +133,7 @@ namespace Tester
 		private void button1_Click(object sender, EventArgs e)
 		{
 			Utility.SendToUO(
-				string.Format("[go {0} {1} {2}\n", mapViewer1.Center.X, mapViewer1.Center.Y, mapViewer1.GetMapHeight()));
+				string.Format("[go {0} {1} {2}\n", mapViewer1.Center.X, mapViewer1.Center.Y, mapViewer1.GetMapHeight()), false);
 		}
 	}
 }

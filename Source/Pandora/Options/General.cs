@@ -40,6 +40,7 @@ namespace TheBox.Options
 		private string m_CommandPrefix = "[";
 		private bool m_Animate = true;
 		private bool m_RoomView = true;
+		private bool m_Clipboard = false;
 		private bool m_Scale = true;
 		private ColorDef m_ArtBackground;
 		private Point m_WindowLocation;
@@ -220,6 +221,11 @@ namespace TheBox.Options
 		///     Gets or sets the command prefix
 		/// </summary>
 		public string CommandPrefix { get { return m_CommandPrefix; } set { m_CommandPrefix = value; } }
+
+		/// <summary>
+		///     Gets or sets the option to send commands to the clipboard instead
+		/// </summary>
+		public bool Clipboard { get { return m_Clipboard; } set { m_Clipboard = value; } }
 
 		/// <summary>
 		///     Gets or sets a value stating whether the Box window stays always on top

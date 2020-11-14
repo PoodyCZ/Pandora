@@ -261,7 +261,7 @@ namespace TheBox
 		{
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Box));
-            TheBox.Common.MulManager mulManager2 = new TheBox.Common.MulManager();
+            TheBox.Common.MulManager mulManager3 = new TheBox.Common.MulManager();
             this.BigTab = new System.Windows.Forms.TabControl();
             this.TabGeneral = new System.Windows.Forms.TabPage();
             this.general1 = new TheBox.Pages.General();
@@ -427,7 +427,7 @@ namespace TheBox
             this.m_TravelTab.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_TravelTab.Location = new System.Drawing.Point(0, 0);
             this.m_TravelTab.Name = "m_TravelTab";
-            this.m_TravelTab.Size = new System.Drawing.Size(496, 226);
+            this.m_TravelTab.Size = new System.Drawing.Size(642, 226);
             this.m_TravelTab.TabIndex = 0;
             // 
             // TabProperties
@@ -445,7 +445,7 @@ namespace TheBox
             this.m_PageProperties.Location = new System.Drawing.Point(0, 0);
             this.m_PageProperties.Name = "m_PageProperties";
             this.m_PageProperties.SelectedProperty = null;
-            this.m_PageProperties.Size = new System.Drawing.Size(639, 230);
+            this.m_PageProperties.Size = new System.Drawing.Size(642, 230);
             this.m_PageProperties.TabIndex = 0;
             // 
             // TabItems
@@ -624,9 +624,9 @@ namespace TheBox
             this.Map.DrawStatics = false;
             this.Map.Location = new System.Drawing.Point(1, 1);
             this.Map.Map = TheBox.MapViewer.Maps.Felucca;
-            mulManager2.CustomFolder = null;
-            mulManager2.Table = null;
-            this.Map.MulManager = mulManager2;
+            mulManager3.CustomFolder = null;
+            mulManager3.Table = null;
+            this.Map.MulManager = mulManager3;
             this.Map.Name = "Map";
             this.Map.Navigation = TheBox.MapViewer.MapNavigation.LeftMouseButton;
             this.Map.ShowCross = true;
@@ -649,6 +649,7 @@ namespace TheBox
             // 
             // ucPropManager
             // 
+            this.ucPropManager.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ucPropManager.Location = new System.Drawing.Point(0, 0);
             this.ucPropManager.Name = "ucPropManager";
             this.ucPropManager.Size = new System.Drawing.Size(176, 144);
@@ -1128,7 +1129,7 @@ namespace TheBox
             // Box
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(6, 16);
-            this.ClientSize = new System.Drawing.Size(842, 269);
+            this.ClientSize = new System.Drawing.Size(842, 272);
             this.Controls.Add(this.bMenu);
             this.Controls.Add(this.pctCap);
             this.Controls.Add(this.boxButton8);
