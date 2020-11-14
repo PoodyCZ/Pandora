@@ -221,12 +221,12 @@ namespace TheBox.Pages
             this.tProps.AllowDrop = true;
             this.tProps.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tProps.HideSelection = false;
-            this.tProps.Location = new System.Drawing.Point(214, 0);
+            this.tProps.Location = new System.Drawing.Point(211, 0);
             this.tProps.Name = "tProps";
             this.tProps.ShowLines = false;
             this.tProps.ShowPlusMinus = false;
             this.tProps.ShowRootLines = false;
-            this.tProps.Size = new System.Drawing.Size(205, 221);
+            this.tProps.Size = new System.Drawing.Size(193, 221);
             this.tProps.Sorted = true;
             this.tProps.TabIndex = 0;
             this.tProps.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tProps_AfterSelect);
@@ -240,7 +240,7 @@ namespace TheBox.Pages
             this.tClasses.Indent = 15;
             this.tClasses.Location = new System.Drawing.Point(0, 0);
             this.tClasses.Name = "tClasses";
-            this.tClasses.Size = new System.Drawing.Size(211, 221);
+            this.tClasses.Size = new System.Drawing.Size(208, 221);
             this.tClasses.Sorted = true;
             this.tClasses.TabIndex = 1;
             this.tClasses.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tClasses_AfterSelect);
@@ -265,7 +265,7 @@ namespace TheBox.Pages
             this.chkAllClasses.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.chkAllClasses.Location = new System.Drawing.Point(4, 62);
             this.chkAllClasses.Name = "chkAllClasses";
-            this.chkAllClasses.Size = new System.Drawing.Size(96, 20);
+            this.chkAllClasses.Size = new System.Drawing.Size(105, 20);
             this.chkAllClasses.TabIndex = 3;
             this.chkAllClasses.Text = "Props.AllClasses";
             this.chkAllClasses.CheckedChanged += new System.EventHandler(this.chkAllClasses_CheckedChanged);
@@ -275,7 +275,7 @@ namespace TheBox.Pages
             this.chkAllProps.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.chkAllProps.Location = new System.Drawing.Point(4, 88);
             this.chkAllProps.Name = "chkAllProps";
-            this.chkAllProps.Size = new System.Drawing.Size(96, 20);
+            this.chkAllProps.Size = new System.Drawing.Size(105, 20);
             this.chkAllProps.TabIndex = 4;
             this.chkAllProps.Text = "Props.AllProps";
             this.chkAllProps.CheckedChanged += new System.EventHandler(this.chkAllProps_CheckedChanged);
@@ -315,6 +315,7 @@ namespace TheBox.Pages
             // 
             // cEnum
             // 
+            this.cEnum.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cEnum.Location = new System.Drawing.Point(4, 16);
             this.cEnum.Name = "cEnum";
             this.cEnum.Size = new System.Drawing.Size(104, 116);
@@ -323,6 +324,7 @@ namespace TheBox.Pages
             // 
             // cPoint3D
             // 
+            this.cPoint3D.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cPoint3D.Location = new System.Drawing.Point(4, 16);
             this.cPoint3D.Name = "cPoint3D";
             this.cPoint3D.Size = new System.Drawing.Size(104, 116);
@@ -331,6 +333,7 @@ namespace TheBox.Pages
             // 
             // cDateTime
             // 
+            this.cDateTime.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cDateTime.Location = new System.Drawing.Point(4, 16);
             this.cDateTime.Name = "cDateTime";
             this.cDateTime.Size = new System.Drawing.Size(104, 116);
@@ -339,6 +342,7 @@ namespace TheBox.Pages
             // 
             // cTimeSpan
             // 
+            this.cTimeSpan.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cTimeSpan.Location = new System.Drawing.Point(4, 16);
             this.cTimeSpan.Name = "cTimeSpan";
             this.cTimeSpan.Size = new System.Drawing.Size(104, 116);
@@ -356,6 +360,7 @@ namespace TheBox.Pages
             // 
             // cBoolean
             // 
+            this.cBoolean.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cBoolean.Location = new System.Drawing.Point(4, 16);
             this.cBoolean.Name = "cBoolean";
             this.cBoolean.Size = new System.Drawing.Size(104, 116);
@@ -391,15 +396,15 @@ namespace TheBox.Pages
             this.panel1.Controls.Add(this.tProps);
             this.panel1.Controls.Add(this.splitter);
             this.panel1.Controls.Add(this.tClasses);
-            this.panel1.Location = new System.Drawing.Point(100, 0);
+            this.panel1.Location = new System.Drawing.Point(115, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(419, 221);
+            this.panel1.Size = new System.Drawing.Size(404, 221);
             this.panel1.TabIndex = 11;
             // 
             // splitter
             // 
             this.splitter.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.splitter.Location = new System.Drawing.Point(211, 0);
+            this.splitter.Location = new System.Drawing.Point(208, 0);
             this.splitter.Name = "splitter";
             this.splitter.Size = new System.Drawing.Size(3, 221);
             this.splitter.TabIndex = 2;
